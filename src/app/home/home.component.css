@@ -1,0 +1,195 @@
+.wrapper-home {
+    position: relative;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+    top: 0;
+    position: absolute;
+}
+
+.title-wrapper {
+    display: block;
+    margin: 8%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.message {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #EAECEE;
+    font-size: 1.5rem;
+    margin-top: 200px;
+}
+
+.inner-message {
+    margin-bottom: 0px;
+    text-align: center;
+}
+
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: -100;
+    background-attachment: fixed;
+}
+
+.fullscreen-bg::after {
+    content:"";
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.video-background {
+    background: #000;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -99;
+}
+
+.video-foreground {
+     background-color: rgba(0,0,0,0.1);
+}
+
+.video-foreground,
+.video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.goToAgenda {
+    position: absolute;
+    bottom: 8px;
+    cursor: pointer;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+#calendar {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.days-wrapper {
+    display: flex;
+    flex-direction: row;
+    z-index: 4;
+    margin: 0 auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+    margin-top: 150px;
+}
+
+.day {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5rem;
+    color: white;
+    border: 4px solid white;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/images/Tu-y-Yo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat, repeat;
+    background-color: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+.day-number {
+    font-size: 60px;
+    margin: 0;
+}
+
+.day-name {
+    margin-top: -20px;
+}
+
+.poster-img {
+    width: 360px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+
+    .title-wrapper {
+        top: 10%;
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .fullscreen-bg {
+    height: 300%;
+    top: -100%;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .fullscreen-bg {
+    width: 300%;
+    left: -100%;
+  }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video-foreground {
+        height: 300%; top: -100%;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .video-foreground {
+        width: 300%; left: -100%; 
+    }
+}
+@media all and (max-width: 600px) {
+    .vid-info { 
+        width: 50%; padding: .5rem;
+    }
+    .vid-info h1 {
+        margin-bottom: .2rem;
+    }
+}
+@media all and (max-width: 500px) {
+    .vid-info .acronym {
+        display: none;
+    }
+
+    .day {
+        width: 350px;
+        margin: 0 auto 12px;
+    }
+
+    .message {
+        padding-top: 80px;
+    }
+}

@@ -14,10 +14,19 @@ li {
     padding: 10px 5px 5px 5px;
     position: absolute;
     left: 10px;
+    left: 20px;
+    z-index: 10;
 }
 
 .close {
     left: 220px;
+}
+
+.nav-bar-wrapper {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 12;
 }
 
 .nav-bar {
@@ -25,12 +34,12 @@ li {
     width: 250px;
     background-color: #17202A;
     color: #EAECEE;
-    cursor: pointer;
     height: 100vh;
     z-index: 10;
 }
 
 .nav-bar__link {
+    cursor: pointer;
     height: 20px;
     list-style-type: none;
     margin-top: 40px;
@@ -39,8 +48,23 @@ li {
     transition: color 0.2s;
 }
 
-.nav-bar__link:hover {
+.nav-bar__link-a {
+    color: #EAECEE;
+}
+
+.nav-bar__link-a:hover {
     color: #BC3926;
+}
+
+.nav-bar__link-a.active {
+    color: #BC3926;
+}
+
+.nav-bar-empty {
+     width: calc(100% - 250px);
+     height: 100vh;
+     margin-left: 250px;
+     cursor: pointer; 
 }
 
 .title-wrapper {
@@ -48,4 +72,31 @@ li {
     margin: 8%; 
     margin-left: auto;
     margin-right: auto;
+}
+
+.social-wrapper {
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+}
+
+.social {
+    border-top: 1px solid #EAECEE;
+    margin: 0 auto;
+    padding-top: 5%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around
+}
+
+.social-icon {
+    cursor: pointer;
+    font-size: 20px;
+    -webkit-transition: color 0.2s; /* Safari */
+    transition: color 0.2s;
+}
+
+.social-icon:hover {
+    color: #BC3926;
 }

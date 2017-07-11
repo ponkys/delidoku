@@ -18,7 +18,6 @@ export class DeliNavBarComponent implements OnInit {
 
   openNavBar() {
     this.showNavBar = true;
-    console.log(this.showNavBar);
   }
 
   closeNavBar() {

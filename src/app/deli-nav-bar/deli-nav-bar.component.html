@@ -1,7 +1,24 @@
 <header class="menu">
-  <span class="menu-symbol" (click)="openNavBar()"><i class="fa fa-bars" aria-hidden="true"></i></span>
+  <div class="menu-symbol" (click)="openNavBar()"><i class="fa fa-bars" aria-hidden="true"></i></div>
 </header>
-<nav *ngIf="showNavBar" class="nav-bar">
-  <span class="menu-symbol close" (click)="closeNavBar()"><i class="fa fa-times" aria-hidden="true"></i></span>
-  <ul><li *ngFor="let link of links" class="nav-bar__link">{{link | uppercase}}</li></ul>
-</nav>
+<div *ngIf="showNavBar" class="nav-bar-wrapper">
+  <nav  class="nav-bar">
+    <div class="menu-symbol close" (click)="closeNavBar()"><i class="fa fa-times" aria-hidden="true"></i></div>
+      <ul>
+        <li *ngFor="let link of links" class="nav-bar__link">
+          <a class="nav-bar__link-a"
+            routerLink="#"
+            routerLinkActive="active">
+            {{link | uppercase}}
+          </a>
+        </li>
+      </ul>
+    <div class="social-wrapper">
+      <div class="col-10 social">
+        <div class="fa fa-facebook-square social-icon"></div>
+        <div class="fa fa-twitter-square social-icon"></div>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-bar-empty" (click)="closeNavBar()"></div>
+</div>

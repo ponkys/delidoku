@@ -8,7 +8,7 @@ import { VideoBackgroundService } from '../video-background.service';
 })
 export class HomeComponent implements OnInit {
 
-  private video;
+  public video;
 
   constructor (private videoBackgroundService: VideoBackgroundService) {}
 

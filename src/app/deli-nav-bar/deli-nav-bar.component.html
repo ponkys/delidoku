@@ -4,15 +4,16 @@
 <div *ngIf="showNavBar" class="nav-bar-wrapper">
   <nav  class="nav-bar">
     <div class="menu-symbol close" (click)="closeNavBar()"><i class="fa fa-times" aria-hidden="true"></i></div>
-      <ul>
-        <li *ngFor="let link of links" class="nav-bar__link">
-          <a class="nav-bar__link-a"
-            routerLink="#"
-            routerLinkActive="active">
-            {{link | uppercase}}
-          </a>
-        </li>
-      </ul>
+    <ul>
+      <li *ngFor="let link of links" class="nav-bar__link">
+        <a class="nav-bar__link-a"
+          routerLink={{link}}
+          (click)="closeNavBar()"
+          routerLinkActive="active">
+          {{link | uppercase}}
+        </a>
+      </li>
+    </ul>
     <div class="social-wrapper">
       <div class="col-10 social">
         <div class="fa fa-facebook-square social-icon"></div>

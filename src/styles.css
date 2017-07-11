@@ -10,6 +10,9 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+p {
+    font-family: 'Poppins', sans-serif;
+}
 ul {
     padding: 0;
 }

@@ -18,6 +18,10 @@ li {
     z-index: 10;
 }
 
+.open {
+    position: fixed;
+}
+
 .close {
     left: 200px;
 }
@@ -123,6 +127,7 @@ li {
 .social-icon {
     cursor: pointer;
     font-size: 20px;
+    color: white;
     -webkit-transition: color 0.2s; /* Safari */
     transition: color 0.2s;
 }

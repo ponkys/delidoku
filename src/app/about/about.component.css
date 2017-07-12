@@ -1,0 +1,97 @@
+.wrapper-about {
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.deli-img {
+    width: 100%;
+    height: 50vh;
+    background-image: url('/assets/images/lense.svg');
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-position: center;
+}
+
+.info-area {
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.food {
+    background-image: url('/assets/images/food.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero {
+    left: 0;
+    height: 50vh;
+    width: 100vw;
+    text-align: center;
+    background-color: #BC3926;
+    -webkit-box-shadow: inset 0px 3px 10px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: inset 0px 3px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: inset 0px 3px 10px 0px rgba(0,0,0,0.5);
+}
+
+.hero-message {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.apartmet-img {
+    background-image: url('/assets/images/icons/home_screening-01.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.public-img {
+    background-image: url('/assets/images/icons/public_screening-01.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.grid {
+    float: left;
+    height: 313px;
+}
+
+.vertical-center {
+    transform: translateY(25%);
+}
+
+.for-desktop {
+    display: initial;
+    
+}
+
+.for-mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .for-desktop {
+        display: none;
+    }
+
+    .for-mobile {
+        display: inherit;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .grid {
+        height: 626px;
+    }
+}

@@ -18,16 +18,15 @@
 }
 
 .message {
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
-    color: #EAECEE;
-    font-size: 1.5rem;
     margin-top: 200px;
 }
 
 .inner-message {
     margin-bottom: 0px;
     text-align: center;
+    color: #EAECEE;
+    font-weight: bold;
+    font-size: 1.5rem;
 }
 
 .fullscreen-bg {
@@ -137,10 +136,6 @@
 }
 
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-        width: 100%;
-    }
 
     .title-wrapper {
         top: 10%;

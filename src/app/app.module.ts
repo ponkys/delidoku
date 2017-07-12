@@ -11,6 +11,7 @@ import { DeliNavBarComponent } from './deli-nav-bar/deli-nav-bar.component';
 import { HomeComponent } from './home/home.component';
 import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ContactComponent } from './contact/contact.component';
     DeliNavBarComponent,
     HomeComponent,
     TeamComponent,
-    ContactComponent
+    ContactComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

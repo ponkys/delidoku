@@ -1,3 +1,8 @@
+.wrapper {
+    width: 100vw;
+    background-color: #BC3926;
+}
+
 .wrapper-about {
     margin: 0 auto;
     font-family: 'Poppins', sans-serif;
@@ -5,16 +10,17 @@
 
 .deli-img {
     width: 100%;
-    height: 50vh;
-    background-image: url('/assets/images/lense.svg');
+    height: 80vh;
+    background-image: url('/assets/images/deli-doku-sq.jpg');
     background-repeat: no-repeat;
-    background-size: 25%;
+    background-size: 50%;
     background-position: center;
 }
 
 .info-area {
     margin: 0 auto;
     padding: 20px 0;
+    color: white;
 }
 
 .food {
@@ -26,22 +32,23 @@
 
 .hero {
     left: 0;
-    height: 50vh;
+    height: 80vh;
     width: 100vw;
+    position: relative;
     text-align: center;
-    background-color: #BC3926;
+    background-color: white;
     -webkit-box-shadow: inset 0px 3px 10px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: inset 0px 3px 10px 0px rgba(0,0,0,0.5);
     box-shadow: inset 0px 3px 10px 0px rgba(0,0,0,0.5);
 }
 
 .hero-message {
-    position: relative;
+    position: absolute;
     float: left;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color:  black;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              0px 8px 13px rgba(0,0,0,0.1),
              0px 18px 23px rgba(0,0,0,0.1);
@@ -90,7 +97,7 @@
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1200px) {
     .grid {
         height: 626px;
     }

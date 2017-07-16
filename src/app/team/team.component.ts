@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Team } from './team';
 
 @Component({
@@ -8,11 +8,15 @@ import { Team } from './team';
 })
 export class TeamComponent implements OnInit {
 
+  @ViewChild('contentWrapper')
+  contentWrapper: ElementRef
+
   private team: any[] = Team;
 
   constructor() { }
 
   ngOnInit() {
+    this.contentWrapper.nativeElement.scrollTop = 0;
   }
 
 }

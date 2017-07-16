@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-about',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
+  @ViewChild('contentWrapper')
+  contentWrapper: ElementRef
+
   constructor() { }
 
   ngOnInit() {
+    this.contentWrapper.nativeElement.scrollTop = 0;
   }
 
 }

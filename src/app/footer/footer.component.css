@@ -1,0 +1,25 @@
+.wrapper {
+    height: 150px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.wrapper-footer {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.footer-p {
+    font-size: 0.7rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer-p:hover {
+    text-decoration: underline;
+}

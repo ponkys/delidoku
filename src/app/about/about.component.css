@@ -49,20 +49,21 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color:  black;
+    width: 100%;
     text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
              0px 8px 13px rgba(0,0,0,0.1),
              0px 18px 23px rgba(0,0,0,0.1);
 }
 
 .apartmet-img {
-    background-image: url('/assets/images/icons/home_screening-01.jpg');
+    background-image: url('/assets/images/icons/home_screening-01.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
 }
 
 .public-img {
-    background-image: url('/assets/images/icons/public_screening-01.jpg');
+    background-image: url('/assets/images/icons/public_screening-01.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -70,7 +71,7 @@
 
 .grid {
     float: left;
-    height: 313px;
+    height: 250px;
 }
 
 .vertical-center {
@@ -86,6 +87,40 @@
     display: none;
 }
 
+/* Animation  */
+
+.animation-title {
+   opacity: 1;
+    -webkit-animation-name: title; /* Safari 4.0 - 8.0 */
+     -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+     animation-name: title;
+     animation-duration: 3s;
+     animation-fill-mode: forwards;
+     -webkit-animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes title {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Standard syntax */
+@keyframes title {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* responsive  */
+
 @media only screen and (max-width: 768px) {
 
     .for-desktop {
@@ -95,10 +130,22 @@
     .for-mobile {
         display: inherit;
     }
+
+    .info-area {
+        width: 90%;
+    }
+
+    .hero-message {
+        width: 90%;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
-    .grid {
+    /* .grid {
         height: 626px;
+    } */
+
+    .grid-col {
+        width: 100%;
     }
 }

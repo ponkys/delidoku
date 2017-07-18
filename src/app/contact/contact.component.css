@@ -1,11 +1,11 @@
 .wrapper {
     width: 100vw;
-    height: 100vh; /* delete if it gets bigger thant 100vh  */
     background-color: #BC3926;
 }
 
 .wrapper-contact {
     margin: 0 auto;
+    height: 100vh;
     font-family: 'Poppins', sans-serif;
 }
 

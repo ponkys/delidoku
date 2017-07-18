@@ -8,7 +8,8 @@
       <li *ngFor="let link of links" class="nav-bar__link">
         <a class="nav-bar__link-a"
           routerLink={{link}}
-          (click)="closeNavBar()"
+          (click)="onSelect(link)"
+
           routerLinkActive="active">
           {{link | uppercase}}
         </a>

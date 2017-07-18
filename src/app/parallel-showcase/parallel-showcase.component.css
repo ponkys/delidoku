@@ -1,0 +1,66 @@
+.wrapper {
+    width: 100vw;
+    background-color: #BC3926;
+}
+
+.wrapper-parallel {
+    margin: 0 auto;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+}
+
+.parallel-area {
+    margin: 0 auto;
+    padding: 20px 0;
+    color: white;
+}
+
+.parallel-title-wrapper {
+    width: 100%;
+    height: 40vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.film-img {
+    width: 150px;
+    height: 150px;
+    background-image: url('/assets/images/icons/screening-01.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+/* Animations  */
+
+.animation-title {
+   opacity: 1;
+    -webkit-animation-name: title; /* Safari 4.0 - 8.0 */
+     -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+     animation-name: title;
+     animation-duration: 3s;
+     animation-fill-mode: forwards;
+     -webkit-animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes title {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Standard syntax */
+@keyframes title {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

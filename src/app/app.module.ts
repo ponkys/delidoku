@@ -14,6 +14,7 @@ import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
+import { ParallelShowcaseComponent } from './parallel-showcase/parallel-showcase.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
     TeamComponent,
     ContactComponent,
     AboutComponent,
-    FooterComponent
+    FooterComponent,
+    ParallelShowcaseComponent
   ],
   imports: [
     BrowserModule,

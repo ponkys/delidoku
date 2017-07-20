@@ -10,33 +10,37 @@
     right: 20px;
 }
 
-.animation-title {
-   opacity: 1;
-    -webkit-animation-name: title; /* Safari 4.0 - 8.0 */
-     -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-     animation-name: title;
-     animation-duration: 3s;
-     animation-fill-mode: forwards;
-     -webkit-animation-fill-mode: forwards;
+.animation-logo {
+    opacity: 1;
+    -webkit-animation-name: logo; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes title {
+@-webkit-keyframes logo {
     from {
         opacity: 0;
+        transform: translateX(120%);
     }
     to {
         opacity: 1;
+        transform: translateX(0%);
     }
 }
 
 /* Standard syntax */
-@keyframes title {
+@keyframes logo {
     from {
         opacity: 0;
+        transform: translateX(120%);
     }
     to {
         opacity: 1;
+        transform: translateX(0%);
     }
 }
 

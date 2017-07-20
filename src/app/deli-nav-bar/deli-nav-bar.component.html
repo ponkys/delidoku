@@ -1,5 +1,7 @@
 <header class="menu">
-  <div class="menu-symbol open" (click)="openNavBar()"><i class="fa fa-bars" aria-hidden="true"></i></div>
+  <div class="menu-symbol open" (click)="openNavBar()">
+    <p class="fa fa-bars" aria-hidden="true"><span class="menu-title">Menu</span></p>
+  </div>
 </header>
 <div *ngIf="showNavBar" class="nav-bar-wrapper">
   <nav  class="nav-bar">

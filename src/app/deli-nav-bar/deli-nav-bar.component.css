@@ -2,11 +2,6 @@ ul {
     padding: 0;
 }
 
-
-li {
-    font-family: 'Poppins', sans-serif;
-}
-
 .menu-symbol {
     color: #EAECEE;
     cursor: pointer;
@@ -20,6 +15,15 @@ li {
 
 .open {
     position: fixed;
+}
+
+.menu-title {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 8px;
+}
+
+.open:hover {
+    text-decoration: underline; 
 }
 
 .close {
@@ -42,7 +46,13 @@ li {
     z-index: 10;
     -webkit-box-shadow: 2px 0px 20px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 2px 0px 20px 0px rgba(0,0,0,0.5);
-    box-shadow: 2px 0px 20px 0px rgba(0,0,0,0.5); 
+    box-shadow: 2px 0px 20px 0px rgba(0,0,0,0.5);
+    -webkit-animation-name: navAnimation; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
+    animation-name: navAnimation;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
 /* Safari 4.0 - 8.0 */

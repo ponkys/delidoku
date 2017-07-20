@@ -11,7 +11,7 @@ export class TeamComponent implements OnInit {
   @ViewChild('contentWrapper')
   contentWrapper: ElementRef
 
-  private team: any[] = Team;
+  team: any[] = Team;
 
   constructor() { }
 

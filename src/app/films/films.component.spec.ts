@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ParallelShowcaseComponent } from './parallel-showcase.component';
+import { FilmsComponent } from './films.component';
 
-describe('ParallelShowcaseComponent', () => {
-  let component: ParallelShowcaseComponent;
-  let fixture: ComponentFixture<ParallelShowcaseComponent>;
+describe('FilmsComponent', () => {
+  let component: FilmsComponent;
+  let fixture: ComponentFixture<FilmsComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ParallelShowcaseComponent ]
+      declarations: [ FilmsComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ParallelShowcaseComponent);
+    fixture = TestBed.createComponent(FilmsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

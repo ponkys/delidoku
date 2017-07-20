@@ -14,7 +14,8 @@ import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
-import { ParallelShowcaseComponent } from './parallel-showcase/parallel-showcase.component';
+import { FilmsComponent } from './films/films.component';
+import { LogoComponent } from './logo/logo.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ParallelShowcaseComponent } from './parallel-showcase/parallel-showcase
     ContactComponent,
     AboutComponent,
     FooterComponent,
-    ParallelShowcaseComponent
+    FilmsComponent,
+    LogoComponent
   ],
   imports: [
     BrowserModule,

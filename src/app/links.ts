@@ -2,6 +2,6 @@ export const Links: string[] = [
     'home',
     'about',
     'team',
-    'parallel-showcase',
+    'films',
     'contact', // solo email
 ]

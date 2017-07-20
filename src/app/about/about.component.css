@@ -9,12 +9,15 @@
 }
 
 .deli-img {
-    width: 100%;
-    height: 80vh;
-    background-image: url('/assets/images/deli-doku-sq.jpg');
+    width: 100px;
+    height: 100px;
+    background-image: url(/assets/images/deli-doku-sq.jpg);
     background-repeat: no-repeat;
-    background-size: 50%;
+    background-size: cover;
     background-position: center;
+    position: absolute;
+    top: 10px;
+    right: 20px;
 }
 
 .info-area {
@@ -23,36 +26,8 @@
     color: white;
 }
 
-.food {
-    background-image: url('/assets/images/food.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.hero {
-    left: 0;
-    height: 80vh;
-    width: 100vw;
-    position: relative;
-    text-align: center;
-    background-color: white;
-    -webkit-box-shadow: inset 0px 3px 10px 0px rgba(0,0,0,0.5);
-    -moz-box-shadow: inset 0px 3px 10px 0px rgba(0,0,0,0.5);
-    box-shadow: inset 0px 3px 10px 0px rgba(0,0,0,0.5);
-}
-
-.hero-message {
-    position: absolute;
-    float: left;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color:  black;
-    width: 100%;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-             0px 8px 13px rgba(0,0,0,0.1),
-             0px 18px 23px rgba(0,0,0,0.1);
+.space-screen {
+    margin-top: 3rem;
 }
 
 .apartmet-img {
@@ -85,6 +60,42 @@
 
 .for-mobile {
     display: none;
+}
+
+/* Icons  */
+
+.post-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.film-icon {
+    width: 150px;
+    height: 150px;
+    background-image: url('/assets/images/icons/screening-01.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.drink-icon {
+    width: 150px;
+    height: 150px;
+    background-image: url('/assets/images/icons/drinking-01.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.food-icon {
+    width: 150px;
+    height: 150px;
+    background-image: url('/assets/images/icons/eating-01.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 /* Animation  */
@@ -137,6 +148,10 @@
 
     .hero-message {
         width: 90%;
+    }
+
+    .deli-img {
+        display: none;
     }
 }
 

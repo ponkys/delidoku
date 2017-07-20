@@ -22,13 +22,20 @@
 }
 
 p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.58;
     color: white;
     margin: 0 5px;
 }
 
 h1 {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.04;
+    margin-top: 0px;
+    color: white;
+}
+
+h2 {
     font-family: 'Poppins', sans-serif;
     line-height: 1.04;
     margin-top: 0px;

@@ -10,7 +10,7 @@ import { WindowRefService  } from './window-ref.service';
 export class AppComponent implements DoCheck {
   isHomeComponent = true;
 
-  constructor(private route: ActivatedRoute, router: Router, private winRef: WindowRefService) {
+  constructor(private winRef: WindowRefService) {
   }
 
   ngDoCheck() {

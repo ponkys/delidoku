@@ -1,7 +1,6 @@
-<div #contentWrapper class="wrapper">
-  <app-logo></app-logo>
-  <div class="wrapper-team col-8">
-    <div class="team-title-wrapper center"><h1 class="team-title">Team</h1></div>
+<div #contentWrapper class="wrapper" [ngClass]="(mobileScreen===true)? 'mobile-screen-width' : 'big-screen-width'">
+  <div class="wrapper-team col-7">
+    <div class="team-title-wrapper center"><h1 class="title team-title">Team</h1></div>
     <section class="team-area">
       <div class="team-card center" *ngFor="let t of team">
         <div class="team-img-wrapper"><img class="team-img" [src]=t.img/></div>

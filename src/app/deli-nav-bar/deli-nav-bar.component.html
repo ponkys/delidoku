@@ -3,8 +3,8 @@
     <p class="fa fa-bars" aria-hidden="true"><span class="menu-title">Menu</span></p>
   </div>
 </header>
-<div *ngIf="showNavBar" class="nav-bar-wrapper">
-  <nav  class="nav-bar">
+<div *ngIf="showNavBar" class="nav-bar-wrapper" >
+  <nav  class="nav-bar" [ngClass]="{'nav-bar-animation': bigScreen===false }">
     <div class="menu-symbol close" (click)="closeNavBar()"><i class="fa fa-times" aria-hidden="true"></i></div>
     <ul>
       <li *ngFor="let link of links" class="nav-bar__link">
@@ -13,7 +13,7 @@
           (click)="onSelect(link)"
 
           routerLinkActive="active">
-          {{link | uppercase}}
+          {{link | capitalize}}
         </a>
       </li>
     </ul>

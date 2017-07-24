@@ -1,12 +1,11 @@
-<div #contentWrapper class="wrapper">
-  <app-logo></app-logo>
+<div class="wrapper" [ngClass]="(mobileScreen===true)? 'mobile-screen-width' : 'big-screen-width'">
   <div class="wrapper-parallel col-8">
-    <div class="parallel-title-wrapper center"><h1 class="animation-title">Films</h1></div>
+    <div class="parallel-title-wrapper center"><h1 class="title animation-title">Films</h1></div>
     <section class="parallel-area">
       <p>The official selection is composed of 7 films from different Latin American countries. It will be announced soon.
       </p>
     </section>
-    <div class="parallel-title-wrapper center"><h1 class="animation-title">Parallel showcase</h1></div>
+    <div class="parallel-title-wrapper center"><h1 class="title animation-title">Parallel showcase</h1></div>
     <section class="parallel-area">
       <p>For the first edition of Déli-Doku there will be a section of short documentary films from the renowned EICTV film school in Cuba, curated by Adam Breier, Hungarian film director and former student of the school.
       </p>

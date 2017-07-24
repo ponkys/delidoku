@@ -1,5 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Team } from './team';
+import { WindowRefService } from '../window-ref.service';
 
 @Component({
   selector: 'app-team',
@@ -13,7 +14,14 @@ export class TeamComponent implements OnInit {
 
   team: any[] = Team;
 
-  constructor() { }
+  public mobileScreen = true;
+
+  constructor(private winRef: WindowRefService) {
+    if (winRef.nativeWindow.outerWidth > 768) {
+      this.mobileScreen = false;
+    }
+  }
+
 
   ngOnInit() {
     this.contentWrapper.nativeElement.scrollTop = 0;

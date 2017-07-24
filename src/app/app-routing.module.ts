@@ -8,12 +8,21 @@ import { FilmsComponent } from './films/films.component';
 
 const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'home',  component: HomeComponent },
-    { path: 'team',  component: TeamComponent },
-    { path: 'contact',  component: ContactComponent },
-    { path: 'about',  component: AboutComponent },
-    { path: 'films',  component: FilmsComponent },
-    { path: '**',  component: HomeComponent }
+    {
+        path: 'home',
+        component: HomeComponent,
+        data: {
+            try: 1
+        }
+        // resolve: {
+        //     isHomeComponent: 'isHomeComponent'
+        // }
+    },
+    { path: 'team', component: TeamComponent },
+    { path: 'contact', component: ContactComponent },
+    { path: 'about', component: AboutComponent },
+    { path: 'films', component: FilmsComponent },
+    { path: '**', component: HomeComponent }
 ];
 
 @NgModule({

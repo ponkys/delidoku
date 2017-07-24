@@ -1,28 +1,31 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Links } from '../links';
+import { WindowRefService } from '../window-ref.service';
 
 @Component({
   selector: 'app-deli-nav-bar',
   templateUrl: './deli-nav-bar.component.html',
   styleUrls: ['./deli-nav-bar.component.css']
 })
-export class DeliNavBarComponent implements OnInit {
+export class DeliNavBarComponent {
 
   links: string[] = Links;
   showNavBar: Boolean = false;
+  bigScreen: Boolean = false;
 
-  constructor( private route: ActivatedRoute,
-                private router: Router) { }
-
-  ngOnInit() {
-    // read route
-    // this.route.paramMap.subscribe(p => console.log(p));
-  }
+  constructor(private router: Router, private winRef: WindowRefService) {
+      if (winRef.nativeWindow.outerWidth > 768) {
+        this.bigScreen = true;
+        this.showNavBar = true;
+      }
+    }
 
   onSelect(link: string) {
     this.router.navigate([`/${link}`]);
-    this.closeNavBar()
+    if (this.bigScreen === false) {
+      this.closeNavBar()
+    }
   }
 
   openNavBar() {

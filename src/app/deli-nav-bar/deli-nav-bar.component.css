@@ -17,6 +17,10 @@ ul {
     position: fixed;
 }
 
+.close {
+    display: none;
+}
+
 .menu-title {
     font-family: 'Poppins', sans-serif;
     margin-left: 8px;
@@ -24,10 +28,6 @@ ul {
 
 .open:hover {
     text-decoration: underline; 
-}
-
-.close {
-    left: 200px;
 }
 
 .nav-bar-wrapper {
@@ -38,8 +38,9 @@ ul {
 }
 
 .nav-bar {
+    padding-top: 8vh;
     position: absolute;
-    width: 250px;
+    width: 150px;
     background-color: #17202A;
     color: #EAECEE;
     height: 100vh;
@@ -47,12 +48,19 @@ ul {
     -webkit-box-shadow: 2px 0px 20px 0px rgba(0,0,0,0.5);
     -moz-box-shadow: 2px 0px 20px 0px rgba(0,0,0,0.5);
     box-shadow: 2px 0px 20px 0px rgba(0,0,0,0.5);
+}
+
+.nav-bar-animation {
     -webkit-animation-name: navAnimation; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 0.5s; /* Safari 4.0 - 8.0 */
     animation-name: navAnimation;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
     -webkit-animation-fill-mode: forwards;
+}
+
+.nav-bar-empty {
+    display: none;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -95,18 +103,6 @@ ul {
 
 .nav-bar__link-a.active {
     color: #BC3926;
-}
-
-.nav-bar-empty {
-     height: 100vh;
-     cursor: pointer; 
-     background-color: rgba(23,32,42, 0);
-     -webkit-animation-name: empty; /* Safari 4.0 - 8.0 */
-     -webkit-animation-duration: 0.3s; /* Safari 4.0 - 8.0 */
-     animation-name: empty;
-     animation-duration: 0.3s;
-     animation-fill-mode: forwards;
-     -webkit-animation-fill-mode: forwards;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -162,4 +158,26 @@ ul {
 
 .social-icon:hover {
     color: #BC3926;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .nav-bar-empty {
+        height: 100vh;
+        cursor: pointer; 
+        background-color: rgba(23,32,42, 0);
+        -webkit-animation-name: empty; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 0.3s; /* Safari 4.0 - 8.0 */
+        animation-name: empty;
+        animation-duration: 0.3s;
+        animation-fill-mode: forwards;
+        -webkit-animation-fill-mode: forwards;
+    }
+
+    .close {
+        display: block;
+        left: 120px;
+        top: 0;
+    }
+
 }

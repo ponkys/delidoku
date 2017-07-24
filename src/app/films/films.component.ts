@@ -1,15 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
+import { WindowRefService } from '../window-ref.service';
 
 @Component({
   selector: 'app-films',
   templateUrl: './films.component.html',
   styleUrls: ['./films.component.css']
 })
-export class FilmsComponent implements OnInit {
+export class FilmsComponent {
 
-  constructor() { }
+  public mobileScreen = true;
 
-  ngOnInit() {
+  constructor(private winRef: WindowRefService) {
+    if (winRef.nativeWindow.outerWidth > 768) {
+      this.mobileScreen = false;
+    }
   }
 
 }

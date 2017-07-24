@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { VideoBackgroundService } from '../video-background.service';
+import { WindowRefService } from '../window-ref.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,8 +11,16 @@ import { VideoBackgroundService } from '../video-background.service';
 export class HomeComponent implements OnInit {
 
   public video;
+  public mobileScreen = true;
+  public isHomeComponent: false;
 
-  constructor (private videoBackgroundService: VideoBackgroundService) {}
+  constructor (
+    private videoBackgroundService: VideoBackgroundService,
+    private winRef: WindowRefService) {
+    if (winRef.nativeWindow.outerWidth > 768) {
+      this.mobileScreen = false;
+    }
+  }
 
   ngOnInit() {
     this.video = this.videoBackgroundService.randomVideo()

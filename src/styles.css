@@ -26,6 +26,7 @@ p {
     line-height: 1.58;
     color: white;
     margin: 0 5px;
+    font-size: 14px
 }
 
 h1 {
@@ -33,6 +34,7 @@ h1 {
     line-height: 1.04;
     margin-top: 0px;
     color: white;
+    font-size: 16px;
 }
 
 h2 {
@@ -40,6 +42,7 @@ h2 {
     line-height: 1.04;
     margin-top: 0px;
     color: white;
+    font-size: 16px
 }
 ul {
     padding: 0;
@@ -52,6 +55,16 @@ li {
 
 a {
     text-decoration: none;
+}
+
+.big-screen-width {
+    width: calc(100vw - 150px);
+    left: 150px;  
+    position: relative;
+}
+
+.mobile-screen-width {
+    width: 100vw;
 }
 
 @media only screen and (min-width: 600px) {

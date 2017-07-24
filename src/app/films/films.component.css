@@ -1,5 +1,4 @@
 .wrapper {
-    width: 100vw;
     background-color: #BC3926;
 }
 
@@ -13,6 +12,10 @@
     margin: 0 auto;
     padding: 20px 0;
     color: white;
+}
+
+.title {
+    font-size: 20px;
 }
 
 .parallel-title-wrapper {

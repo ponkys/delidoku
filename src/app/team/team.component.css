@@ -1,5 +1,4 @@
 .wrapper {
-    width: 100vw;
     background-color: #BC3926;
 }
 
@@ -17,14 +16,18 @@
     justify-content: center;
 }
 
+.title {
+    font-size: 20px;
+}
+
 .team-title {
    opacity: 1;
     -webkit-animation-name: title; /* Safari 4.0 - 8.0 */
-     -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-     animation-name: title;
-     animation-duration: 3s;
-     animation-fill-mode: forwards;
-     -webkit-animation-fill-mode: forwards;
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation-name: title;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -60,6 +63,7 @@
 .team-card {
     padding: 0 1rem 2rem 1rem;
     margin: 0 auto;
+    max-width: 196px;
 }
 
 .team-img {

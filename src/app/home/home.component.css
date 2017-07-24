@@ -3,11 +3,19 @@
 }
 
 .wrapper {
-    width: 100vw;
     height: 100vh;
     display: block;
     top: 0;
     position: absolute;
+}
+
+.big-screen-width {
+    width: calc(100vw - 150px);
+    left: 150px;  
+}
+
+.mobile-screen-width {
+    width: 100vw;
 }
 
 .title-wrapper {

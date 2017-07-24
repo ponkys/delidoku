@@ -6,7 +6,7 @@
         </iframe>
     </div>
   </div>
-  <div id="home" class="wrapper">
+  <div id="home" class="wrapper" [ngClass]="(mobileScreen===true)? 'mobile-screen-width' : 'big-screen-width'">
     <div class="title-wrapper col-8">
         <img class="animated fadeInDownBig" src='assets/images/title1.svg' alt="deli doku"/>
     </div>

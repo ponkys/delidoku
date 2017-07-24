@@ -43,14 +43,6 @@ import {CapitalizePipe} from './utils/capitalize.pipe';
   providers: [
     VideoBackgroundService,
     WindowRefService,
-    // {
-    //   provide: 'isHomeComponent',
-    //   useValue: () => {
-    //     return {
-    //       isHomeComponent: true,
-    //     };
-    //   }
-    // }
   ],
   bootstrap: [AppComponent]
 })

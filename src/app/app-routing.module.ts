@@ -11,12 +11,6 @@ const routes: Routes = [
     {
         path: 'home',
         component: HomeComponent,
-        data: {
-            try: 1
-        }
-        // resolve: {
-        //     isHomeComponent: 'isHomeComponent'
-        // }
     },
     { path: 'team', component: TeamComponent },
     { path: 'contact', component: ContactComponent },

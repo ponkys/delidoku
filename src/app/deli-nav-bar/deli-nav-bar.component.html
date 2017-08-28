@@ -1,6 +1,6 @@
 <header class="menu">
   <div class="menu-symbol open" (click)="openNavBar()">
-    <p class="fa fa-bars" aria-hidden="true"><span class="menu-title">Menu</span></p>
+    <p class="fa fa-bars" aria-hidden="true"></p>
   </div>
 </header>
 <div *ngIf="showNavBar" class="nav-bar-wrapper" >
@@ -9,8 +9,7 @@
     <ul>
       <li *ngFor="let link of links" class="nav-bar__link">
         <a class="nav-bar__link-a"
-          (click)="onSelect(link)"
-
+          [routerLink]="['/'+link]"
           routerLinkActive="active">
           {{link | capitalize}}
         </a>

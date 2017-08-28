@@ -14,7 +14,7 @@ export class AppComponent implements DoCheck {
   }
 
   ngDoCheck() {
-    this.isHomeComponent =  (this.winRef.nativeWindow.location.href.substr(-4) === 'home') ? true : false;
+    this.isHomeComponent =  (this.winRef.nativeWindow.location.href.substr(-4).match('home')) ? true : false;
   }
 }
 

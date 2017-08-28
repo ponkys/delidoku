@@ -1,15 +1,15 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Links } from '../links';
 
 @Component({
-  selector: 'app-footer',
-  templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css']
+  selector: 'app-links',
+  templateUrl: './links.component.html',
+  styleUrls: ['./links.component.css']
 })
-export class FooterComponent {
+export class LinksComponent {
 
-  links: any[] = Links;
+  links: string[] = Links.slice(1);
 
   constructor(private router: Router) {}
 

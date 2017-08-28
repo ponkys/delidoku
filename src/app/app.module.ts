@@ -20,6 +20,7 @@ import { LogoComponent } from './logo/logo.component';
 
 // pipe
 import {CapitalizePipe} from './utils/capitalize.pipe';
+import { LinksComponent } from './links/links.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import {CapitalizePipe} from './utils/capitalize.pipe';
     FilmsComponent,
     LogoComponent,
     // pipe
-    CapitalizePipe
+    CapitalizePipe,
+    LinksComponent
   ],
   imports: [
     BrowserModule,

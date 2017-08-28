@@ -1,6 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 @import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Tinos:400,400i,700');
+
 
 *, *:after, *:before {
     -webkit-box-sizing: border-box;
@@ -22,34 +24,35 @@
 }
 
 p {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     line-height: 1.58;
-    color: white;
-    margin: 0 5px;
+    color: #2E2E2E;
+    margin: 0;
     font-size: 14px
 }
 
 h1 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Tinos', serif;
     line-height: 1.04;
     margin-top: 0px;
-    color: white;
-    font-size: 16px;
+    color: #2E2E2E;
+    font-size: 18px;
 }
 
 h2 {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Tinos', serif;
     line-height: 1.04;
     margin-top: 0px;
-    color: white;
+    color: #2E2E2E;
     font-size: 16px
 }
 ul {
     padding: 0;
+    list-style-type: none;
 }
 
 li {
-    font-family: 'Poppins', sans-serif;
+    list-style-type: none;
 }
 
 
@@ -57,11 +60,15 @@ a {
     text-decoration: none;
 }
 
-.big-screen-width {
+.strong {
+    font-weight: 700;
+}
+
+/* .big-screen-width {
     width: calc(100vw - 150px);
     left: 150px;  
     position: relative;
-}
+} */
 
 .mobile-screen-width {
     width: 100vw;

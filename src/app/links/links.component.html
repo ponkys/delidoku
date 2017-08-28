@@ -1,0 +1,9 @@
+<ul class="links-wrapper">
+  <li *ngFor="let link of links" class="links">
+    <a class="links-a"
+      (click)="onSelect(link)"
+      routerLinkActive="active">
+      {{link | capitalize}}
+    </a>
+  </li>
+</ul>

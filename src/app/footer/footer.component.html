@@ -1,7 +1,7 @@
 <div class="wrapper">
     <div class="wrapper-footer col-5">
       <p class="footer-p" *ngFor="let link of links"
-        routerLink={{link}}>
+        (click)="onSelect(link)">
         {{link | uppercase}}
       </p>
     </div>

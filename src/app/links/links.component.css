@@ -1,0 +1,32 @@
+.links-wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+
+.links {
+    list-style-type: none;
+    padding-right: 12px;
+    
+}
+
+.links-a:hover {
+    border-bottom: 1px solid white;
+}
+
+.links-a {
+    color: white;
+    cursor: pointer;
+    
+}
+
+.links:after {
+    color: white;
+}
+
+.links:last-child {
+    content: ' ';
+}

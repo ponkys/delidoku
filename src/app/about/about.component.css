@@ -1,10 +1,9 @@
 .wrapper {
-    background-color: #BC3926;
+    background-color: white;
 }
 
 .wrapper-about {
     margin: 0 auto;
-    font-family: 'Poppins', sans-serif;
 }
 
 .deli-img {
@@ -22,7 +21,7 @@
 .info-area {
     margin: 0 auto;
     padding: 20px 0;
-    color: white;
+    color: #2E2E2E;
 }
 
 .title {
@@ -33,7 +32,21 @@
     margin-top: 3rem;
 }
 
+.screening-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.screening-text {
+    margin-bottom: 20px;
+}
+
 .apartmet-img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
     background-image: url('/assets/images/icons/home_screening-01.png');
     background-repeat: no-repeat;
     background-size: contain;
@@ -41,19 +54,13 @@
 }
 
 .public-img {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
     background-image: url('/assets/images/icons/public_screening-01.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-}
-
-.grid {
-    float: left;
-    height: 250px;
-}
-
-.vertical-center {
-    transform: translateY(25%);
 }
 
 .for-desktop {

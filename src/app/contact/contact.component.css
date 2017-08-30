@@ -1,10 +1,10 @@
 .wrapper {
-    background-color: #BC3926;
+    background-color: white;
 }
 
 .wrapper-contact {
     margin: 0 auto;
-    height: 100vh;
+    height: 80vh;
     font-family: 'Poppins', sans-serif;
 }
 

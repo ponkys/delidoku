@@ -29,5 +29,9 @@
       </div>
     </div>
   </nav>
-  <div class="nav-bar-empty" (click)="closeNavBar()"></div>
+  <div
+    *ngIf="bigScreen === false"
+    class="nav-bar-empty"
+    (click)="closeNavBar()">
+  </div>
 </div>

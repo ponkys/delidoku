@@ -1,7 +1,8 @@
 .wrapper {
-    height: 150px;
+    height: 20vh;
     display: flex;
     flex-wrap: wrap;
+    padding: 12px;
 }
 
 .wrapper-footer {

@@ -24,14 +24,12 @@ body {
 }
 
 p {
-    /* line-height: 1.58; */
     color: #2E2E2E;
     margin: 0;
     font-size: 20px;
 }
 
 h1 {
-    /* line-height: 1.04; */
     margin: 0;
     color: #2E2E2E;
     font-weight: 900;
@@ -40,7 +38,6 @@ h1 {
 }
 
 h2 {
-    /* line-height: 1.04; */
     margin-top: 0;
     color: #2E2E2E;
     font-size: 24px;

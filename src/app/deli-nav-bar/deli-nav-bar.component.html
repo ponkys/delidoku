@@ -1,6 +1,14 @@
-<div class="menu">
-  
-</div>
+<header class="header">
+    <div 
+      class="menu-symbol open" 
+      *ngIf="showNavBar===false"
+      (click)="openNavBar()">
+      <p class="fa fa-bars" aria-hidden="true"></p>
+    </div>
+  <div class="logo-wrapper">
+    <div class="logo"></div>
+  </div>
+</header>
 <div *ngIf="showNavBar" class="nav-bar-wrapper" >
   <nav  class="nav-bar" [ngClass]="{'nav-bar-animation': bigScreen===false }">
     <div class="menu-symbol close" (click)="closeNavBar()"><i class="fa fa-times" aria-hidden="true"></i></div>
@@ -8,7 +16,8 @@
       <li *ngFor="let link of links" class="nav-bar__link">
         <a class="nav-bar__link-a"
           [routerLink]="['/'+link]"
-          routerLinkActive="active">
+          routerLinkActive="active"
+          (click)=closeNavBar()>
           {{link | capitalize}}
         </a>
       </li>
@@ -22,11 +31,3 @@
   </nav>
   <div class="nav-bar-empty" (click)="closeNavBar()"></div>
 </div>
-<header class="header">
-    <div class="menu-symbol open" (click)="openNavBar()">
-        <p class="fa fa-bars" aria-hidden="true"></p>
-      </div>
-  <div class="logo-wrapper">
-    <div class="logo"></div>
-  </div>
-</header>

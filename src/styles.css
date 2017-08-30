@@ -17,29 +17,31 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
 }
 .center {
     text-align: center;
 }
 
 p {
-    line-height: 1.58;
+    /* line-height: 1.58; */
     color: #2E2E2E;
     margin: 0;
     font-size: 20px;
 }
 
 h1 {
-    line-height: 1.04;
-    margin-top: 0px;
+    /* line-height: 1.04; */
+    margin: 0;
     color: #2E2E2E;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 40px;
+
 }
 
 h2 {
-    line-height: 1.04;
-    margin-top: 0px;
+    /* line-height: 1.04; */
+    margin-top: 0;
     color: #2E2E2E;
     font-size: 24px;
     font-weight: 500;

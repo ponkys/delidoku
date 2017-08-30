@@ -41,12 +41,13 @@
     margin-top: 3rem;
 }
 
+.decons-wrapper {
+    margin-top: 12px;
+}
+
 .decons {
-    margin: 20px 0;
-    height: 370px;
-    background-image: url('/assets/images/decons.png');
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
+    height: auto;
 }
 
 .screening-imgs {
@@ -61,22 +62,22 @@
 }
 
 .apartmet-img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     margin: 0 auto;
     background-image: url('/assets/images/icons/home_screening-01.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 
 .public-img {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     margin: 0 auto;
     background-image: url('/assets/images/icons/public_screening-01.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 
@@ -99,29 +100,29 @@
 }
 
 .film-icon {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     background-image: url('/assets/images/icons/screening-01.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 
 .drink-icon {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     background-image: url('/assets/images/icons/drinking-01.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 
 .food-icon {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     background-image: url('/assets/images/icons/eating-01.png');
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
 }
 
@@ -184,9 +185,13 @@
     .title {
         margin-top: 45px;
     }
+
+    decons {
+        height: 350px;
+    }
 }
 
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 769px) and (max-width: 1250px) {
 
     .grid-col {
         width: 100%;

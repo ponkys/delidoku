@@ -39,7 +39,9 @@ export class DeliNavBarComponent {
   }
 
   closeNavBar() {
-    this.showNavBar = false;
+    if (this.winRef.nativeWindow.outerWidth < 768) {
+      this.showNavBar = false;
+    }
   }
 
 }

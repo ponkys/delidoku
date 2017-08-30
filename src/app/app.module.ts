@@ -40,7 +40,7 @@ import { LinksComponent } from './links/links.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
   ],
   providers: [
     VideoBackgroundService,

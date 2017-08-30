@@ -24,12 +24,29 @@
     color: #2E2E2E;
 }
 
+.info-area-minus-bottom {
+    padding-top: 70px;
+    padding-bottom: 0px;
+}
+
+.title-unique {
+    margin-top: 20px;
+}
+
 .title {
-    font-size: 20px;
+    margin-bottom: 20px;
 }
 
 .space-screen {
     margin-top: 3rem;
+}
+
+.decons {
+    margin: 20px 0;
+    height: 370px;
+    background-image: url('/assets/images/decons.png');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .screening-imgs {
@@ -163,12 +180,13 @@
     .deli-img {
         display: none;
     }
+
+    .title {
+        margin-top: 45px;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1200px) {
-    /* .grid {
-        height: 626px;
-    } */
 
     .grid-col {
         width: 100%;

@@ -7,14 +7,14 @@
 .wrapper {
     top: 50%;
     transform: translate(0%, -50%);
-    right: 20px;
+    right: 15%;
     position: absolute;
-    padding: 40px 60px 60px 60px;
+    padding: 40px 60px 10% 60px;
     text-align: left;
     display: flex;
     height: 100vh;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: flex-end;
 }
 
 .mobile-screen-width {
@@ -26,6 +26,7 @@
     margin-left: auto;
     margin-right: auto;
     padding: 12px;
+    padding-bottom: 40px;
 }
 
 .inner-message {
@@ -57,7 +58,6 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, .5);
 }
 
 .video-background {
@@ -68,7 +68,7 @@
 }
 
 .video-foreground {
-     background-color: rgba(0,0,0,0.3);
+     background-color: rgba(0,0,0,0.2);
 }
 
 .video-foreground,
@@ -194,6 +194,7 @@
     .wrapper {
         right: 0;
         padding: 0;
+        justify-content: space-around;
     }
 
     .message {

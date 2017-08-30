@@ -1,8 +1,6 @@
-<header class="menu">
-  <div class="menu-symbol open" (click)="openNavBar()">
-    <p class="fa fa-bars" aria-hidden="true"></p>
-  </div>
-</header>
+<div class="menu">
+  
+</div>
 <div *ngIf="showNavBar" class="nav-bar-wrapper" >
   <nav  class="nav-bar" [ngClass]="{'nav-bar-animation': bigScreen===false }">
     <div class="menu-symbol close" (click)="closeNavBar()"><i class="fa fa-times" aria-hidden="true"></i></div>
@@ -24,3 +22,11 @@
   </nav>
   <div class="nav-bar-empty" (click)="closeNavBar()"></div>
 </div>
+<header class="header">
+    <div class="menu-symbol open" (click)="openNavBar()">
+        <p class="fa fa-bars" aria-hidden="true"></p>
+      </div>
+  <div class="logo-wrapper">
+    <div class="logo"></div>
+  </div>
+</header>

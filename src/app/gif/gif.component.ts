@@ -8,7 +8,6 @@ import { Component, OnInit, Input } from '@angular/core';
 export class GifComponent implements OnInit {
 
   @Input() video: string;
-  @Input() gif: string;
 
   constructor() { }
 

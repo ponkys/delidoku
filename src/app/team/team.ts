@@ -12,7 +12,7 @@ export const Team: any[] = [
      {
         name: 'Adam Breier',
         role: 'Programmer and artistic producer',
-        img: 'assets/images/team/adam-bw.png'
+        img: 'assets/images/team/adam.png'
     },
      {
         name: 'Dániel Bozzai',
@@ -25,7 +25,7 @@ export const Team: any[] = [
         img: 'assets/images/team/diego.png'
     },
      {
-        name: 'Manuel Contreras',
+        name: 'Manuel F Contreras',
         role: 'Artistic producer',
         img: 'assets/images/team/manuel.png'
     }

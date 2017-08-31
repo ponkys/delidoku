@@ -1,10 +1,10 @@
 <div #contentWrapper class="wrapper" [ngClass]="(mobileScreen===true)? 'mobile-screen-width' : 'big-screen-width'">
   <div class="wrapper-team col-6">
-    <div class="team-title-wrapper center"><h1 class="title team-title">Team</h1></div>
+    <div class="team-title-wrapper center"><h2 class="title team-title">Team</h2></div>
     <section class="team-area">
       <div class="team-card center" *ngFor="let t of team">
         <div class="team-img-wrapper">
-          <img class="team-img" [src]=t.img/>
+          <img class="team-img" [src]=t.img alt={{t.name}}/>
         </div>
         <div class="team-content">
           <h2>{{t.name}}</h2>

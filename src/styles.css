@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900');
+@import url('https://fonts.googleapis.com/css?family=Tinos:400,400i,700,700i');
+
 
 *, *:after, *:before {
     -webkit-box-sizing: border-box;
@@ -16,7 +18,7 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Tinos', serif;
     line-height: 1.6;
 }
 .center {
@@ -26,14 +28,15 @@ body {
 p {
     color: #2E2E2E;
     margin: 0;
-    font-size: 20px;
+    font-size: 20px important!; 
 }
 
 h1 {
     margin: 0;
     color: #2E2E2E;
-    font-weight: 900;
-    font-size: 40px;
+    font-weight: 400;
+    font-size: 24px;
+    font-style: italic;
 
 }
 
@@ -41,7 +44,8 @@ h2 {
     margin-top: 0;
     color: #2E2E2E;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 400;
+    font-style: italic;
 }
 ul {
     padding: 0;

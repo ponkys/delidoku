@@ -25,7 +25,7 @@
 }
 
 .info-area-minus-bottom {
-    padding-top: 70px;
+    padding-top: 140px;
     padding-bottom: 0px;
 }
 
@@ -37,12 +37,16 @@
     margin-bottom: 20px;
 }
 
+.main-title-line-height {
+    line-height: 1.3;
+}
+
 .space-screen {
     margin-top: 3rem;
 }
 
 .decons-wrapper {
-    margin-top: 12px;
+    margin-top: 20px;
 }
 
 .decons {
@@ -188,6 +192,10 @@
 
     decons {
         height: 350px;
+    }
+
+    .info-area-minus-bottom {
+        padding-top: 90px;
     }
 }
 

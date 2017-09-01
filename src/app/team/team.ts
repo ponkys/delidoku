@@ -4,11 +4,11 @@ export const Team: any[] = [
         role: 'Locations producer',
         img: 'assets/images/team/charlotte-symmons.png'
     },
-    // {
-    //     name: 'Veronika Gazner',
-    //     role: 'Executive producer',
-    //     img: 'assets/images/team/charlotte-symmons.png'
-    // },
+    {
+        name: 'Veronika Gazner',
+        role: 'Executive producer',
+        img: 'assets/images/team/veronika.png'
+    },
      {
         name: 'Adam Breier',
         role: 'Programmer and artistic producer',

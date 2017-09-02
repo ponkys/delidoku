@@ -22,6 +22,7 @@ import { LogoComponent } from './logo/logo.component';
 import {CapitalizePipe} from './utils/capitalize.pipe';
 import { LinksComponent } from './links/links.component';
 import { GifComponent } from './gif/gif.component';
+import { LoadingComponent } from './loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { GifComponent } from './gif/gif.component';
     // pipe
     CapitalizePipe,
     LinksComponent,
-    GifComponent
+    GifComponent,
+    LoadingComponent
   ],
   imports: [
     BrowserModule,

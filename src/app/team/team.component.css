@@ -19,6 +19,10 @@
     margin-bottom: 20px;
 }
 
+.loading {
+    text-align: center;
+}
+
 .team-title {
    opacity: 1;
     -webkit-animation-name: title; /* Safari 4.0 - 8.0 */

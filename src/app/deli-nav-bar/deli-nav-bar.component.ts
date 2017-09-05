@@ -44,4 +44,8 @@ export class DeliNavBarComponent {
     }
   }
 
+  facebookNavigate() {
+      window.open('https://www.facebook.com/delidokubp/', '_blank');
+  }
+
 }

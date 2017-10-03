@@ -17,12 +17,18 @@ export const Team: any[] = [
         // tslint:disable-next-line:max-line-length
         img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Fadam.png?alt=media&token=9e8c139b-2dee-4fc0-a473-2cb0eaae94e5'
     },
-     {
-        name: '<h2>D&aacute;niel Bozzai</h2>',
-        role: 'Graphic design',
+    {
+        name: '<h2>Priscilla Esteves</h2>',
+        role: 'communication manager',
         // tslint:disable-next-line:max-line-length
-        img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Fdaniel.png?alt=media&token=50b34431-6e2e-4e28-846e-4c33937c3a44'
+        img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Fpriscilla.png?alt=media&token=a96751db-ce38-4041-bcc2-810db7c32117'
     },
+    //  {
+    //     name: '<h2>D&aacute;niel Bozzai</h2>',
+    //     role: 'Graphic design',
+        // tslint:disable-next-line:max-line-length
+    //     img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Fdaniel.png?alt=media&token=50b34431-6e2e-4e28-846e-4c33937c3a44'
+    // },
      {
         name: '<h2>Diego Mosquera</h2>',
         role: 'Web development',

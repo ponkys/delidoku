@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Links } from '../links';
 import { WindowRefService } from '../window-ref.service';
-import { ScrollimateService } from 'ng2-scrollimate';
 import { trigger, animate, state, style, transition } from '@angular/animations';
 
 @Component({

@@ -19,7 +19,7 @@ export const Team: any[] = [
     },
     {
         name: '<h2>Priscilla Esteves</h2>',
-        role: 'communication manager',
+        role: 'Communication manager',
         // tslint:disable-next-line:max-line-length
         img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Fpriscilla.png?alt=media&token=a96751db-ce38-4041-bcc2-810db7c32117'
     },

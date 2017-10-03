@@ -80,6 +80,18 @@
     pointer-events: none;
 }
 
+.mobile-background {
+    background-color: #BC3926;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/assets/images/lense.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
 .goToAgenda {
     position: absolute;
     bottom: 8px;

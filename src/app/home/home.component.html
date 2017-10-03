@@ -1,11 +1,12 @@
 <div class="wrapper-home">  
-  <div class="video-background">
+  <div *ngIf="!mobileScreen" class="video-background">
     <div class="video-foreground">
-        <iframe class="fullscreen-bg" frameBorder="0" height="100%" title="background video" width="100%" 
-            [src]="video">
-        </iframe>
+      <iframe class="fullscreen-bg" frameBorder="0" height="100%" title="background video" width="100%" 
+          [src]="video">
+      </iframe>
     </div>
   </div>
+  <div *ngIf="mobileScreen" class="mobile-background"></div>
   <div id="home" class="wrapper">
     <div class="title-wrapper col-12">
         <img class="animated fadeInDownBig" src='assets/images/title1.svg' alt="deli doku"/>

@@ -17,7 +17,7 @@ export class HomeComponent implements OnInit {
   constructor (
     private videoBackgroundService: VideoBackgroundService,
     private winRef: WindowRefService) {
-    if (winRef.nativeWindow.outerWidth > 768) {
+    if (this.winRef.nativeWindow.innerWidth > 768) {
       this.mobileScreen = false;
     }
   }

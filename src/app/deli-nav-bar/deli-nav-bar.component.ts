@@ -22,7 +22,6 @@ export class DeliNavBarComponent {
       private winRef: WindowRefService) {
         if (winRef.nativeWindow.outerWidth > 768) {
           this.bigScreen = true;
-          this.showNavBar = true;
         }
       }
 
@@ -37,10 +36,14 @@ export class DeliNavBarComponent {
     this.showNavBar = true;
   }
 
-  closeNavBar() {
-    if (this.winRef.nativeWindow.outerWidth < 768) {
-      this.showNavBar = false;
+  closeNavBar(link?) {
+    if (link) {
+      window.location.hash = link;
     }
+
+    // if (this.winRef.nativeWindow.outerWidth < 768) {
+      this.showNavBar = false;
+    // }
   }
 
   facebookNavigate() {

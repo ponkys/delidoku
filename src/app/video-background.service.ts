@@ -15,7 +15,7 @@ export class VideoBackgroundService {
 
   constructor(private sanitizer: DomSanitizer) {}
 
-  randomVideo (): SafeResourceUrl {
+  randomVideo(): SafeResourceUrl {
     let lenght;
     lenght = this.videoLinks.length;
     this.dangerous = this.videoLinks[this.getRandomIntInclusive(1, lenght) - 1];
@@ -26,6 +26,10 @@ export class VideoBackgroundService {
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + 1)) + min;
+  }
+
+  sanitise(link: string): SafeResourceUrl {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(link);
   }
 
 }

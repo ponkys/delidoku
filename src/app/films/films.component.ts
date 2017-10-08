@@ -1,21 +1,36 @@
-import { Component} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { WindowRefService } from '../window-ref.service';
+import { Films } from './films';
+import { VideoBackgroundService } from '../video-background.service';
 
 @Component({
   selector: 'app-films',
   templateUrl: './films.component.html',
   styleUrls: ['./films.component.css']
 })
-export class FilmsComponent {
+export class FilmsComponent implements OnInit {
 
-  public mobileScreen = true;
+  mobileScreen = true;
+  films = Films;
+  videoSrc;
 
-  video = '/assets/gif/lense3.mp4';
-
-  constructor(private winRef: WindowRefService) {
+  constructor(private winRef: WindowRefService,
+              private videoBackgroundService: VideoBackgroundService) {
     if (winRef.nativeWindow.outerWidth > 768) {
       this.mobileScreen = false;
     }
+    this.films.map( film => {
+      return film.trailerSafe = this.videoBackgroundService.sanitise(film.trailer);
+    })
+  }
+
+  ngOnInit() {
+
+  }
+
+  openTrailer(i) {
+    this.videoSrc = null;
+    this.videoSrc = this.films[i].trailerSafe;
   }
 
 }

@@ -1,62 +1,45 @@
 <div #contentWrapper class="wrapper" [ngClass]="(mobileScreen===true)? 'mobile-screen-width' : 'big-screen-width'">
-  <div class="wrapper-about col-6">
-    <section class="info-area info-area-minus-bottom">
-      <div class="title center animation-title main-title-line-height">
-        <h2>Contemporary Latin-American Documentary Film Showcase<br>Budapest / November 8 - 12 of 2017</h2>
+  <div class="wrapper-about info-area">
+    <section>
+      <div class="title animation-title main-title-line-height">
+        <h2>Contemporary Latin American Documentary Film Showcase</h2>
       </div>
-      <div class="info-area">
+      <div class="title-bar"></div>
+      <div>
+        <h3>Budapest / November 8 - 12 of 2017</h3>
         <p>D&eacute;li-Doku brings to Budapest the finest in modern documentary film
           production from Latin America and brings along the Latin-American feeling. Starting in 2017 as an alternative film event, D&eacute;li-Doku goes beyond the cinema experience by taking the screenings to both public and private locations, such as apartments, parks, social organizations, artistic venues and such, generating a series of social happenings connected with today's alternative ways of cinema distribution.
         </p>
       </div>
-      <div class="decons-wrapper">
-        <img class="decons" src="assets/images/decons-web.png">
+    </section>
+    <section>
+      <h2 class="title">Each film will have two screenings!</h2>
+      <div class="screening-imgs">
+        <div class="flex-items-screnning">
+          <p>1st - Apartment screening: A person shares her/his apartment with other people invited to watch the film, creating an intimate experience that ultimately becomes a celebration.</p>
+        </div>
+        <div class="img-screening-wrapper"><div class="apartmet-img"></div></div>
       </div>
-      <h2 class="info-area title-unique">All the screenings of D&eacute;li-Doku are free of charge!</h2>
-      <div class="post-icons">
-        <div class="film-icon"></div>
+      <div class="screening-imgs">
+        <div class="flex-items-screnning">
+          <p>2nd - Public space: Cultural institutions, social organizations, libraries, bars, parks, etc. The options are open. The films are
+              looking for the best places and the ideal audiences for them.</p>
+        </div>
+        <div class="img-screening-wrapper"><div class="public-img"></div></div>
+        
       </div>
     </section>
-  </div>
-  <div class="wrapper-about col-6">
-    <section class="info-area">
-      <h2 class="title">Each film will have two screenings:</h2>
-      <div class="for-desktop group">
-        <div class="screening-imgs">
-          <div class="apartmet-img"></div><div class="public-img"></div>
-        </div>
-        <div class="screening-text">
-          <p class=""><span class="strong">Apartment screening:</span> A person shares her/his apartment with other people invited to watch the film, creating an intimate experience that ultimately becomes a celebration.</p>
-        </div>
-        <div class="screening-text">
-          <p><span class="strong">Public space:</span> Cultural institutions, social organizations, libraries, bars, parks, etc. The options are open.</p>
-        </div>
-        <p>The films are looking for the best places and the ideal audiences for them.</p>
-      </div>
-      <div class="for-mobile group">
-        <div class="col-6 grid grid-col apartmet-img"></div>
-        <div class="col-6 grid grid-col vertical-center">
-          <p class="">Apartment screening: A person shares her/his apartment with other people invited to watch the film, creating an intimate experience that ultimately becomes a celebration.</p>
-        </div>
-        <div class="col-6 grid grid-col public-img"></div>
-        <div class="col-6 grid grid-col vertical-center">
-          <p>Public space: Cultural institutions, social organizations, libraries, bars, parks, etc. The options are open.<br/> The films are looking for the best places and the ideal audiences for them.</p>
-        </div>
-      </div>
-    </section>
-    <div class="info-area">
-      <h2 class="title">Post happening!</h2>
+    <div>
+      <h2 class="title">Post happening</h2>
     </div>
-    <div class="post-icons">
-      <div class="drink-icon"></div>
-      <div class="food-icon"></div>
+    <div class="screening-imgs">
+      <div class="flex-items-screnning">
+        <p>After the films there will be thematic talks accompanied by latin food, drinks and even some dancing. Each one of the screenings is sponsored either by an organization or an individual. If you would like to know more about how to sponsor a screening, please contact us!</p>
+      </div>
+      <div class="img-screening-wrapper post-happening-icons">
+        <div class="drink-icon"></div>
+        <div class="food-icon"></div>
+      </div>
     </div>
   </div>
-  <div class="wrapper-about col-6">
-    <section class="info-area">
-      <p>After the films there will be thematic talks accompanied by latin food, drinks and even some dancing.</p>
-      <p><br> Each one of the screenings is sponsored either by an organization or an individual. If you would like to know more about how to sponsor a screening, please contact us!</p>
-    </section>
-  </div>
-  <app-footer></app-footer>
 </div>

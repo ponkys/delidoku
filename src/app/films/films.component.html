@@ -1,21 +1,32 @@
 <div class="wrapper" [ngClass]="(mobileScreen===true)? 'mobile-screen-width' : 'big-screen-width'">
-  <div class="wrapper-parallel col-6">
-    <div class="parallel-title-wrapper center"><h2 class="title animation-title">Films</h2></div>
-    <section class="parallel-area">
-      <p>The official selection is composed of 7 films from different Latin American countries. It will be announced on October the 15th.
-      </p>
-    </section>
-    <div class="parallel-title-wrapper center">
-      <div class="film-icon"></div>
+  <div class="post-icons">
+    <div class="film-icon"></div>
+  </div>
+  <div class="wrapper-parallel">
+    <div class="title main-title-line-height">
+      <h2 class="animation-title">Films</h2>
     </div>
-    <div class="parallel-title-wrapper center"><h2 class="title animation-title">Parallel showcase</h2></div>
+    <div class="title-bar"></div>
+    <section class="parallel-area">
+      <ng-container *ngFor="let film of films; let i = index">
+        <div class="film-main-info">
+          <p><span class="film-title">{{film.title}}</span> ({{film.duration}}min) by {{film.author}} - {{film.country}}<br>
+            Trailer: <span class="watch" (click)="openTrailer(i)">{{film.trailer}}</span>
+          </p>
+        </div>
+        <div class="video-wrapper" *ngIf="videoSrc === film.trailerSafe">
+            <iframe width="100%" frameBorder="0" height="400px" [src]=videoSrc allowfullscreen></iframe>
+          </div>
+        <div *ngIf="film.synopsis" class="film-description">
+          <p>{{film.synopsis}}</p>
+        </div>
+        <div class="bottom-padding"></div>
+      </ng-container>
+    </section>
+    <div><h2 class="title animation-title">Parallel showcase:</h2></div>
     <section class="parallel-area">
       <p>For the first edition of Déli-Doku there will be a section of short documentary films from the renowned EICTV film school in Cuba, curated by Adam Breier, Hungarian film director and former student of the school.
       </p>
     </section>
-    <div class="video-wrapper">
-        <app-gif [video]="video"></app-gif>
-    </div>
   </div>
-  <app-footer></app-footer>
 </div>

@@ -7,9 +7,9 @@ import { AboutComponent } from './about/about.component';
 import { FilmsComponent } from './films/films.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    // { path: '', redirectTo: '/home', pathMatch: 'full' },
     {
-        path: 'home',
+        path: '',
         component: HomeComponent,
     },
     { path: 'team', component: TeamComponent },

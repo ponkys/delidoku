@@ -1,27 +1,15 @@
 .wrapper {
-    background-color: white;
+    margin-bottom: 70px;
 }
 
 .wrapper-about {
     margin: 0 auto;
 }
 
-.deli-img {
-    width: 100px;
-    height: 100px;
-    background-image: url(/assets/images/deli-doku-sq.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    position: absolute;
-    top: 10px;
-    right: 20px;
-}
-
 .info-area {
     margin: 0 auto;
     padding: 20px 0;
-    color: #2E2E2E;
+    color: #EAECEE;
 }
 
 .info-area-minus-bottom {
@@ -35,40 +23,42 @@
 
 .title {
     margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .main-title-line-height {
     line-height: 1.3;
 }
 
+.title-bar {
+    width: 50px;
+    height: 4px;
+    background-color: #70C9C5;
+}
+
 .space-screen {
     margin-top: 3rem;
-}
-
-.decons-wrapper {
-    margin-top: 20px;
-}
-
-.decons {
-    width: 100%;
-    height: auto;
 }
 
 .screening-imgs {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
-.screening-text {
-    margin-bottom: 20px;
+.img-screening-wrapper {
+    width: 40%;
+}
+
+.flex-items-screnning {
+    width: 60%;
 }
 
 .apartmet-img {
-    width: 250px;
-    height: 250px;
-    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    margin: 0 80px 0 auto;
     background-image: url('/assets/images/icons/home_screening-01.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,18 +66,13 @@
 }
 
 .public-img {
-    width: 250px;
-    height: 250px;
-    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    margin: 0 80px 0 auto;
     background-image: url('/assets/images/icons/public_screening-01.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
-
-.for-desktop {
-    display: initial;
-    
 }
 
 .for-mobile {
@@ -104,17 +89,24 @@
 }
 
 .film-icon {
-    width: 250px;
-    height: 250px;
+    width: 80px;
+    height: 80px;
     background-image: url('/assets/images/icons/screening-01.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
+.post-happening-icons {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .drink-icon {
-    width: 250px;
-    height: 250px;
+    width: 80px;
+    height: 80px;
     background-image: url('/assets/images/icons/drinking-01.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -122,8 +114,8 @@
 }
 
 .food-icon {
-    width: 250px;
-    height: 250px;
+    width: 80px;
+    height: 80px;
     background-image: url('/assets/images/icons/eating-01.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -199,7 +191,7 @@
     }
 }
 
-@media (min-width: 769px) and (max-width: 1250px) {
+@media (min-width: 769px) and (max-width: 180px) {
 
     .grid-col {
         width: 100%;

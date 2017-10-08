@@ -9,12 +9,13 @@ import { Links } from '../links';
 })
 export class LinksComponent {
 
-  links: string[] = Links.slice(1);
+  links: string[] = Links;
 
   constructor(private router: Router) {}
 
   onSelect(link: string) {
-    this.router.navigate([`/${link}`]);
+    window.location.hash = link;
+    // this.router.navigate([`/#${link}`]);
   }
 
 }

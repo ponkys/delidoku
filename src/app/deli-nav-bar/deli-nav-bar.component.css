@@ -165,8 +165,8 @@ ul {
     align-items: center;
     position: fixed;
     z-index: 13;
-    background-color: #BC3926;
-    /* box-shadow: 0 2px 2px -2px rgba(0,0,0,.15); */
+    background-color: transparent;
+    transition: all 0.5s ease-out;
 }
 
 .logo-wrapper {
@@ -184,6 +184,11 @@ ul {
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
+}
+
+.page-scroll-header {
+    background-color: #BC3926;
+    box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
 }
 
 @media only screen and (max-width: 768px) {

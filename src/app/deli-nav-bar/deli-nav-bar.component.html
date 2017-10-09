@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" [ngClass]= "{'page-scroll-header': isScrolled}">
     <div 
       class="menu-symbol open" 
       *ngIf="showNavBar===false"
@@ -9,7 +9,7 @@
     <div class="logo"></div>
   </div>
   <app-links class="links"></app-links>
-  <app-logo></app-logo>
+  <!-- <app-logo></app-logo> -->
 </header>
 <div *ngIf="showNavBar" class="nav-bar-wrapper" >
   <nav  class="nav-bar" [ngClass]="{'nav-bar-animation': bigScreen===false }">

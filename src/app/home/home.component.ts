@@ -26,4 +26,8 @@ export class HomeComponent implements OnInit {
     this.video = this.videoBackgroundService.randomVideo()
   }
 
+  onScroll($event) {
+    console.log($event);
+  }
+
 }

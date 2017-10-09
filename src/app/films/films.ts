@@ -2,41 +2,43 @@ import { SafeResourceUrl } from '@angular/platform-browser';
 
 export const Films: Films[] = [
     {
-        title: 'PATIENT',
-        synopsis: `A mother fights and fears for her terminally ill daughter in this monumental
-        indictment of the barbaric bureaucracy controlling the Colombian
+        title: 'The room of bones',
+        synopsis: `Over the last three decades, forensic anthropologists
+        in El Salvador have accumulated thousands of unidentified remains, piling them up heartbreakingly in one cramped and overflowing
+        room at the Legal Medicine Institute. This chilling documentary by filmmaker Marcela Zamora follows the stories of
+        four mothers who, like so many others, desperately continue to search for their missing children year after year.
         `,
-        trailer: 'https://youtube.com/embed/7jv-aZX3w3',
-        duration: 70,
-        author: 'Jorge Caballero',
-        country: 'Colombia'
+        trailer: 'https://youtube.com/embed/oryP7F4FWlQ',
+        duration: 60,
+        year: 2015,
+        author: 'Marcela Zamora',
+        country: 'El Salvador'
     },
     {
-        title: 'SURIRE',
-        synopsis: `The Surire salt flat is located in the Chilean high plateau at 4,300 meters
-        over the sea level, on the border with Bolivia. In its surroundings live
-        a handful of elders, the last survivors of the Aymara culture in the area.
-        As background, the machinery of a mine site roams the landscape,
-        intermingled with flamingos, vicunas and llamas. SURIRE is a film that from
-        observation and visual language portrays this unique space in which coexist
-        natural beauty, human absurdity,and cultural decline.`,
-        trailer: 'https://youtube.com/embed/3F7jN3jnGf0',
-        duration: 77,
-        author: 'Iván Osnoviko and Bettina Perut',
-        country: 'Chile'
+        title: 'THE RETURN OF THE DEAD MAN',
+        synopsis: `The Return of the Dead is a story about human condition and repentance.
+            This documentary is the story of a tormented man, Don Rosendo, who has been haunted by his past and
+            in the dawn of his life tries to find a sense for his existence. This story happens at the Mexico-USA border,
+            in a transitory hostel.
+        `,
+        trailer: 'https://www.youtube.com/embed/pZrOow7mbCg',
+        duration: 83,
+        year: 2015,
+        author: 'Gustavo Gamou',
+        country: 'Mexico'
     },
     {
-        title: 'THE JOY OF SOUND',
-        synopsis: `What we hear is a vibration in the air, a vibration no one sees. Sound is invisible,
-        but it drives us; it makes us cry, laugh, remember and dance; it rattles our insides,
-        it moves us.Through a series of outlandish characters, The Joy of Sound takes the
-        viewer on a voyage of the senses, as it reflects on nature, communal life, solitude
-        and silence... An ode to sound, that mysterious, invisible and intangible phenomenon
-        that brings pleasure andtogetherness – and sometimes irritation.`,
-        trailer: 'https://youtube.com/embed/_5myqwx3_wM',
-        duration: 61,
-        author: 'Ana Endara Mislov – Panama',
-        country: 'Panama'
+        title: 'CUMBIA LA REINA',
+        synopsis: `recounts the phenomenon by which Cumbia was
+            becoming part of the argentinean culture since the beginning if the 50’s with
+            Mario Castellon (founder of The Wawancó) until the 2000 with Pablo Lescano
+            (creator of Cumbia Villera).
+        `,
+        trailer: 'https://www.youtube.com/embed/HA6yisytSDA',
+        duration: 80,
+        year: 2015,
+        author: 'Pablo Coronel',
+        country: 'Argentina'
     },
     {
         title: 'YOU AND ME',
@@ -50,18 +52,54 @@ export const Films: Films[] = [
         The film is an excuse to watch theirrelationship closely, to perceive what happens
         when the border seem to diuse itself in a placewhere dierence of social class and
         race remain deep in the culture.`,
-        trailer: 'https://player.vimeo.com/video/117002929',
+        trailer: 'https://youtube.com/embed/6bu4YXTH4pw',
         duration: 86,
+        year: 2015,
         author: 'Natalia Cabral and Oriol Estrada',
         country: 'Dominican Republic'
     },
     {
-        title: 'THE RETURN OF THE DEAD MAN',
-        synopsis: '',
-        trailer: 'https://www.youtube.com/embed/pZrOow7mbCg',
-        duration: 83,
-        author: 'Gustavo Gamou',
-        country: 'Mexico'
+        title: 'SURIRE',
+        synopsis: `The Surire salt flat is located in the Chilean high plateau at 4,300 meters
+        over the sea level, on the border with Bolivia. In its surroundings live
+        a handful of elders, the last survivors of the Aymara culture in the area.
+        As background, the machinery of a mine site roams the landscape,
+        intermingled with flamingos, vicunas and llamas. SURIRE is a film that from
+        observation and visual language portrays this unique space in which coexist
+        natural beauty, human absurdity,and cultural decline.`,
+        trailer: 'https://player.vimeo.com/video/168268548',
+        duration: 77,
+        year: 2015,
+        author: 'Iván Osnoviko and Bettina Perut',
+        country: 'Chile'
+    },
+    {
+        title: 'THE JOY OF SOUND',
+        synopsis: `What we hear is a vibration in the air, a vibration no one sees. Sound is invisible,
+        but it drives us; it makes us cry, laugh, remember and dance; it rattles our insides,
+        it moves us.Through a series of outlandish characters, The Joy of Sound takes the
+        viewer on a voyage of the senses, as it reflects on nature, communal life, solitude
+        and silence... An ode to sound, that mysterious, invisible and intangible phenomenon
+        that brings pleasure andtogetherness – and sometimes irritation.`,
+        trailer: 'https://youtube.com/embed/_5myqwx3_wM',
+        duration: 61,
+        year: 2015,
+        author: 'Ana Endara Mislov',
+        country: 'Panama'
+    },
+    {
+        title: 'ELENA',
+        synopsis: `What we hear is a vibration in the air, a vibration no one sees. Sound is invisible,
+        but it drives us; it makes us cry, laugh, remember and dance; it rattles our insides,
+        it moves us.Through a series of outlandish characters, The Joy of Sound takes the
+        viewer on a voyage of the senses, as it reflects on nature, communal life, solitude
+        and silence... An ode to sound, that mysterious, invisible and intangible phenomenon
+        that brings pleasure andtogetherness – and sometimes irritation.`,
+        trailer: 'https://youtube.com/embed/y5hTIOCuwy4',
+        duration: 82,
+        year: 2013,
+        author: 'Petra Costa',
+        country: 'Brazil'
     },
 ];
 
@@ -71,6 +109,7 @@ interface Films {
     trailer: string;
     trailerSafe?: SafeResourceUrl;
     duration: number;
+    year: number;
     author: string;
     country: string;
 };

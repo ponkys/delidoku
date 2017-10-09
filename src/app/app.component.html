@@ -1,11 +1,15 @@
 <div class="app">
-  <app-deli-nav-bar></app-deli-nav-bar>
-  <div class="col-11 main-wrapper">
-      <app-home id="home"></app-home>
-      <app-about id="about"></app-about>
-      <app-films id="films"></app-films>
-      <app-team id="team"></app-team>
-      <app-contact id="contact"></app-contact>
+  <app-deli-nav-bar
+    [isScrolled]="isScrolled">
+  </app-deli-nav-bar>
+  <app-home id="home"></app-home>
+  <div class="main">
+      <div class="col-11 main-wrapper">
+        <app-about id="about"></app-about>
+        <app-films id="films"></app-films>
+        <app-team id="team"></app-team>
+        <app-contact id="contact"></app-contact>
+      </div>
   </div>
   
 </div>

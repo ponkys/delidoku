@@ -1,7 +1,20 @@
-<div class="wrapper-home">  
-  <div class="col-12 logo-wrapper">
-    <div>
-        <img class="main-img animated fadeInDownBig" src='assets/images/deli-doku-sq.jpg' alt="deli doku"/>
+<div (scroll)="onScroll($event)"  class="wrapper-home">  
+  <div *ngIf="!mobileScreen" class="video-background">
+    <div class="video-foreground">
+      <iframe class="fullscreen-bg" frameBorder="0" height="100%" title="background video" width="100%" 
+          [src]="video">
+      </iframe>
+    </div>
+  </div>
+  <div *ngIf="mobileScreen" class="mobile-background"></div>
+  <div class="wrapper">
+    <div class="title-wrapper col-12">
+        <img class="animated fadeInDownBig" src='assets/images/title1.svg' alt="deli doku"/>
+    </div>
+    <div class="message">
+      <div class="message-wrapper">
+          <p class="inner-message">Latin American Documentary Film Showcase<br/>November 8 - 12 of 2017 / Budapest</p>
+      </div>
     </div>
   </div>
 </div>

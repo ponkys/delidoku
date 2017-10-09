@@ -11,11 +11,11 @@
       <ng-container *ngFor="let film of films; let i = index">
         <div class="film-main-info">
           <p><span class="film-title">{{film.title}}</span> ({{film.duration}}min) by {{film.author}} - {{film.country}}<br>
-            Trailer: <span class="watch" (click)="openTrailer(i)">{{film.trailer}}</span>
+            Trailer: <span>{{film.trailer}}</span>
           </p>
         </div>
-        <div class="video-wrapper" *ngIf="videoSrc === film.trailerSafe">
-            <iframe width="100%" frameBorder="0" height="400px" [src]=videoSrc allowfullscreen></iframe>
+        <div class="video-wrapper" *ngIf="film.trailerSafe">
+            <iframe width="100%" frameBorder="0" height="400px" [src]=film.trailerSafe allowfullscreen></iframe>
           </div>
         <div *ngIf="film.synopsis" class="film-description">
           <p>{{film.synopsis}}</p>

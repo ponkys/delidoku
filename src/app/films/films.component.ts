@@ -12,7 +12,6 @@ export class FilmsComponent implements OnInit {
 
   mobileScreen = true;
   films = Films;
-  videoSrc;
 
   constructor(private winRef: WindowRefService,
               private videoBackgroundService: VideoBackgroundService) {
@@ -26,11 +25,6 @@ export class FilmsComponent implements OnInit {
 
   ngOnInit() {
 
-  }
-
-  openTrailer(i) {
-    this.videoSrc = null;
-    this.videoSrc = this.films[i].trailerSafe;
   }
 
 }

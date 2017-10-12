@@ -59,14 +59,19 @@
 .film-main-info {
     cursor: pointer;
     margin-bottom: 20px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.border-bottom {
+    border-bottom: 1px solid #70C9C5;
+}
+
 .film-secondary-info {
     opacity: 1;
-    height: 100%;
+    margin-bottom: 20px;    
     -webkit-animation-name: title; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
     animation-name: title;
@@ -94,7 +99,6 @@
 .social-icon {
     cursor: pointer;
     font-size: 20px;
-    margin-bottom: 40px;
     color: white;
     /* color: rgba(111, 201, 198, 0.6); */
     -webkit-transition: color 0.2s; /* Safari */

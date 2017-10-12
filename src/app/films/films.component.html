@@ -9,14 +9,14 @@
     <div class="title-bar"></div>
     <section class="parallel-area">
       <ng-container *ngFor="let film of films; let i = index">
-        <div class="film-main-info" (click)=openFilmInfo(film.title)>
+        <div class="film-main-info" (click)="openFilmInfo(film.title)" [ngClass]="selectedFilm !== film.title? 'border-bottom' : ''">
           <p><span class="film-title">{{film.title}}</span> ({{film.duration}}min) by {{film.author}} - {{film.country}}<br>
             Trailer: <span>{{film.trailer}}</span>
           </p>
           <div *ngIf="selectedFilm !== film.title" class="fa fa-chevron-circle-down social-icon"></div>
           <div *ngIf="selectedFilm === film.title" class="fa fa-chevron-circle-up social-icon"></div>
         </div>
-        <div class="film-secondary-info" *ngIf = "selectedFilm === film.title">
+        <div class="film-secondary-info" *ngIf = "selectedFilm === film.title" [ngClass]="selectedFilm === film.title? 'border-bottom' : ''">
           <div class="video-wrapper" *ngIf="film.trailerSafe">
               <iframe width="100%" frameBorder="0" height="400px" [src]=film.trailerSafe allowfullscreen></iframe>
             </div>

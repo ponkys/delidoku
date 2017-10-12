@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {HttpClientModule} from '@angular/common/http';
+
 import { HomeComponent } from './home/home.component';
 import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
@@ -20,7 +22,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-    imports: [ RouterModule.forRoot(routes, { useHash: true }) ],
+    imports: [
+        RouterModule.forRoot(routes, { useHash: true }),
+        HttpClientModule],
     exports: [ RouterModule ]
 })
 export class AppRoutingModule {}

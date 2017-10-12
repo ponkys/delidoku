@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { WindowRefService } from '../window-ref.service';
 import { Films } from './films';
 import { VideoBackgroundService } from '../video-background.service';
@@ -8,10 +8,11 @@ import { VideoBackgroundService } from '../video-background.service';
   templateUrl: './films.component.html',
   styleUrls: ['./films.component.css']
 })
-export class FilmsComponent implements OnInit {
+export class FilmsComponent {
 
   mobileScreen = true;
   films = Films;
+  selectedFilm: string;
 
   constructor(private winRef: WindowRefService,
               private videoBackgroundService: VideoBackgroundService) {
@@ -23,8 +24,11 @@ export class FilmsComponent implements OnInit {
     })
   }
 
-  ngOnInit() {
-
+  openFilmInfo(title: string): string {
+    if (title === this.selectedFilm) {
+      return this.selectedFilm = '';
+    }
+    return this.selectedFilm = title;
   }
 
 }

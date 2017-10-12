@@ -23,6 +23,8 @@ import {CapitalizePipe} from './utils/capitalize.pipe';
 import { LinksComponent } from './links/links.component';
 import { GifComponent } from './gif/gif.component';
 import { LoadingComponent } from './loading/loading.component';
+import { SponsorsComponent } from './sponsors/sponsors.component';
+import { ScheduleComponent } from './schedule/schedule.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { LoadingComponent } from './loading/loading.component';
     CapitalizePipe,
     LinksComponent,
     GifComponent,
-    LoadingComponent
+    LoadingComponent,
+    SponsorsComponent,
+    ScheduleComponent
   ],
   imports: [
     BrowserModule,

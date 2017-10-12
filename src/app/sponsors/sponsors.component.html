@@ -1,0 +1,21 @@
+<div #contentWrapper class="wrapper" [ngClass]="(mobileScreen===true)? 'mobile-screen-width' : 'big-screen-width'">
+  <div class="wrapper-title">
+      <div class="title animation-title main-title-line-height">
+        <h2 class="team-title-animation">Sponsors</h2>
+      </div>
+      <div class="title-bar"></div>
+  </div> 
+  <div class="wrapper-team">
+    <section class="team-area">
+      <div class="team-card center" *ngFor="let t of sponsors; let i = index">
+        <div class="team-img-wrapper" [ngClass]="i === 0 ? 'white' : ''">
+          <img class="team-img" [src]=t.url alt={{t.name}}/>
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="center">
+    <p style="margin-bottom : 20px">Follow us!</p>
+    <div (click)="facebookNavigate()" class="fa fa-facebook-square social-icon"></div>
+  </div>
+</div>

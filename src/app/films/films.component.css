@@ -9,12 +9,13 @@
 }
 
 .parallel-area {
-    width: 80%;
+    width: 100%;
     padding: 20px 0;
     color: white;
 }
 
 .title {
+    padding-top: 70px;
     margin-bottom: 20px;
 }
 
@@ -43,7 +44,7 @@
     flex-wrap: wrap;
     justify-content: space-around;
     right: 80px;
-    top: 80px;
+    top: 70px;
 }
 
 .film-icon {
@@ -56,7 +57,22 @@
 }
 
 .film-main-info {
+    cursor: pointer;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.film-secondary-info {
+    opacity: 1;
+    height: 100%;
+    -webkit-animation-name: title; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: title;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards; 
 }
 
 .bottom-padding {
@@ -75,16 +91,30 @@
     padding: 20px 0;
 }
 
+.social-icon {
+    cursor: pointer;
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: white;
+    /* color: rgba(111, 201, 198, 0.6); */
+    -webkit-transition: color 0.2s; /* Safari */
+    transition: color 0.2s;
+}
+
+.social-icon:hover {
+    color: #6fc9c6;
+}
+
 /* Animations  */
 
 .animation-title {
    opacity: 1;
     -webkit-animation-name: title; /* Safari 4.0 - 8.0 */
-     -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-     animation-name: title;
-     animation-duration: 3s;
-     animation-fill-mode: forwards;
-     -webkit-animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: title;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
 /* Safari 4.0 - 8.0 */

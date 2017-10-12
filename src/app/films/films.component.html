@@ -9,18 +9,22 @@
     <div class="title-bar"></div>
     <section class="parallel-area">
       <ng-container *ngFor="let film of films; let i = index">
-        <div class="film-main-info">
+        <div class="film-main-info" (click)=openFilmInfo(film.title)>
           <p><span class="film-title">{{film.title}}</span> ({{film.duration}}min) by {{film.author}} - {{film.country}}<br>
             Trailer: <span>{{film.trailer}}</span>
           </p>
+          <div *ngIf="selectedFilm !== film.title" class="fa fa-chevron-circle-down social-icon"></div>
+          <div *ngIf="selectedFilm === film.title" class="fa fa-chevron-circle-up social-icon"></div>
         </div>
-        <div class="video-wrapper" *ngIf="film.trailerSafe">
-            <iframe width="100%" frameBorder="0" height="400px" [src]=film.trailerSafe allowfullscreen></iframe>
+        <div class="film-secondary-info" *ngIf = "selectedFilm === film.title">
+          <div class="video-wrapper" *ngIf="film.trailerSafe">
+              <iframe width="100%" frameBorder="0" height="400px" [src]=film.trailerSafe allowfullscreen></iframe>
+            </div>
+          <div *ngIf="film.synopsis" class="film-description">
+            <p>{{film.synopsis}}</p>
           </div>
-        <div *ngIf="film.synopsis" class="film-description">
-          <p>{{film.synopsis}}</p>
+          <div class="bottom-padding"></div>
         </div>
-        <div class="bottom-padding"></div>
       </ng-container>
     </section>
     <div><h2 class="title animation-title">Parallel showcase:</h2></div>

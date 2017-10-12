@@ -26,8 +26,8 @@ export class HomeComponent implements OnInit {
     this.video = this.videoBackgroundService.randomVideo()
   }
 
-  onScroll($event) {
-    console.log($event);
+  facebookNavigate() {
+    window.open('https://www.facebook.com/delidokubp/', '_blank');
   }
 
 }

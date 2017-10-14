@@ -24,7 +24,9 @@ import { LinksComponent } from './links/links.component';
 import { GifComponent } from './gif/gif.component';
 import { LoadingComponent } from './loading/loading.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
-import { ScheduleComponent } from './schedule/schedule.component';
+import { ProgrammeComponent } from './programme/programme.component';
+import { MainComponent } from './main/main.component';
+import { CrowdfundingComponent } from './crowdfunding/crowdfunding.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { ScheduleComponent } from './schedule/schedule.component';
     GifComponent,
     LoadingComponent,
     SponsorsComponent,
-    ScheduleComponent
+    ProgrammeComponent,
+    MainComponent,
+    CrowdfundingComponent
   ],
   imports: [
     BrowserModule,

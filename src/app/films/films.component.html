@@ -1,4 +1,4 @@
-<div class="wrapper" [ngClass]="(mobileScreen===true)? 'mobile-screen-width' : 'big-screen-width'">
+<div class="wrapper">
   <div class="post-icons">
     <div class="film-icon"></div>
   </div>
@@ -10,9 +10,7 @@
     <section class="parallel-area">
       <ng-container *ngFor="let film of films; let i = index">
         <div class="film-main-info" (click)="openFilmInfo(film.title)" [ngClass]="selectedFilm !== film.title? 'border-bottom' : ''">
-          <p><span class="film-title">{{film.title}}</span> ({{film.duration}}min) by {{film.author}} - {{film.country}}<br>
-            Trailer: <span>{{film.trailer}}</span>
-          </p>
+          <p><span class="film-title">{{film.title}}</span><br>by {{film.author}} - {{film.country}} ({{film.duration}}min)</p>
           <div *ngIf="selectedFilm !== film.title" class="fa fa-chevron-circle-down social-icon"></div>
           <div *ngIf="selectedFilm === film.title" class="fa fa-chevron-circle-up social-icon"></div>
         </div>

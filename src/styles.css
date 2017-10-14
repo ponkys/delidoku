@@ -66,17 +66,6 @@ a {
     font-weight: 700;
 }
 
-.big-screen-width {
-    /* width: calc(100vw - 150px);
-    left: 150px;   */
-    position: relative;
-}
-
-.mobile-screen-width {
-    width: 100vw;
-    left: 0px;  
-}
-
 @media only screen and (min-width: 600px) {
     /* For tablets: */
     .col-m-1 {width: 8.33%;}

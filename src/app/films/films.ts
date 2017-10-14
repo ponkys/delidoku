@@ -2,7 +2,7 @@ import { SafeResourceUrl } from '@angular/platform-browser';
 
 export const Films: Films[] = [
     {
-        title: 'The room of bones',
+        title: 'THE ROOM OF BONES',
         synopsis: `Over the last three decades, forensic anthropologists
         in El Salvador have accumulated thousands of unidentified remains, piling them up heartbreakingly in one cramped and overflowing
         room at the Legal Medicine Institute. This chilling documentary by filmmaker Marcela Zamora follows the stories of

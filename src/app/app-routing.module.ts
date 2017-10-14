@@ -7,18 +7,17 @@ import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { FilmsComponent } from './films/films.component';
+import { CrowdfundingComponent } from 'app/crowdfunding/crowdfunding.component';
+import { MainComponent } from 'app/main/main.component';
 
 const routes: Routes = [
     // { path: '', redirectTo: '/home', pathMatch: 'full' },
     {
         path: '',
-        component: HomeComponent,
+        component: MainComponent,
     },
-    { path: 'team', component: TeamComponent },
-    { path: 'contact', component: ContactComponent },
-    { path: 'about', component: AboutComponent },
-    { path: 'films', component: FilmsComponent },
-    { path: '**', component: HomeComponent }
+    { path: 'crowdfunding', component: CrowdfundingComponent },
+    { path: '*', component: MainComponent}
 ];
 
 @NgModule({

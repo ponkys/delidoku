@@ -1,40 +1,35 @@
-<div #contentWrapper class="wrapper" [ngClass]="(mobileScreen===true)? 'mobile-screen-width' : 'big-screen-width'">
+<div #contentWrapper class="wrapper">
   <div class="wrapper-about info-area">
     <section>
       <div class="title animation-title main-title-line-height">
-        <h2>Contemporary Latin American Documentary Film Showcase</h2>
+        <h2>About</h2>
       </div>
       <div class="title-bar"></div>
       <div>
         <h3>Budapest / November 8 - 12 of 2017</h3>
-        <p>D&eacute;li-Doku brings to Budapest the finest in modern documentary film
-          production from Latin America and brings along the Latin-American feeling. Starting in 2017 as an alternative film event, D&eacute;li-Doku goes beyond the cinema experience by taking the screenings to both public and private locations, such as apartments, parks, social organizations, artistic venues and such, generating a series of social happenings connected with today's alternative ways of cinema distribution.
+        <p>D&eacute;li-Doku brings to Budapest the finest in modern documentary film production from Latin America and brings along the Latin-American feeling. Starting in 2017 as an alternative film event, D&eacute;li-Doku goes beyond the cinema experience by taking the screenings to both public and private locations, such as apartments, social organizations, artistic venues and such, generating a series of social happenings connected with today's alternative ways of cinema distribution.          
         </p>
       </div>
     </section>
-    <section>
-      <h2 class="title">Each film will have two screenings!</h2>
-      <div class="screening-imgs">
-        <div class="flex-items-screnning">
-          <p>1st - Apartment screening: A person shares her/his apartment with other people invited to watch the film, creating an intimate experience that ultimately becomes a celebration.</p>
-        </div>
-        <div class="img-screening-wrapper"><div class="apartmet-img"></div></div>
+    <div>
+      <h2 class="title">ALL THE SCREENINGS AND EVENTS ARE FREE OF CHARGE! </h2>
+    </div>
+    <div class="screening-imgs">
+      <div class="flex-items-screnning">
+        <p>If you want to attend a screening in an apartment, please write an email informing which film you wold like to attend. Check out our programme and find further information about our events on D&eacute;li-Doku’s Facebook page.</p>
       </div>
-      <div class="screening-imgs">
-        <div class="flex-items-screnning">
-          <p>2nd - Public space: Cultural institutions, social organizations, libraries, bars, parks, etc. The options are open. The films are
-              looking for the best places and the ideal audiences for them.</p>
-        </div>
-        <div class="img-screening-wrapper"><div class="public-img"></div></div>
-        
+      <div class="img-screening-wrapper post-happening-icons">
+        <div class="apartmet-img"></div>
+        <div class="public-img"></div>
       </div>
-    </section>
+    </div>
     <div>
       <h2 class="title">Post happening</h2>
     </div>
     <div class="screening-imgs">
       <div class="flex-items-screnning">
         <p>After the films there will be thematic talks accompanied by latin food, drinks and even some dancing. Each one of the screenings is sponsored either by an organization or an individual. If you would like to know more about how to sponsor a screening, please contact us!</p>
+        <div (click)="facebookNavigate()" class="fa fa-facebook-square social-icon"></div>
       </div>
       <div class="img-screening-wrapper post-happening-icons">
         <div class="drink-icon"></div>

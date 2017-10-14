@@ -1,8 +1,9 @@
 export const Links: string[] = [
     'home',
     'films',
-    'schedule',
+    'Programme',
     'about',
     'team',
-    'contact'
+    'contact',
+    'sponsors'
 ]

@@ -7,7 +7,7 @@ import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { FilmsComponent } from './films/films.component';
-import { CrowdfundingComponent } from 'app/crowdfunding/crowdfunding.component';
+import { FundraiserComponent } from 'app/fundraiser/fundraiser.component';
 import { MainComponent } from 'app/main/main.component';
 
 const routes: Routes = [
@@ -16,7 +16,7 @@ const routes: Routes = [
         path: '',
         component: MainComponent,
     },
-    { path: 'crowdfunding', component: CrowdfundingComponent },
+    { path: 'fundraiser', component: FundraiserComponent },
     { path: '*', component: MainComponent}
 ];
 

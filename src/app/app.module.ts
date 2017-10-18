@@ -26,7 +26,7 @@ import { LoadingComponent } from './loading/loading.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { ProgrammeComponent } from './programme/programme.component';
 import { MainComponent } from './main/main.component';
-import { CrowdfundingComponent } from './crowdfunding/crowdfunding.component';
+import { FundraiserComponent } from './fundraiser/fundraiser.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +47,7 @@ import { CrowdfundingComponent } from './crowdfunding/crowdfunding.component';
     SponsorsComponent,
     ProgrammeComponent,
     MainComponent,
-    CrowdfundingComponent
+    FundraiserComponent
   ],
   imports: [
     BrowserModule,

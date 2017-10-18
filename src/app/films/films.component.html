@@ -16,8 +16,8 @@
         </div>
         <div class="film-secondary-info" *ngIf = "selectedFilm === film.title" [ngClass]="selectedFilm === film.title? 'border-bottom' : ''">
           <div class="video-wrapper" *ngIf="film.trailerSafe">
-              <iframe width="100%" frameBorder="0" height="400px" [src]=film.trailerSafe allowfullscreen></iframe>
-            </div>
+            <iframe width="100%" frameBorder="0" height="400px" [src]=film.trailerSafe allowfullscreen></iframe>
+          </div>
           <div *ngIf="film.synopsis" class="film-description">
             <p>{{film.synopsis}}</p>
           </div>

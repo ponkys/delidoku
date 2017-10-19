@@ -70,7 +70,7 @@ export const Films: Films[] = [
         trailer: 'https://player.vimeo.com/video/120189057',
         duration: 77,
         year: 2015,
-        author: 'Iván Osnoviko and Bettina Perut',
+        author: 'Iván Osnovikoff and Bettina Perut',
         country: 'Chile'
     },
     {

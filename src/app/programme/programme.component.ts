@@ -15,7 +15,7 @@ export class ProgrammeComponent implements OnInit {
 
   download() {
     // tslint:disable-next-line:max-line-length
-    const url = 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/DE%CC%81LI-DOKU%20programme.pdf?alt=media&token=74e95466-4afa-4a4c-b4d9-6e979ddb6820'
+    const url = 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/DE%CC%81LI-DOKU%20programme.pdf?alt=media&token=59dff291-24f1-4c21-9711-c46aa31faf33'
 
     window.open(url, '_blank');
   }

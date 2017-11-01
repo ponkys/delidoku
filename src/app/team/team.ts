@@ -60,6 +60,18 @@ export const Team: any[] = [
         img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Fpetra.png?alt=media&token=f184d9af-56f3-45b1-a975-4c213ddf0cc4'
     },
     {
+        name: '<h2>Gabriella M&eacute;sz&#225;ros</h2>',
+        role: 'Translator',
+        // tslint:disable-next-line:max-line-length
+        img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Fgabriella.png?alt=media&token=a5496c32-db5a-49e7-a0e9-790a25eb247c'
+    },
+    {
+        name: '<h2>Viktor Harta</h2>',
+        role: 'Translator',
+        // tslint:disable-next-line:max-line-length
+        img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2FViktor.png?alt=media&token=3b9186e3-9789-4e18-8c18-d573e95c79ce'
+    },
+    {
         name: '<h2>Diego Mosquera</h2>',
         role: 'Web development',
         // tslint:disable-next-line:max-line-length

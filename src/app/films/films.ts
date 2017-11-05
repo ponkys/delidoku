@@ -2,30 +2,29 @@ import { SafeResourceUrl } from '@angular/platform-browser';
 
 export const Films: Films[] = [
     {
-        title: 'THE ROOM OF BONES',
-        synopsis: `Over the last three decades, forensic anthropologists
-        in El Salvador have accumulated thousands of unidentified remains, piling them up heartbreakingly in one cramped and overflowing
-        room at the Legal Medicine Institute. This chilling documentary by filmmaker Marcela Zamora follows the stories of
-        four mothers who, like so many others, desperately continue to search for their missing children year after year.
-        `,
-        trailer: 'https://youtube.com/embed/oryP7F4FWlQ',
-        duration: 60,
+        title: 'SURIRE',
+        synopsis: `The Surire salt flat is located in the Chilean high plateau at 4,300 meters
+        over the sea level, on the border with Bolivia. In its surroundings live
+        a handful of elders, the last survivors of the Aymara culture in the area.
+        As background, the machinery of a mine site roams the landscape,
+        intermingled with flamingos, vicunas and llamas. SURIRE is a film that from
+        observation and visual language portrays this unique space in which coexist
+        natural beauty, human absurdity,and cultural decline.`,
+        trailer: 'https://player.vimeo.com/video/120189057',
+        duration: 77,
         year: 2015,
-        author: 'Marcela Zamora',
-        country: 'El Salvador'
-    },
-    {
-        title: 'THE RETURN OF THE DEAD MAN',
-        synopsis: `The Return of the Dead is a story about human condition and repentance.
-            This documentary is the story of a tormented man, Don Rosendo, who has been haunted by his past and
-            in the dawn of his life tries to find a sense for his existence. This story happens at the Mexico-USA border,
-            in a transitory hostel.
-        `,
-        trailer: 'https://www.youtube.com/embed/pZrOow7mbCg',
-        duration: 83,
-        year: 2015,
-        author: 'Gustavo Gamou',
-        country: 'Mexico'
+        author: 'Iván Osnovikoff and Bettina Perut',
+        country: 'Chile',
+        date: [
+            {
+                info: 'Nov 8th - Bem Mozi (Opening Film) - 6:00pm',
+                event: 'https://www.facebook.com/events/696394463882878/'
+            },
+            {
+                info: 'Nov 10th - Instituto Cervantes de Budapest - 7:30pm',
+                event: 'https://www.facebook.com/events/369628650154224/'
+            }
+        ]
     },
     {
         title: 'CUMBIA LA REINA',
@@ -38,7 +37,40 @@ export const Films: Films[] = [
         duration: 80,
         year: 2015,
         author: 'Pablo Coronel',
-        country: 'Argentina'
+        country: 'Argentina',
+        date: [
+            {
+                info: 'Nov 8th - House Bar (Opening Party) - 8:30pm',
+                event: 'https://www.facebook.com/events/186563825243657/'
+            },
+            {
+                info: 'Nov 10th - House Bar (Cumbia Party) - 9:00pm',
+                event: 'https://www.facebook.com/events/140114296714981/'
+            }
+        ]
+    },
+    {
+        title: 'THE RETURN OF THE DEAD MAN',
+        synopsis: `The Return of the Dead is a story about human condition and repentance.
+            This documentary is the story of a tormented man, Don Rosendo, who has been haunted by his past and
+            in the dawn of his life tries to find a sense for his existence. This story happens at the Mexico-USA border,
+            in a transitory hostel.
+        `,
+        trailer: 'https://www.youtube.com/embed/pZrOow7mbCg',
+        duration: 83,
+        year: 2015,
+        author: 'Gustavo Gamou',
+        country: 'Mexico',
+        date: [
+            {
+                info: 'Nov 9th - Instituto Cervantes de Budapest - 6:00pm',
+                event: 'https://www.facebook.com/events/494633650902763/'
+            },
+            {
+                info: 'Nov 12th - Bem Mozi - 4:30pm',
+                event: 'https://www.facebook.com/events/523915631276134/'
+            }
+        ]
     },
     {
         title: 'YOU AND ME',
@@ -56,22 +88,32 @@ export const Films: Films[] = [
         duration: 86,
         year: 2015,
         author: 'Natalia Cabral and Oriol Estrada',
-        country: 'Dominican Republic'
+        country: 'Dominican Republic',
+        date: [
+            {
+                info: 'Nov 9th - KuglerArt Szalon Gallery and Shop - 6:30pm',
+                event: 'https://www.facebook.com/events/1736497176657662/'
+            }
+        ]
     },
     {
-        title: 'SURIRE',
-        synopsis: `The Surire salt flat is located in the Chilean high plateau at 4,300 meters
-        over the sea level, on the border with Bolivia. In its surroundings live
-        a handful of elders, the last survivors of the Aymara culture in the area.
-        As background, the machinery of a mine site roams the landscape,
-        intermingled with flamingos, vicunas and llamas. SURIRE is a film that from
-        observation and visual language portrays this unique space in which coexist
-        natural beauty, human absurdity,and cultural decline.`,
-        trailer: 'https://player.vimeo.com/video/120189057',
-        duration: 77,
+        title: 'THE ROOM OF BONES',
+        synopsis: `Over the last three decades, forensic anthropologists
+        in El Salvador have accumulated thousands of unidentified remains, piling them up heartbreakingly in one cramped and overflowing
+        room at the Legal Medicine Institute. This chilling documentary by filmmaker Marcela Zamora follows the stories of
+        four mothers who, like so many others, desperately continue to search for their missing children year after year.
+        `,
+        trailer: 'https://youtube.com/embed/oryP7F4FWlQ',
+        duration: 60,
         year: 2015,
-        author: 'Iván Osnovikoff and Bettina Perut',
-        country: 'Chile'
+        author: 'Marcela Zamora',
+        country: 'El Salvador',
+        date: [
+            {
+                info: 'Nov 10th - KuglerArt Szalon Gallery and Shop - 6:30pm',
+                event: 'https://www.facebook.com/events/520989848274758/'
+            }
+        ]
     },
     {
         title: 'THE JOY OF SOUND',
@@ -85,7 +127,13 @@ export const Films: Films[] = [
         duration: 61,
         year: 2015,
         author: 'Ana Endara Mislov',
-        country: 'Panama'
+        country: 'Panama',
+        date: [
+            {
+                info: 'Nov 12th - Auróra - 8:00pm',
+                event: 'https://www.facebook.com/events/930339770448394/'
+            }
+        ]
     },
     {
         title: 'ELENA',
@@ -99,7 +147,13 @@ export const Films: Films[] = [
         duration: 82,
         year: 2013,
         author: 'Petra Costa',
-        country: 'Brazil'
+        country: 'Brazil',
+        date: [
+            {
+                info: 'Nov 11th - Auróra - 9:00pm',
+                event: 'https://www.facebook.com/events/1733796860261277/'
+            }
+        ]
     },
 ];
 
@@ -112,4 +166,5 @@ interface Films {
     year: number;
     author: string;
     country: string;
+    date: Array<{info: string, event: string}>
 };

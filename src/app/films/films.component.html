@@ -10,7 +10,15 @@
     <section class="parallel-area">
       <ng-container *ngFor="let film of films; let i = index">
         <div class="film-main-info" (click)="openFilmInfo(film.title)" [ngClass]="selectedFilm !== film.title? 'border-bottom' : ''">
-          <p><span class="film-title">{{film.title}}</span><br>by {{film.author}} - {{film.country}} ({{film.duration}}min)</p>
+          <div>
+            <p><span class="film-title">{{film.title}}</span><br>by {{film.author}} - {{film.country}} ({{film.duration}}min)</p>
+            <div class="film-info-events">
+              <h3>Screening<ng-container *ngIf="film.date.length > 1">s</ng-container>:</h3>
+              <ng-container *ngFor="let d of film.date">
+                <a href="{{d.event}}" target="_blank"> {{d.info}}</a>
+              </ng-container>
+            </div>
+          </div>
           <div *ngIf="selectedFilm !== film.title" class="fa fa-chevron-circle-down social-icon"></div>
           <div *ngIf="selectedFilm === film.title" class="fa fa-chevron-circle-up social-icon"></div>
         </div>

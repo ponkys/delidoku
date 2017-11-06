@@ -17,6 +17,7 @@
   <meta name="author" content="Déli-Doku">
 </head>
 <body>
+  <noscript>Please active javascript in your browser to acces the website</noscript>
   <app-root></app-root>
 </body>
 <!-- google analytics -->
@@ -29,5 +30,12 @@
   ga('create', 'UA-75894720-3', 'auto');
   ga('send', 'pageview');
 
+</script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+    }).catch(function(err) {
+    });
+  }
 </script>
 </html>

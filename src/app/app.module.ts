@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // routing
 import { AppRoutingModule } from './app-routing.module';
@@ -51,8 +50,7 @@ import { FundraiserComponent } from './fundraiser/fundraiser.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [
     VideoBackgroundService,

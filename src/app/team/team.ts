@@ -72,6 +72,12 @@ export const Team: any[] = [
         img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2FViktor.png?alt=media&token=3b9186e3-9789-4e18-8c18-d573e95c79ce'
     },
     {
+        name: '<h2>Adriana Portmann</h2>',
+        role: 'Translator',
+        // tslint:disable-next-line:max-line-length
+        img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Fadriana.png?alt=media&token=b5b6ec4a-d262-4984-b40e-a36acca13bd1'
+    },
+    {
         name: '<h2>Diego Mosquera</h2>',
         role: 'Web development',
         // tslint:disable-next-line:max-line-length

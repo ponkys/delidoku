@@ -20,20 +20,21 @@
 body {
     font-family: 'Tinos', serif;
     line-height: 1.6;
+    background-color: #BC3926;
 }
 .center {
     text-align: center;
 }
 
 p {
-    color: #2E2E2E;
+    color: #EAECEE;;
     margin: 0;
     font-size: 20px important!; 
 }
 
 h1 {
     margin: 0;
-    color: #2E2E2E;
+    color: #EAECEE;;
     font-weight: 400;
     font-size: 24px;
     font-style: italic;
@@ -42,10 +43,9 @@ h1 {
 
 h2 {
     margin-top: 0;
-    color: #2E2E2E;
+    color: #EAECEE;;
     font-size: 24px;
-    font-weight: 400;
-    font-style: italic;
+    font-weight: 700;
 }
 ul {
     padding: 0;
@@ -59,21 +59,11 @@ li {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 .strong {
     font-weight: 700;
-}
-
-.big-screen-width {
-    /* width: calc(100vw - 150px);
-    left: 150px;   */
-    position: relative;
-}
-
-.mobile-screen-width {
-    width: 100vw;
-    left: 0px;  
 }
 
 @media only screen and (min-width: 600px) {

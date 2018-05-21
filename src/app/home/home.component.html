@@ -7,14 +7,14 @@
     </div>
   </div>
   <div *ngIf="mobileScreen" class="mobile-background"></div>
-  <div id="home" class="wrapper">
+  <div class="wrapper">
     <div class="title-wrapper col-12">
         <img class="animated fadeInDownBig" src='assets/images/title1.svg' alt="deli doku"/>
     </div>
     <div class="message">
       <div class="message-wrapper">
-          <p class="inner-message">Latin American Documentary Film Showcase<br/>November 8 - 12 of 2017 / Budapest</p>
-          <app-links></app-links>
+          <p class="inner-message">Contemporary Latin American Documentary Film Showcase<br/>November 8 - 12 of 2017 / Budapest</p>
+          <div (click)="facebookNavigate()" class="fa fa-facebook-square social-icon"></div>
       </div>
     </div>
   </div>

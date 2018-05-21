@@ -1,5 +1,4 @@
-import { Component, DoCheck } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { Component, HostListener } from '@angular/core';
 import { WindowRefService  } from './window-ref.service';
 
 @Component({
@@ -7,14 +6,8 @@ import { WindowRefService  } from './window-ref.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements DoCheck {
-  isHomeComponent = true;
+export class AppComponent {
 
-  constructor(private winRef: WindowRefService) {
-  }
 
-  ngDoCheck() {
-    this.isHomeComponent =  (this.winRef.nativeWindow.location.href.substr(-4).match('home')) ? true : false;
-  }
 }
 

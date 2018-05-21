@@ -11,12 +11,15 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
   <meta name="theme-color" content="#bc3926">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <meta name="description" content="Déli-Doku! Latin American Documentary Film Showcase">
   <meta name="keywords" content="Déli-Doku,Deli-Doku,Film Festival,Budapest,Latin-America, Documentary Films">
   <meta name="author" content="Déli-Doku">
 </head>
 <body>
+  <noscript>Please active javascript in your browser to acces the website</noscript>
   <app-root></app-root>
 </body>
 <!-- google analytics -->
@@ -29,5 +32,12 @@
   ga('create', 'UA-75894720-3', 'auto');
   ga('send', 'pageview');
 
+</script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+    }).catch(function(err) {
+    });
+  }
 </script>
 </html>

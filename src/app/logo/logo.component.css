@@ -1,13 +1,12 @@
 .deli-img {
-    width: 100px;
-    height: 100px;
-    background-image: url(/assets/images/deli-doku-sq.jpg);
+    width: 4%;
+    height: 100%;
+    background-image: url(/assets/images/logo_world.svg);
     background-repeat: no-repeat;
-    background-size: cover;
     background-position: center;
     position: absolute;
-    top: 10px;
-    right: 20px;
+    top: 2px;
+    right: 25px;
     z-index: 1;
     border-bottom-right-radius: 6px;
     border-top-left-radius: 6px;

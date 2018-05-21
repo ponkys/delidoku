@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // routing
 import { AppRoutingModule } from './app-routing.module';
@@ -23,6 +22,10 @@ import {CapitalizePipe} from './utils/capitalize.pipe';
 import { LinksComponent } from './links/links.component';
 import { GifComponent } from './gif/gif.component';
 import { LoadingComponent } from './loading/loading.component';
+import { SponsorsComponent } from './sponsors/sponsors.component';
+import { ProgrammeComponent } from './programme/programme.component';
+import { MainComponent } from './main/main.component';
+import { FundraiserComponent } from './fundraiser/fundraiser.component';
 
 @NgModule({
   declarations: [
@@ -39,12 +42,15 @@ import { LoadingComponent } from './loading/loading.component';
     CapitalizePipe,
     LinksComponent,
     GifComponent,
-    LoadingComponent
+    LoadingComponent,
+    SponsorsComponent,
+    ProgrammeComponent,
+    MainComponent,
+    FundraiserComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [
     VideoBackgroundService,

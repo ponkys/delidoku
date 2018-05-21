@@ -1,26 +1,29 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import {HttpClientModule} from '@angular/common/http';
+
 import { HomeComponent } from './home/home.component';
 import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { FilmsComponent } from './films/films.component';
+import { FundraiserComponent } from 'app/fundraiser/fundraiser.component';
+import { MainComponent } from 'app/main/main.component';
 
 const routes: Routes = [
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
+    // { path: '', redirectTo: '/home', pathMatch: 'full' },
     {
-        path: 'home',
-        component: HomeComponent,
+        path: '',
+        component: MainComponent,
     },
-    { path: 'team', component: TeamComponent },
-    { path: 'contact', component: ContactComponent },
-    { path: 'about', component: AboutComponent },
-    { path: 'films', component: FilmsComponent },
-    { path: '**', component: HomeComponent }
+    { path: 'fundraiser', component: FundraiserComponent },
+    { path: '*', component: MainComponent}
 ];
 
 @NgModule({
-    imports: [ RouterModule.forRoot(routes, { useHash: true }) ],
+    imports: [
+        RouterModule.forRoot(routes, { useHash: true }),
+        HttpClientModule],
     exports: [ RouterModule ]
 })
 export class AppRoutingModule {}

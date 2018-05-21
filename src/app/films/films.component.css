@@ -1,6 +1,6 @@
 .wrapper {
-    background-color: white;
-    padding-top: 140px;
+    position: relative;
+    margin-bottom: 70px;
 }
 
 .wrapper-parallel {
@@ -9,15 +9,24 @@
 }
 
 .parallel-area {
-    margin: 0 auto;
+    width: 100%;
     padding: 20px 0;
     color: white;
 }
 
-.video-wrapper {
-    max-width: 350px;
-    margin: 0 auto;
-    width: 100%;
+.title {
+    padding-top: 70px;
+    margin-bottom: 20px;
+}
+
+.main-title-line-height {
+    line-height: 1.3;
+}
+
+.title-bar {
+    width: 50px;
+    height: 4px;
+    background-color: #70C9C5;
 }
 
 .parallel-title-wrapper {
@@ -28,13 +37,84 @@
     justify-content: center;
 }
 
+.post-icons {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    right: 80px;
+    top: 70px;
+}
+
 .film-icon {
-    width: 250px;
-    height: 250px;
+    width: 80px;
+    height: 80px;
     background-image: url('/assets/images/icons/screening-01.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+
+.film-info-events {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.film-main-info {
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #70C9C5;
+}
+
+.film-secondary-info {
+    opacity: 1;
+    margin-bottom: 20px;    
+    -webkit-animation-name: title; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: title;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards; 
+}
+
+.bottom-padding {
+    margin-bottom: 40px;
+}
+
+.film-description {
+    margin-bottom: 20px;
+}
+
+.film-title {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.video-wrapper {
+    padding: 20px 0;
+}
+
+.social-icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    /* color: rgba(111, 201, 198, 0.6); */
+    -webkit-transition: color 0.2s; /* Safari */
+    transition: color 0.2s;
+}
+
+.social-icon:hover {
+    color: #6fc9c6;
 }
 
 /* Animations  */
@@ -42,11 +122,11 @@
 .animation-title {
    opacity: 1;
     -webkit-animation-name: title; /* Safari 4.0 - 8.0 */
-     -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-     animation-name: title;
-     animation-duration: 3s;
-     animation-fill-mode: forwards;
-     -webkit-animation-fill-mode: forwards;
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: title;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -66,5 +146,15 @@
     }
     to {
         opacity: 1;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .post-icons {
+        display: none;
+    }
+
+    .parallel-area {
+        width: 100%;
     }
 }

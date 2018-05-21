@@ -1,7 +1,9 @@
 <div #contentWrapper class="wrapper" [ngClass]="(mobileScreen===true)? 'mobile-screen-width' : 'big-screen-width'">
-  <div class="wrapper-team col-6">
-    <div class="team-title-wrapper center"><h2 class="title team-title">Team</h2></div>
-    <!-- <app-loading class="loading" [visible]="loading"></app-loading> -->
+  <div class="wrapper-team">
+      <div class="title animation-title main-title-line-height">
+        <h2 class="team-title-animation">Team</h2>
+      </div>
+      <div class="title-bar"></div>
     <section class="team-area">
       <div class="team-card center" *ngFor="let t of team">
         <div class="team-img-wrapper">
@@ -14,5 +16,4 @@
       </div>
     </section>
   </div>
-  <app-footer></app-footer>
 </div>

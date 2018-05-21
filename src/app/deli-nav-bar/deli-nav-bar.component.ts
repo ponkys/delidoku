@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Links } from '../links';
 import { WindowRefService } from '../window-ref.service';
@@ -13,6 +13,8 @@ import { trigger, animate, state, style, transition } from '@angular/animations'
 })
 export class DeliNavBarComponent {
 
+  @Input() isScrolled: Boolean;
+
   links: string[] = Links;
   showNavBar: Boolean = false;
   bigScreen: Boolean = false;
@@ -22,7 +24,6 @@ export class DeliNavBarComponent {
       private winRef: WindowRefService) {
         if (winRef.nativeWindow.outerWidth > 768) {
           this.bigScreen = true;
-          this.showNavBar = true;
         }
       }
 
@@ -37,10 +38,12 @@ export class DeliNavBarComponent {
     this.showNavBar = true;
   }
 
-  closeNavBar() {
-    if (this.winRef.nativeWindow.outerWidth < 768) {
-      this.showNavBar = false;
+  closeNavBar(link?) {
+    if (link) {
+      window.location.hash = link;
     }
+
+    this.showNavBar = false;
   }
 
   facebookNavigate() {

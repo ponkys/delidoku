@@ -1,6 +1,6 @@
 import { DelidokuAngPage } from './app.po';
 
-describe('delidoku-ang App', () => {
+describe('delidoku App', () => {
   let page: DelidokuAngPage;
 
   beforeEach(() => {

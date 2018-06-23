@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { WindowRefService } from '../window-ref.service';
-import { Films } from './films';
+import { Films } from './films-2017';
 import { VideoBackgroundService } from '../video-background.service';
 import { SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-films',
-  templateUrl: './films.component.html',
-  styleUrls: ['./films.component.css']
+  selector: 'app-films-2017',
+  templateUrl: './films-2017.component.html',
+  styleUrls: ['./films-2017.component.css']
 })
-export class FilmsComponent implements OnInit {
+export class Films2017Component implements OnInit {
 
   mobileScreen = true;
   films = Films;

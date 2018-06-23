@@ -1,3 +1,8 @@
+.main-wrapper {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
 .wrapper {
     position: relative;
     margin-bottom: 70px;

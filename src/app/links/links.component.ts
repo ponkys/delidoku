@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { Links } from '../links';
+import { Router } from '@angular/router';
+import { Location } from '@angular/common';
+import { Links, LinksArchive } from '../links';
 
 @Component({
   selector: 'app-links',
@@ -10,12 +11,27 @@ import { Links } from '../links';
 export class LinksComponent {
 
   links: string[] = Links;
-
-  constructor(private router: Router) {}
+  linksArchive: string[] = LinksArchive;
+  isArchive: boolean;
+  constructor(
+    private router: Router,
+    private location: Location
+  ) {
+    this.initHeader();
+  }
 
   onSelect(link: string) {
-    window.location.hash = link;
-    // this.router.navigate([`/#${link}`]);
+    if (link === 'archive') {
+      this.router.navigate(['archive']);
+      this.isArchive = true;
+    } else {
+      this.router.navigate(['/']);
+      this.isArchive = false
+    }
+  }
+
+  private initHeader() {
+    this.isArchive = this.location.path() === '/archive';
   }
 
 }

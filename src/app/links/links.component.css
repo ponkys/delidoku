@@ -30,3 +30,27 @@
 .links:last-child {
     content: ' ';
 }
+
+.nav-bar__link {
+    cursor: pointer;
+    height: 20px;
+    list-style-type: none;
+    margin-top: 30px;
+    text-align: center;
+    -webkit-transition: color 0.2s; /* Safari */
+    transition: color 0.2s;
+}
+
+.nav-bar__link-a {
+    color: #2E2E2E;
+    /* color: rgba(111, 201, 198, 0.6); */
+    cursor: pointer;
+}
+
+.nav-bar__link-a:hover {
+    color: #6fc9c6;
+}
+
+.active {
+    color: #6fc9c6;
+}

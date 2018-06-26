@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location } from '@angular/common';
 import { Links, LinksArchive } from '../links';
@@ -9,10 +9,12 @@ import { Links, LinksArchive } from '../links';
   styleUrls: ['./links.component.css']
 })
 export class LinksComponent {
-
+  @Input() isMobile = false;
+  @Output() linkClicked: EventEmitter<any> = new EventEmitter();
   links: string[] = Links;
   linksArchive: string[] = LinksArchive;
   isArchive: boolean;
+
   constructor(
     private router: Router,
     private location: Location
@@ -27,6 +29,9 @@ export class LinksComponent {
     } else {
       this.router.navigate(['/']);
       this.isArchive = false
+    }
+    if (this.isMobile) {
+      this.linkClicked.emit(null);
     }
   }
 

@@ -1,9 +1,30 @@
 <ul class="links-wrapper">
-  <li *ngFor="let link of links" class="links">
-    <a class="links-a"
-      (click)="onSelect(link)"
-      routerLinkActive="active">
-      {{link | capitalize}}
-    </a>
-  </li>
+  <ng-container *ngIf="!isArchive; else archive">
+      <li *ngFor="let link of links" class="links">
+        <ng-container *ngIf="link !== 'archive'; else notArchiveLink">
+          <a class="links-a"
+              pageScroll href="#{{link}}"
+              [pageScrollDuration]="500"
+              routerLinkActive="active">
+              {{link | capitalize}}
+          </a>
+        </ng-container>
+        <ng-template #notArchiveLink>
+            <a class="links-a"
+            (click)="onSelect(link)"
+            routerLinkActive="active">
+            {{link | capitalize}}
+          </a>
+        </ng-template>
+      </li>
+  </ng-container>
+  <ng-template #archive>
+      <li *ngFor="let link of linksArchive" class="links">
+        <a class="links-a"
+          (click)="onSelect(link)"
+          routerLinkActive="active">
+          {{link | capitalize}}
+        </a>
+      </li>
+  </ng-template>
 </ul>

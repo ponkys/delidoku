@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { NgxPageScrollModule } from 'ngx-page-scroll';
+
 // routing
 import { AppRoutingModule } from './app-routing.module';
 
@@ -48,7 +50,8 @@ import { MainComponent } from './main/main.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxPageScrollModule
   ],
   providers: [
     VideoBackgroundService,

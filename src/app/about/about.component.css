@@ -1,3 +1,11 @@
+ul li {
+    margin-bottom: 12px;
+}
+
+.section-why {
+    margin-bottom: 56px;
+}
+
 .wrapper-about {
     margin: 0 auto;
 }
@@ -19,7 +27,7 @@
 
 .title {
     padding-top: 70px;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
 }
 
 .main-title-line-height {

@@ -42,13 +42,13 @@
 }
 
 .nav-bar__link-a {
-    color: #2E2E2E;
+    color: #ffffff;
     /* color: rgba(111, 201, 198, 0.6); */
     cursor: pointer;
 }
 
 .nav-bar__link-a:hover {
-    color: #6fc9c6;
+    color: #ebebeb;
 }
 
 .active {

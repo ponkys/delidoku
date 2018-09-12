@@ -1,19 +1,21 @@
-<div class="wrapper-home">  
-  <div *ngIf="!mobileScreen" class="video-background">
+<div class="wrapper-home">
+  <!-- test without video -->
+  <!-- <div *ngIf="!mobileScreen" class="video-background">
     <div class="video-foreground">
       <iframe class="fullscreen-bg" frameBorder="0" height="100%" title="background video" width="100%" 
           [src]="video">
       </iframe>
     </div>
-  </div>
-  <div *ngIf="mobileScreen" class="mobile-background"></div>
+  </div> -->
+  <!-- <div *ngIf="mobileScreen" class="mobile-background"></div> -->
+  <div class="mobile-background"></div>
   <div class="wrapper">
     <div class="title-wrapper col-12">
         <img class="animated fadeInDownBig" src='assets/images/title1.svg' alt="deli doku"/>
     </div>
     <div class="message">
       <div class="message-wrapper">
-          <p class="inner-message">A new way to experience Latin America through documentary cinema<br/>October 16 - 21 of 2018 / Budapest</p>
+          <h1 class="inner-message">A new way to experience Latin America through documentary cinema<br/>October 16 - 21 of 2018 / Budapest</h1>
           <div (click)="facebookNavigate()" class="fa fa-facebook-square social-icon"></div>
       </div>
     </div>

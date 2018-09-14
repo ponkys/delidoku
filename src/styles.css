@@ -21,6 +21,7 @@ body {
     font-family: 'Tinos', serif;
     line-height: 1.6;
     background-color: #BC3926;
+    margin: 0;
 }
 .center {
     text-align: center;

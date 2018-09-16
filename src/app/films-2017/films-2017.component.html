@@ -5,16 +5,16 @@
     </div>
     <div class="wrapper-parallel">
       <div class="title main-title-line-height">
-        <h2 class="animation-title">Films 2017</h2>
+        <h1 class="animation-title">Films 2017</h1>
       </div>
       <div class="title-bar"></div>
       <section class="parallel-area">
         <ng-container *ngFor="let film of films; let i = index">
           <div class="film-main-info" (click)="openFilmInfo(film.title)" [ngClass]="selectedFilm !== film.title? 'border-bottom' : ''">
             <div>
-              <p><span class="film-title">{{film.title}}</span><br>by {{film.author}} - {{film.country}} ({{film.duration}}min)</p>
+              <h3><span class="film-title">{{film.title}}</span><br>by {{film.author}} - {{film.country}} ({{film.duration}}min)</h3>
               <div class="film-info-events">
-                <h3>Screening<ng-container *ngIf="film.date.length > 1">s</ng-container>:</h3>
+                <p>Screening<ng-container *ngIf="film.date.length > 1">s</ng-container>:</p>
                 <ng-container *ngFor="let d of film.date">
                   <a href="{{d.event}}" target="_blank"> {{d.info}}</a>
                 </ng-container>

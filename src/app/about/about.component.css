@@ -33,12 +33,6 @@ ul li {
     line-height: 1.3;
 }
 
-.title-bar {
-    width: 50px;
-    height: 4px;
-    background-color: #70C9C5;
-}
-
 .space-screen {
     margin-top: 3rem;
 }

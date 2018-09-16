@@ -33,7 +33,6 @@ ul {
 }
 
 .nav-bar {
-    /* background-color: #2E2E2E; */
     background-color: #EAECEE;
     padding-top: 25vh;
     position: absolute;
@@ -107,7 +106,6 @@ ul {
 }
 
 .social {
-    /* border-top: 1px solid rgba(111, 201, 198, 0.6); */
     border-top: 1px solid white;
     margin: 0 auto;
     padding-top: 5%;
@@ -120,14 +118,13 @@ ul {
 .social-icon {
     cursor: pointer;
     font-size: 20px;
-    color: #2E2E2E;
-    /* color: rgba(111, 201, 198, 0.6); */
+    fill: #EAECEE;;
     -webkit-transition: color 0.2s; /* Safari */
     transition: color 0.2s;
 }
 
 .social-icon:hover {
-    color: #6fc9c6;
+    fill: #6fc9c6;
 }
 
 .header {

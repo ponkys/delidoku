@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { VideoBackgroundService } from '../video-background.service';
 import { WindowRefService } from '../window-ref.service';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -16,7 +15,8 @@ export class HomeComponent implements OnInit {
 
   constructor (
     private videoBackgroundService: VideoBackgroundService,
-    private winRef: WindowRefService) {
+    private winRef: WindowRefService
+  ) {
     if (this.winRef.nativeWindow.innerWidth > 768) {
       this.mobileScreen = false;
     }

@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900');
-@import url('https://fonts.googleapis.com/css?family=Tinos:400,400i,700,700i');
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600,900');
 
 
 *, *:after, *:before {
@@ -19,11 +18,11 @@
 }
 
 body {
-    font-family: 'Tinos', serif;
     line-height: 1.6;
-    background-color: #BC3926;
     margin: 0;
+    font-family: 'Roboto', sans-serif;
 }
+
 .center {
     text-align: center;
 }
@@ -36,20 +35,22 @@ p {
 h1 {
     margin: 0;
     color: #EAECEE;
-    font-weight: 400;
-    font-style: italic;
+    font-weight: 900;
+    font-family: 'Poppins', sans-serif;
 }
 
 h2 {
     margin-top: 0;
     color: #EAECEE;
-    font-weight: 700;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
 }
 
 h3 {
     margin: 0;
     color: #EAECEE;
-    font-weight: 700;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
 }
 
 ul {
@@ -69,6 +70,13 @@ a {
 
 .strong {
     font-weight: 700;
+}
+
+.title-bar {
+    width: 50px;
+    height: 4px;
+    background-color: #70c9c5;
+    margin-bottom: 24px;
 }
 
 @media only screen and (min-width: 600px) {

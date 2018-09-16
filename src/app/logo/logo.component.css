@@ -1,15 +1,14 @@
 .deli-img {
     width: 4%;
     height: 100%;
-    background-image: url(/assets/images/logo_world.svg);
+    background-image: url(/assets/images/logo_doku_2_white-01.png);
     background-repeat: no-repeat;
     background-position: center;
     position: absolute;
     top: 2px;
     right: 25px;
     z-index: 1;
-    border-bottom-right-radius: 6px;
-    border-top-left-radius: 6px;
+    background-size: cover;
 }
 
 .animation-logo {

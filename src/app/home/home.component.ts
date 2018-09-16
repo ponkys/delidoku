@@ -33,7 +33,6 @@ export class HomeComponent implements OnInit {
             'position': 'absolute',
             'width': '100vw',
             'height': '100vh',
-            'z-index': 1,
             'top': 0,
             'left': 0,
             'right': 0,

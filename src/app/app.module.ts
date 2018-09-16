@@ -22,7 +22,6 @@ import { LogoComponent } from './logo/logo.component';
 // pipe
 import {CapitalizePipe} from './utils/capitalize.pipe';
 import { LinksComponent } from './links/links.component';
-import { GifComponent } from './gif/gif.component';
 import { LoadingComponent } from './loading/loading.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { ProgrammeComponent } from './programme/programme.component';
@@ -42,7 +41,6 @@ import { MainComponent } from './main/main.component';
     // pipe
     CapitalizePipe,
     LinksComponent,
-    GifComponent,
     LoadingComponent,
     SponsorsComponent,
     ProgrammeComponent,

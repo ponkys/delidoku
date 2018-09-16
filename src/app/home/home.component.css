@@ -2,14 +2,9 @@
     height: 100vh;
     margin: 0 auto;
     position: relative;
-    background: #a01f61;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: -moz-linear-gradient(45deg, #a01f61 0%, #bc3926 100%);
-    background: -webkit-linear-gradient(45deg, #a01f61 0%,#bc3926 100%);
-    background: linear-gradient(45deg, #a01f61 0%,#bc3926 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a01f61', endColorstr='#bc3926',GradientType=1 );
 }
 
 .main-title-background {
@@ -42,7 +37,6 @@
 }
 
 .main-message {
-    color: #EAECEE;
     font-weight: 900;
 }
 
@@ -72,10 +66,6 @@
     top: 0;
     left: 0;
     width: 100%;
-}
-
-.main-title-home {
-    filter: drop-shadow(1px 1px 5px #2E2E2E);
 }
 
 .video-background {

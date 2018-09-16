@@ -21,6 +21,7 @@ body {
     line-height: 1.6;
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    color: #EAECEE;
 }
 
 .center {
@@ -28,27 +29,23 @@ body {
 }
 
 p {
-    color: #EAECEE;;
     margin: 0;
 }
 
 h1 {
     margin: 0;
-    color: #EAECEE;
     font-weight: 900;
     font-family: 'Poppins', sans-serif;
 }
 
 h2 {
     margin-top: 0;
-    color: #EAECEE;
     font-weight: 600;
     font-family: 'Poppins', sans-serif;
 }
 
 h3 {
     margin: 0;
-    color: #EAECEE;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
 }
@@ -65,7 +62,7 @@ li {
 
 a {
     text-decoration: none;
-    color: white;
+    color: #EAECEE;;
 }
 
 .strong {

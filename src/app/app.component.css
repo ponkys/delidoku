@@ -1,10 +1,10 @@
-
 .main {
     width: 100vw;
-    background-color: #BC3926;
-}
-
-.main-wrapper {
-    max-width: 720px;
-    margin: 0 auto;
+    height: 100vh;
+    background: #a01f61;
+    background: -moz-linear-gradient(45deg, #a01f61 0%, #bc3926 100%);
+    background: -webkit-linear-gradient(45deg, #a01f61 0%,#bc3926 100%);
+    background: linear-gradient(45deg, #a01f61 0%,#bc3926 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a01f61', endColorstr='#bc3926',GradientType=1 );
+    overflow: scroll;
 }

@@ -1,6 +1,6 @@
-import { SafeResourceUrl } from '@angular/platform-browser';
+import { Films as f } from './films';
 
-export const Films: Films[] = [
+export const Films: f[] = [
     {
         title: 'SURIRE',
         synopsis: `The Surire salt flat is located in the Chilean high plateau at 4,300 meters
@@ -156,15 +156,3 @@ export const Films: Films[] = [
         ]
     },
 ];
-
-interface Films {
-    title: string;
-    synopsis: string;
-    trailer: string;
-    trailerSafe?: SafeResourceUrl;
-    duration: number;
-    year: number;
-    author: string;
-    country: string;
-    date: Array<{info: string, event: string}>
-};

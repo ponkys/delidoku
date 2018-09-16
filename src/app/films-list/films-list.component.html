@@ -1,0 +1,25 @@
+<ng-container *ngFor="let film of films; let i = index">
+    <div class="film-main-info" (click)="openFilmInfo(film.title)" [ngClass]="selectedFilm !== film.title? 'border-bottom' : ''">
+        <div>
+            <h3><span class="film-title">{{film.title}}</span><br>by {{film.author}} - {{film.country}}
+                ({{film.duration}}min)</h3>
+            <div class="film-info-events">
+                <p *ngIf="film.date.length">Screening<ng-container *ngIf="film.date.length > 1">s</ng-container>:</p>
+                <ng-container *ngFor="let d of film.date">
+                    <a href="{{d.event}}" target="_blank"> {{d.info}}</a>
+                </ng-container>
+            </div>
+        </div>
+        <div *ngIf="selectedFilm !== film.title" class="fa fa-chevron-circle-down social-icon"></div>
+        <div *ngIf="selectedFilm === film.title" class="fa fa-chevron-circle-up social-icon"></div>
+    </div>
+    <div class="film-secondary-info" *ngIf="selectedFilm === film.title" [ngClass]="selectedFilm === film.title? 'border-bottom' : ''">
+        <div class="video-wrapper" *ngIf="film.trailerSafe">
+            <iframe width="100%" frameBorder="0" height="400px" [src]=film.trailerSafe allowfullscreen></iframe>
+        </div>
+        <div *ngIf="film.synopsis" class="film-description">
+            <p>{{film.synopsis}}</p>
+        </div>
+        <div class="bottom-padding"></div>
+    </div>
+</ng-container>

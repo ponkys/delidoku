@@ -1,6 +1,6 @@
 import { SafeResourceUrl } from '@angular/platform-browser';
 
-export interface Films {
+export interface Film {
     title: string;
     synopsis: string;
     trailer: string;

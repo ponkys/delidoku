@@ -1,6 +1,6 @@
-import { Films } from './films';
+import { Film } from './film';
 
-export const FILMS_2018: Films[] = [
+export const FILMS_2018: Film[] = [
     {
         title: 'Amazona',
         // tslint:disable-next-line:max-line-length
@@ -92,7 +92,7 @@ export const FILMS_2018: Films[] = [
     {
         title: 'Descartes',
         // tslint:disable-next-line:max-line-length
-        synopsis: 'If films are memory, what happens when a film is lost? If films exist only in the memory of those who where able to see them, does the filmmaker who created them even exist? Bitterness and nostalgia cut with discarded frames Gustavo Valle saves—shelved and damped; traces of film confirming that: "it was", that "it existed", that "It exist", that "it is".',        
+        synopsis: 'If films are memory, what happens when a film is lost? If films exist only in the memory of those who where able to see them, does the filmmaker who created them even exist? Bitterness and nostalgia cut with discarded frames Gustavo Valle saves—shelved and damped; traces of film confirming that: "it was", that "it existed", that "It exist", that "it is".',
         trailer: null,
         duration: 80,
         year: 2009,

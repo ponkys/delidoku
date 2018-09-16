@@ -1,6 +1,6 @@
-import { Films as f } from './films';
+import { Film } from './film';
 
-export const Films: f[] = [
+export const FILMS_2017: Film[] = [
     {
         title: 'SURIRE',
         synopsis: `The Surire salt flat is located in the Chilean high plateau at 4,300 meters

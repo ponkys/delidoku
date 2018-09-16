@@ -1,0 +1,86 @@
+.film-main-info {
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #70C9C5;
+}
+
+.film-secondary-info {
+    opacity: 1;
+    margin-bottom: 20px;    
+    -webkit-animation-name: title; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+    animation-name: title;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards; 
+}
+
+.film-description {
+    margin-bottom: 20px;
+}
+
+.video-wrapper {
+    padding: 20px 0;
+}
+
+.bottom-padding {
+    margin-bottom: 40px;
+}
+
+.film-info-events {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.social-icon {
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    -webkit-transition: color 0.2s; /* Safari */
+    transition: color 0.2s;
+}
+
+.social-icon:hover {
+    color: #6fc9c6;
+}
+
+/* Animations  */
+
+.animation-title {
+    opacity: 1;
+     -webkit-animation-name: title; /* Safari 4.0 - 8.0 */
+     -webkit-animation-duration: 1s; /* Safari 4.0 - 8.0 */
+     animation-name: title;
+     animation-duration: 1s;
+     animation-fill-mode: forwards;
+     -webkit-animation-fill-mode: forwards;
+ }
+ 
+ /* Safari 4.0 - 8.0 */
+ @-webkit-keyframes title {
+     from {
+         opacity: 0;
+     }
+     to {
+         opacity: 1;
+     }
+ }
+ 
+ /* Standard syntax */
+ @keyframes title {
+     from {
+         opacity: 0;
+     }
+     to {
+         opacity: 1;
+     }
+}
+

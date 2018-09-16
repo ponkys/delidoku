@@ -16,7 +16,7 @@ import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
-import { Films2017Component } from './films-2017/films-2017.component';
+import { FilmComponent } from './film/film.component';
 import { LogoComponent } from './logo/logo.component';
 
 // pipe
@@ -26,6 +26,7 @@ import { LoadingComponent } from './loading/loading.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
 import { ProgrammeComponent } from './programme/programme.component';
 import { MainComponent } from './main/main.component';
+import { FilmsListComponent } from './films-list/films-list.component';
 
 @NgModule({
   declarations: [
@@ -36,15 +37,16 @@ import { MainComponent } from './main/main.component';
     ContactComponent,
     AboutComponent,
     FooterComponent,
-    Films2017Component,
+    FilmComponent,
     LogoComponent,
-    // pipe
-    CapitalizePipe,
     LinksComponent,
     LoadingComponent,
     SponsorsComponent,
     ProgrammeComponent,
     MainComponent,
+    FilmsListComponent,
+    // pipe
+    CapitalizePipe,
   ],
   imports: [
     BrowserModule,

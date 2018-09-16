@@ -26,8 +26,7 @@ export class FilmComponent {
         this.aRoute.data.subscribe(data => {
             this.year = data['year'];
             this.title = data['title'];
-            this.films = data['films']
-            console.log(data);
+            this.films = data['films'];
         })
     }
 

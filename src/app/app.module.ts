@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { ParticlesModule } from 'angular-particle';
 
 // routing
 import { AppRoutingModule } from './app-routing.module';
@@ -51,7 +52,8 @@ import { FilmsListComponent } from './films-list/films-list.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxPageScrollModule
+    NgxPageScrollModule,
+    ParticlesModule
   ],
   providers: [
     VideoBackgroundService,

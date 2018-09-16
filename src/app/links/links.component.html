@@ -4,9 +4,7 @@
         <ng-container *ngIf="link !== 'archive'; else notArchiveLink">
           <a
             [ngClass]="isMobile ? 'links-a' : 'nav-bar__link-a'"
-            pageScroll href="#{{link}}"
-            [pageScrollDuration]="500"
-            (pageScrollFinish)="linkClicked.emit(null)"
+            (click)="onSelect(link)"
             routerLinkActive="active">
             {{link | capitalize}}
           </a>

@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
-import { Location } from '@angular/common';
+import { Location, ViewportScroller } from '@angular/common';
 import { Links, LinksArchive } from '../links';
 
 @Component({
@@ -17,7 +17,8 @@ export class LinksComponent {
 
   constructor(
     private router: Router,
-    private location: Location
+    private location: Location,
+    private viewportScroller: ViewportScroller
   ) {
     this.initHeader();
   }
@@ -27,7 +28,10 @@ export class LinksComponent {
       this.router.navigate(['archive']);
       this.isArchive = true;
     } else {
-      this.router.navigate(['/']);
+      if (this.isArchive) {
+        this.router.navigate(['']);
+      }
+      this.viewportScroller.scrollToAnchor(link);
       this.isArchive = false
     }
     if (this.isMobile) {

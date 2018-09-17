@@ -3,14 +3,14 @@
 Website for Déli-Doku Latin american Documentary Film Festival.
 
 ## to build use
-ng build --aot --prod --build-optimizer
+ng serve
 
-## to deploy use
-
-```
-firebase deploy	Creates a release of all deployable resources in your project directory
-firebase deploy --only hosting:target-name	Creates a release of only the resources for the specified Hosting target
-firebase serve	Serves your Firebase project locally
-firebase serve --only hosting:target-name	Serves locally only the resources for the specified Hosting target
-```
+### z-index
+ - Background -10;
+ - menu-symbol 10;
+ - nav-bar-wrapper 12;
+ - nav-bar 10;
+ - header 13 and 10 in media query ---> this is shit;
+ - inner-message 1;
+ - deli-img 1;
 

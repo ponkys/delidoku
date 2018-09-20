@@ -1,32 +1,27 @@
-<ul [class.links-wrapper]="!isMobile">
-  <ng-container *ngIf="!isArchive; else archive">
-      <li *ngFor="let link of links" [ngClass]="isMobile ? 'nav-bar__link' : 'links'">
-        <ng-container *ngIf="link !== 'archive'; else notArchiveLink">
-          <a
-            [ngClass]="isMobile ? 'links-a' : 'nav-bar__link-a'"
-            (click)="onSelect(link)"
-            routerLinkActive="active">
-            {{link | capitalize}}
-          </a>
-        </ng-container>
-        <ng-template #notArchiveLink>
-            <a 
-            [ngClass]="isMobile ? 'links-a' : 'nav-bar__link-a'"
-            (click)="onSelect(link)"
-            routerLinkActive="active">
-            {{link | capitalize}}
-          </a>
-        </ng-template>
-      </li>
-  </ng-container>
-  <ng-template #archive>
-      <li *ngFor="let link of linksArchive" [ngClass]="isMobile ? 'nav-bar__link' : 'links'">
-        <a
-          [ngClass]="isMobile ? 'links-a' : 'nav-bar__link-a'"
-          (click)="onSelect(link)"
-          routerLinkActive="active">
-          {{link | capitalize}}
-        </a>
-      </li>
-  </ng-template>
+<ul
+    class="links-wrapper"
+    [class.flex-row]="!isMobile"
+    [class.flex-column]="isMobile"
+    [class.mobile-links-padding]="isMobile">
+    <ng-container *ngIf="!isArchive; else archive">
+        <li *ngFor="let link of links" [ngClass]="isMobile ? 'nav-bar__link' : 'links'">
+            <ng-container *ngIf="link !== 'archive'; else archiveLink">
+                <a [ngClass]="isMobile ? 'links-a' : 'nav-bar__link-a'" (click)="onSelect(link)" routerLinkActive="active">
+                    {{link | capitalize}}
+                </a>
+            </ng-container>
+            <ng-template #archiveLink>
+                <a [ngClass]="isMobile ? 'links-a' : 'nav-bar__link-a'" (click)="onSelect(link)" routerLinkActive="active">
+                    {{link | capitalize}}
+                </a>
+            </ng-template>
+        </li>
+    </ng-container>
+    <ng-template #archive>
+        <li *ngFor="let link of linksArchive" [ngClass]="isMobile ? 'nav-bar__link' : 'links'">
+            <a [ngClass]="isMobile ? 'links-a' : 'nav-bar__link-a'" (click)="onSelect(link)" routerLinkActive="active">
+                {{link | capitalize}}
+            </a>
+        </li>
+    </ng-template>
 </ul>

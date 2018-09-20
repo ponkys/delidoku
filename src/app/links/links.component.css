@@ -1,10 +1,15 @@
 .links-wrapper {
     align-items: center;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 0 auto;
+}
+
+.mobile-links-padding {
+    overflow-y: scroll;
+    padding-top: 42px;
+    padding-bottom: 42px;
 }
 
 .links {

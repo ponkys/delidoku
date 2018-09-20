@@ -1,5 +1,5 @@
 .deli-img {
-    width: 4%;
+    width: 5%;
     height: 100%;
     background-image: url(/assets/images/logo_doku_2_white-01.png);
     background-repeat: no-repeat;
@@ -8,7 +8,7 @@
     top: 2px;
     right: 25px;
     z-index: 1;
-    background-size: cover;
+    background-size: contain;
 }
 
 .animation-logo {

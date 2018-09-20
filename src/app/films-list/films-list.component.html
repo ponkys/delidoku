@@ -18,7 +18,7 @@
             <iframe width="100%" frameBorder="0" height="400px" [src]=film.trailerSafe allowfullscreen></iframe>
         </div>
         <ng-template #noTrailer>
-            <h4 class="center mb-16">No trailer available</h4>
+            <h4 class="center mb-16">Trailer not available</h4>
         </ng-template>
         <div *ngIf="film.synopsis" class="film-description">
             <p>{{film.synopsis}}</p>

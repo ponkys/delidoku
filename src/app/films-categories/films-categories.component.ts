@@ -8,6 +8,7 @@ import { Film } from '../films/film';
   styleUrls: ['../film/film.component.css']
 })
 export class FilmsCategoriesComponent implements OnInit {
+    year: string;
     title: string;
     categories = [
         {

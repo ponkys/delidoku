@@ -2,13 +2,6 @@
     margin: 0 auto;
 }
 
-.wrapper {
-    position: relative;
-    margin: 0 auto;
-    max-width: 720px;
-    padding-bottom: 70px;
-}
-
 .wrapper-parallel {
     margin: 0 auto;
     padding: 12px;

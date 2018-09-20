@@ -28,6 +28,7 @@ import { SponsorsComponent } from './sponsors/sponsors.component';
 import { ProgrammeComponent } from './programme/programme.component';
 import { MainComponent } from './main/main.component';
 import { FilmsListComponent } from './films-list/films-list.component';
+import { FilmsCategoriesComponent } from './films-categories/films-categories.component';
 
 @NgModule({
   declarations: [
@@ -48,6 +49,7 @@ import { FilmsListComponent } from './films-list/films-list.component';
     FilmsListComponent,
     // pipe
     CapitalizePipe,
+    FilmsCategoriesComponent,
   ],
   imports: [
     BrowserModule,

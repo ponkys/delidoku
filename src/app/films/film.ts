@@ -9,5 +9,6 @@ export interface Film {
     year: number;
     author: string;
     country: string;
+    section?: string;
     date: Array<{info: string, event: string}>
 };

@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
 import { WindowRefService } from '../window-ref.service';
 import { ActivatedRoute } from '@angular/router';
 import { Film } from '../films/film';
-import { ViewportScroller } from '@angular/common';
 
 @Component({
     selector: 'app-film',

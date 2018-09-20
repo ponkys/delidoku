@@ -38,6 +38,7 @@ const routes: Routes = [
             useHash: true,
             scrollPositionRestoration: 'enabled',
             anchorScrolling: 'enabled',
+            scrollOffset: [0, 70] // [x, y]
             // enableTracing: true
         }),
         HttpClientModule],

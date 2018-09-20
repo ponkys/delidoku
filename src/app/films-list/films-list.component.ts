@@ -15,7 +15,8 @@ export class FilmsListComponent implements OnInit {
 
     ngOnInit() {
         this.films.map( film => {
-            return film.trailerSafe = this.videoBackgroundService.sanitise(film.trailer);
+            if (!film.trailer) { return film.trailer };
+            film.trailerSafe = this.videoBackgroundService.sanitise(film.trailer);
         });
     }
 

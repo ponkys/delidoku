@@ -152,7 +152,7 @@ export const FILMS_2018: Film[] = [
         duration: 88,
         year: 2013,
         author: 'Darío Aguirre',
-        country: 'Ecuador, Suiza, Alemania',
+        country: 'Switzerland and Germany',
         date: [
             {
                 info: 'Oct 16th - Bem Mozi (Talk with the director & After party) - 20:00',

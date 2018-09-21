@@ -134,7 +134,7 @@ export const FILMS_2018: Film[] = [
         trailer: 'https://www.youtube.com/embed/WFib0QDtY_E',
         duration: 125,
         year: 2013,
-        author: 'Lisandra Rivera y Manolo Sarmiento',
+        author: 'Lisandra Rivera and Manolo Sarmiento',
         country: 'Ecuador',
         date: [
             {

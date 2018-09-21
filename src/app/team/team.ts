@@ -7,7 +7,7 @@ export const Team: any[] = [
     },
     {
         name: '<h4>Adam Breier</h4>',
-        role: 'Programmer',
+        role: 'Artistic producer',
         // tslint:disable-next-line:max-line-length
         img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Foptimized%2Fadam.png?alt=media&token=ce2fc877-24a9-4f8d-8534-f038c17c9ce4'
     },

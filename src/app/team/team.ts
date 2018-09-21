@@ -6,12 +6,6 @@ export const Team: any[] = [
         img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Foptimized%2Fcecilia.png?alt=media&token=1d749c36-0870-40af-bf02-908f2dfe4cae'
     },
     {
-        name: '<h4>Pallav Tyagi</h4>',
-        role: 'Producer',
-        // tslint:disable-next-line:max-line-length
-        img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Foptimized%2FPallav_Tyagi.png?alt=media&token=68569611-2c9f-4b9a-9f73-3eba71b5c961'
-    },
-    {
         name: '<h4>Adam Breier</h4>',
         role: 'Programmer',
         // tslint:disable-next-line:max-line-length
@@ -63,6 +57,12 @@ export const Team: any[] = [
         name: '<h4>Sabina Triana</h4>',
         role: 'Communication support',
         // tslint:disable-next-line:max-line-length
-        img: 'https://via.placeholder.com/50x10'
+        img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Foptimized%2FSabinaBW%202.jpg?alt=media&token=0d4ccce2-4696-4eec-812a-0e76712b2ebd'
+    },
+    {
+        name: '<h4>Pallav Tyagi</h4>',
+        role: 'Producer',
+        // tslint:disable-next-line:max-line-length
+        img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Foptimized%2FPallav_Tyagi.png?alt=media&token=68569611-2c9f-4b9a-9f73-3eba71b5c961'
     },
 ];

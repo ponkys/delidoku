@@ -1,8 +1,8 @@
 <ng-container *ngFor="let film of films; let i = index">
     <div class="film-main-info" (click)="openFilmInfo(film.title)" [ngClass]="selectedFilm !== film.title? 'border-bottom' : ''">
         <div>
-            <h3>{{film.title}} <ng-container *ngIf="film.year">({{film.year}})</ng-container></h3>
-            <p *ngIf="film.author">by {{film.author}} - {{film.country}} <ng-container *ngIf="film.duration">({{film.duration}}min)</ng-container></p>
+            <h3>{{film.title}} <ng-container *ngIf="film.year">({{film.duration}}min)</ng-container></h3>
+            <p *ngIf="film.author">by {{film.author}} - {{film.country}} <ng-container *ngIf="film.duration">({{film.year}})</ng-container></p>
             <div class="film-info-events">
                 <p *ngIf="film.date.length">Screening<ng-container *ngIf="film.date.length > 1">s</ng-container>:</p>
                 <ng-container *ngFor="let d of film.date">

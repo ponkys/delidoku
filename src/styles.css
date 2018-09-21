@@ -95,6 +95,10 @@ a {
     padding-bottom: 70px;
 }
 
+.yellow-color {
+    color: #dcdc1d;
+}
+
 @media only screen and (min-width: 600px) {
     /* For tablets: */
     .col-m-1 {width: 8.33%;}

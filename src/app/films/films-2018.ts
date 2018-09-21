@@ -20,7 +20,7 @@ export const FILMS_2018: Film[] = [
                 event: null
             },
         ],
-        section: 'main'
+        section: 'Official Selection'
     },
     {
         title: 'The cinephiles',
@@ -41,7 +41,7 @@ export const FILMS_2018: Film[] = [
                 event: null
             },
         ],
-        section: 'main'
+        section: 'Official Selection'
     },
     {
         title: 'Heiress of the Wind',
@@ -62,7 +62,7 @@ export const FILMS_2018: Film[] = [
                 event: null
             },
         ],
-        section: 'main'
+        section: 'Official Selection'
     },
     {
         title: 'Solitary Land',
@@ -83,7 +83,7 @@ export const FILMS_2018: Film[] = [
                 event: null
             },
         ],
-        section: 'main'
+        section: 'Official Selection'
     },
     {
         title: 'Waiting for B',
@@ -104,7 +104,7 @@ export const FILMS_2018: Film[] = [
                 event: null
             },
         ],
-        section: 'main'
+        section: 'Official Selection'
     },
     {
         title: 'Alamar',
@@ -125,7 +125,7 @@ export const FILMS_2018: Film[] = [
                 event: null
             },
         ],
-        section: 'main'
+        section: 'Official Selection'
     },
     {
         title: 'The Death of Jaime Roldós',
@@ -165,7 +165,7 @@ export const FILMS_2018: Film[] = [
         title: 'Descartes',
         // tslint:disable-next-line:max-line-length
         synopsis: 'If films are memory, what happens when a film is lost? If films exist only in the memory of those who where able to see them, does the filmmaker who created them even exist? Bitterness and nostalgia cut with discarded frames Gustavo Valle saves—shelved and damped; traces of film confirming that: "it was", that "it existed", that "It exist", that "it is".',
-        trailer: null,
+        trailer: 'https://www.youtube.com/embed/ZBSYrWwTsrU',
         duration: 80,
         year: 2009,
         author: 'Fernando Mieles',
@@ -182,8 +182,8 @@ export const FILMS_2018: Film[] = [
         title: 'Master Building',
         // tslint:disable-next-line:max-line-length
         synopsis: 'For one week, Eduardo Coutinho and his team talked to 27 residents in an enormous building in Copacabana. Amongst these are a middle-aged couple who met through the classified ads in a newspaper, a call-girl who keeps her daughter and her sister, a retired actor, an ex-football player, and a janitor who suspects that his adopted father, whom he dreams about every night, is his real father. The subject of this documentary is private life in the big city, apartments as a last stronghold of individuality, in addition to emphasizing the fact that to live together in one and the same place does not ensure that a community will be formed.',
-        section: 'Retrospective Eduardo Coutinho',
-        trailer: null,
+        section: 'Retrospective: Eduardo Coutinho',
+        trailer: 'https://www.youtube.com/embed/6nSlTXH21vs',
         duration: 110,
         year: 2002,
         author: 'Eduardo Coutinho',
@@ -199,7 +199,7 @@ export const FILMS_2018: Film[] = [
         title: 'Last conversations',
         // tslint:disable-next-line:max-line-length
         synopsis: 'Just before his death in February 2014, famous Brazilian filmmaker Eduardo Coutinho recorded a series of casual conversations with teens who enter an almost empty space one by one. He hopes to find out how they think, dream and live. His simple, empathetic questions about parents and school soon elicit very candid stories. There are girls growing up without a father or mother, because their dad has disappeared and their mom is always at work. There’s a boy who is bullied and has now fallen victim to a deep sense of boredom, and a teenage girl who feels threatened by her stepfather. But there are also plenty of light-hearted moments: a tough, teenage girl who sings Roxette’s “Listen To Your Heart,” another who writes poetry and a seven-year-old who fantasizes about what the world was like before she was born. “Adolescence is just miserable, that’s why I should have filmed kids,” concludes Coutinho, who did what he did best, listen, to the very end. Last Conversations was completed after Coutinho’s death by João Moreira Salles.',
-        section: 'Retrospective Eduardo Coutinho',
+        section: 'Retrospective: Eduardo Coutinho',
         trailer: 'https://player.vimeo.com/video/154723137',
         duration: 87,
         year: 2015,

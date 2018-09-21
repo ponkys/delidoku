@@ -12,11 +12,11 @@ export class FilmsCategoriesComponent implements OnInit {
     title: string;
     categories = [
         {
-            name: 'main',
+            name: 'Official Selection',
             films: []
         },
         {
-            name: 'Retrospective Eduardo Coutinho',
+            name: 'Retrospective: Eduardo Coutinho',
             films: []
         },
         {

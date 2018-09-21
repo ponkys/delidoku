@@ -13,7 +13,7 @@ export const Team: any[] = [
     },
     {
         name: '<h4>Adam Breier</h4>',
-        role: 'Programmer and artistic producer',
+        role: 'Programmer',
         // tslint:disable-next-line:max-line-length
         img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Foptimized%2Fadam.png?alt=media&token=ce2fc877-24a9-4f8d-8534-f038c17c9ce4'
     },
@@ -31,7 +31,7 @@ export const Team: any[] = [
     },
     {
         name: '<h4>Juan Pablo Muñoz</h4>',
-        role: 'Translator',
+        role: 'Composer',
         // tslint:disable-next-line:max-line-length
         img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Foptimized%2FJUAN-PABLO-MUNOZ.png?alt=media&token=ac9eeb5c-3916-4789-9f78-1bdc6358c46c'
     },
@@ -49,7 +49,7 @@ export const Team: any[] = [
     },
     {
         name: '<h4>Manuel F Contreras</h4>',
-        role: 'Artistic producer',
+        role: 'Artistic producer and programmer',
         // tslint:disable-next-line:max-line-length
         img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Foptimized%2Fmanuel.png?alt=media&token=a4a08f1f-7fad-4b2e-b072-b8f672920f3c'
     },

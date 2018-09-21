@@ -16,11 +16,11 @@ export class FilmsCategoriesComponent implements OnInit {
             films: []
         },
         {
-            name: 'Retro Coutinho',
+            name: 'Retrospective Eduardo Coutinho',
             films: []
         },
         {
-            name: 'Ecuador',
+            name: 'FOCUS Ecuador',
             films: []
         }
     ];

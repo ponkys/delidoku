@@ -148,7 +148,7 @@ export const FILMS_2018: Film[] = [
         title: `Cesar's grill`,
         // tslint:disable-next-line:max-line-length
         synopsis: '“My father César thought I would take over his grill restaurant in Ecuador, but I chose art and went to Germany. Ten years later he calls me in Germany for the first time to tell me that his grill restaurant is bankrupt, that he is indebted to his bank and several private loan sharks and that he hasn’t paid the rent in more than two years. Suddenly the previously so very distant Ecuadorian environment is within my grasp and I begin to think that the rescue of my father’s restaurant could become our mutual project. – A trip from Germany to Ecuador that sees my adult, vegetarian self return to my parents and try to help my grilled meat enthusiast father’s financial problems.” (Dario Aguirre)',
-        trailer: 'https://www.youtube.com/embed/RULgOQh-2D8',
+        trailer: 'https://www.youtube.com/embed/J4_Q6CQUPyU',
         duration: 88,
         year: 2013,
         author: 'Darío Aguirre',
@@ -165,7 +165,7 @@ export const FILMS_2018: Film[] = [
         title: 'Descartes',
         // tslint:disable-next-line:max-line-length
         synopsis: 'If films are memory, what happens when a film is lost? If films exist only in the memory of those who where able to see them, does the filmmaker who created them even exist? Bitterness and nostalgia cut with discarded frames Gustavo Valle saves—shelved and damped; traces of film confirming that: "it was", that "it existed", that "It exist", that "it is".',
-        trailer: 'https://www.youtube.com/embed/ZBSYrWwTsrU',
+        trailer: 'https://www.youtube.com/embed/FinoYhvVjb4',
         duration: 80,
         year: 2009,
         author: 'Fernando Mieles',
@@ -183,7 +183,7 @@ export const FILMS_2018: Film[] = [
         // tslint:disable-next-line:max-line-length
         synopsis: 'For one week, Eduardo Coutinho and his team talked to 27 residents in an enormous building in Copacabana. Amongst these are a middle-aged couple who met through the classified ads in a newspaper, a call-girl who keeps her daughter and her sister, a retired actor, an ex-football player, and a janitor who suspects that his adopted father, whom he dreams about every night, is his real father. The subject of this documentary is private life in the big city, apartments as a last stronghold of individuality, in addition to emphasizing the fact that to live together in one and the same place does not ensure that a community will be formed.',
         section: 'Retrospective: Eduardo Coutinho',
-        trailer: 'https://www.youtube.com/embed/6nSlTXH21vs',
+        trailer: 'https://www.youtube.com/embed/OcgQfatgwmE',
         duration: 110,
         year: 2002,
         author: 'Eduardo Coutinho',

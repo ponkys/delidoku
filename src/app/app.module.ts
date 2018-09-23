@@ -1,7 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { ParticlesModule } from 'angular-particle';
 
 // routing
@@ -57,10 +56,8 @@ import { CommonModule } from '@angular/common';
     TrailerFullScreenComponent,
   ],
   imports: [
-    // CommonModule,
     BrowserModule,
     AppRoutingModule,
-    NgxPageScrollModule,
     ParticlesModule
   ],
   providers: [

@@ -41,7 +41,8 @@ const routes: Routes = [
             scrollOffset: [0, 70] // [x, y]
             // enableTracing: true
         }),
-        HttpClientModule],
+        HttpClientModule
+    ],
     exports: [ RouterModule ]
 })
 export class AppRoutingModule {}

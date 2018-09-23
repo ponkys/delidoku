@@ -1,20 +1,21 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { WindowRefService } from '../window-ref.service';
-import { PARTICLES_PARAMS } from './particles-params';
+import { PARTICLES_PARAMS } from './particles/particles-params';
 import { TRAILERS } from './trailers-const';
+import { PARTICLES_STYLES } from './particles/particles-styles';
 
 @Component({
     selector: 'app-home',
     templateUrl: './home.component.html',
     styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
     currentVideo: string;
     height = 100;
     isHomeComponent: false;
     mobileScreen = true;
     myParams: object = PARTICLES_PARAMS;
-    particlesStyle: object = {};
+    particlesStyle: object = PARTICLES_STYLES;
     showVideo: boolean;
     trialers = TRAILERS;
     width = 100;
@@ -25,18 +26,6 @@ export class HomeComponent implements OnInit {
         if (this.winRef.nativeWindow.innerWidth > 768) {
             this.mobileScreen = false;
         }
-    }
-
-    ngOnInit() {
-        this.particlesStyle = {
-            'position': 'absolute',
-            'width': '100vw',
-            'height': '100vh',
-            'top': 0,
-            'left': 0,
-            'right': 0,
-            'bottom': 0,
-        };
     }
 
     onClickVideo(video: string) {

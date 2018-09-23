@@ -22,13 +22,16 @@
               "src/manifest.webapp",
               "src/favicon-16x16.png",
               "src/favicon-32x32.png",
-              "src/mstile-70x70.png",
-              "src/mstile-144x144.png",
-              "src/mstile-150x150.png",
-              "src/mstile-310x150.png",
-              "src/mstile-310x310.png",
-              "src/android-chrome-192x192.png",
-              "src/android-chrome-512x512.png"
+              "src/apple-touch-icon.png",
+              "src/assets/favicons/mstile-70x70.png",
+              "src/assets/favicons/mstile-144x144.png",
+              "src/assets/favicons/mstile-150x150.png",
+              "src/assets/favicons/mstile-310x150.png",
+              "src/assets/favicons/mstile-310x310.png",
+              "src/assets/favicons/android-chrome-192x192.png",
+              "src/assets/favicons/android-chrome-512x512.png",
+              "src/browserconfig.xml",
+              "src/assets/favicons/safari-pinned-tab.svg"
             ],
             "styles": [
               "src/styles.css",
@@ -87,17 +90,17 @@
             ],
             "assets": [
               "src/assets",
-              "src/favicon.ico",
+              "src/assets/favicons/favicon.ico",
               "src/manifest.webapp",
-              "src/favicon-16x16.png",
-              "src/favicon-32x32.png",
-              "src/mstile-70x70.png",
-              "src/mstile-144x144.png",
-              "src/mstile-150x150.png",
-              "src/mstile-310x150.png",
-              "src/mstile-310x310.png",
-              "src/android-chrome-192x192.png",
-              "src/android-chrome-512x512.png"
+              "src/assets/favicons/favicon-16x16.png",
+              "src/assets/favicons/favicon-32x32.png",
+              "src/assets/favicons/mstile-70x70.png",
+              "src/assets/favicons/mstile-144x144.png",
+              "src/assets/favicons/mstile-150x150.png",
+              "src/assets/favicons/mstile-310x150.png",
+              "src/assets/favicons/mstile-310x310.png",
+              "src/assets/favicons/android-chrome-192x192.png",
+              "src/assets/favicons/android-chrome-512x512.png"
             ]
           }
         },

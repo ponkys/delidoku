@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <title>Déli-Doku</title>
     <base href="/">
-    <link rel="manifest" href="/manifest.webapp">
     <!-- favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -28,11 +27,19 @@
     <meta name="description" content="Déli-Doku! Latin American Documentary Film Showcase">
     <meta name="keywords" content="Déli-Doku,Deli-Doku,Film Festival,Budapest,Latin-America, Documentary Films">
     <meta name="author" content="Déli-Doku">
+    <link rel="manifest" href="manifest.json">
 </head>
+<script>
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/ngsw-worker.js').then(function (registration) {
+        }).catch(function (err) {
+        });
+    } 
+</script>
 
 <body>
-    <noscript>Please activate javascript in your browser to access the website</noscript>
     <app-root></app-root>
+  <noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>
 <!-- google analytics -->
 <script>
@@ -46,13 +53,6 @@
     ga('create', 'UA-75894720-3', 'auto');
     ga('send', 'pageview');
 
-</script>
-<script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
-        }).catch(function (err) {
-        });
-    }
 </script>
 
 </html>

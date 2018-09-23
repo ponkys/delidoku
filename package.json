@@ -9,9 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --aot --prod --build-optimizer && npm run precache && firebase deploy --only hosting:development",
-    "deploy-prod": "ng build --aot --prod --build-optimizer && npm run precache && firebase deploy --only hosting:production",
-    "precache": "sw-precache --root=dist/delidoku --verbose"
+    "deploy": "ng build --prod && firebase deploy --only hosting:development",
+    "deploy-prod": "ng build --prod && firebase deploy --only hosting:production"
   },
   "private": true,
   "dependencies": {
@@ -23,13 +22,15 @@
     "@angular/http": "6.1.8",
     "@angular/platform-browser": "6.1.8",
     "@angular/platform-browser-dynamic": "6.1.8",
+    "@angular/pwa": "0.6.0",
     "@angular/router": "6.1.8",
+    "@angular/service-worker": "6.0.1",
     "angular-particle": "^1.0.4",
     "core-js": "^2.5.1",
     "font-awesome": "^4.7.0",
     "normalize.css": "8.0.0",
     "rxjs": "6.3.2",
-    "zone.js": "^0.8.26"
+    "zone.js": "0.8.26"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.8.2",

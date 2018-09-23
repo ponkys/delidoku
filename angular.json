@@ -19,7 +19,6 @@
             "assets": [
               "src/assets",
               "src/favicon.ico",
-              "src/manifest.webapp",
               "src/favicon-16x16.png",
               "src/favicon-32x32.png",
               "src/apple-touch-icon.png",
@@ -31,7 +30,8 @@
               "src/assets/favicons/android-chrome-192x192.png",
               "src/assets/favicons/android-chrome-512x512.png",
               "src/browserconfig.xml",
-              "src/assets/favicons/safari-pinned-tab.svg"
+              "src/assets/favicons/safari-pinned-tab.svg",
+              "src/manifest.json"
             ],
             "styles": [
               "src/styles.css",
@@ -55,7 +55,8 @@
                   "replace": "src/environments/environment.ts",
                   "with": "src/environments/environment.prod.ts"
                 }
-              ]
+              ],
+              "serviceWorker": true
             }
           }
         },
@@ -91,7 +92,6 @@
             "assets": [
               "src/assets",
               "src/assets/favicons/favicon.ico",
-              "src/manifest.webapp",
               "src/assets/favicons/favicon-16x16.png",
               "src/assets/favicons/favicon-32x32.png",
               "src/assets/favicons/mstile-70x70.png",
@@ -100,7 +100,8 @@
               "src/assets/favicons/mstile-310x150.png",
               "src/assets/favicons/mstile-310x310.png",
               "src/assets/favicons/android-chrome-192x192.png",
-              "src/assets/favicons/android-chrome-512x512.png"
+              "src/assets/favicons/android-chrome-512x512.png",
+              "src/manifest.json"
             ]
           }
         },

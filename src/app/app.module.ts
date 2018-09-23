@@ -32,6 +32,8 @@ import { UpdateBannerComponent } from './update-banner/update-banner.component';
 
 // pipe
 import {CapitalizePipe} from './utils/capitalize.pipe';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -62,7 +64,8 @@ import {CapitalizePipe} from './utils/capitalize.pipe';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    ParticlesModule
+    ParticlesModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     VideoBackgroundService,

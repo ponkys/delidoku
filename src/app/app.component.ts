@@ -24,7 +24,12 @@ export class AppComponent implements OnInit {
         private logUpdateService: LogUpdateService
     ) {
         this.changePos = this.winRef.nativeWindow.innerHeight;
-        const initLogupdate = this.logUpdateService.init;
+        this.router.events.subscribe(event => {
+            if (event instanceof NavigationEnd) {
+              (<any>window).ga('set', 'page', event.urlAfterRedirects);
+              (<any>window).ga('send', 'pageview');
+            }
+          });
     }
 
     @HostListener('window:scroll', ['$event'])

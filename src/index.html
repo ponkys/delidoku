@@ -29,13 +29,6 @@
     <meta name="author" content="Déli-Doku">
     <link rel="manifest" href="manifest.json">
 </head>
-<script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('/ngsw-worker.js').then(function (registration) {
-        }).catch(function (err) {
-        });
-    } 
-</script>
 
 <body>
     <app-root></app-root>

@@ -31,7 +31,8 @@
               "src/assets/favicons/android-chrome-512x512.png",
               "src/browserconfig.xml",
               "src/assets/favicons/safari-pinned-tab.svg",
-              "src/manifest.json"
+              "src/manifest.json",
+              "src/ngsw-worker.js"
             ],
             "styles": [
               "src/styles.css",

@@ -7,7 +7,7 @@
 .contact-title-wrapper {
     width: 100%;
     height: 100vh;
-    color: white;
+    color: #EAECEE;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
@@ -26,7 +26,6 @@
 .parallel-area {
     width: 80%;
     padding: 20px 0;
-    color: white;
 }
 
 .title {
@@ -40,7 +39,6 @@
 
 .parallel-title-wrapper {
     width: 100%;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;

@@ -43,7 +43,7 @@
 .social-icon {
     cursor: pointer;
     font-size: 20px;
-    color: white;
+    color: #EAECEE;
     -webkit-transition: color 0.2s; /* Safari */
     transition: color 0.2s;
 }

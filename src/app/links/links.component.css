@@ -19,17 +19,17 @@
 }
 
 .links-a:hover {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #EAECEE;
 }
 
 .links-a {
-    color: white;
+    color: #EAECEE;
     cursor: pointer;
     
 }
 
 .links:after {
-    color: white;
+    color: #EAECEE;
 }
 
 .links:last-child {

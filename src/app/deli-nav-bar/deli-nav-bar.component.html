@@ -1,16 +1,15 @@
 <header class="header" [class.page-scroll-header]="isScrolled && bigScreen">
-    <div class="menu-symbol open" *ngIf="showNavBar === false" (click)="openNavBar()">
-        <i class="fa fa-bars" aria-hidden="true"></i>
-    </div>
-    <div class="logo-wrapper" (click)="onSelect('home')">
-        <div class="logo"></div>
+    <div class="menu-symbol open blue-color-bg" *ngIf="showNavBar === false" (click)="openNavBar()">
+        <i class="fa fa-bars yellow-color" aria-hidden="true"></i>
     </div>
     <app-links class="links"></app-links>
     <app-logo></app-logo>
 </header>
 <div *ngIf="showNavBar" class="nav-bar-wrapper">
     <nav class="nav-bar" [class.nav-bar-animation]="bigScreen">
-        <div class="menu-symbol close" (click)="closeNavBar()"><i class="fa fa-times" aria-hidden="true"></i></div>
+        <div class="menu-symbol close blue-color-bg" (click)="closeNavBar()">
+            <i class="fa fa-times yellow-color" aria-hidden="true"></i>
+        </div>
         <app-links
             [isMobile]="true"
             (linkClicked)="closeNavBar()">

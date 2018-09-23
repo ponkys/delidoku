@@ -29,6 +29,9 @@ import { ProgrammeComponent } from './programme/programme.component';
 import { MainComponent } from './main/main.component';
 import { FilmsListComponent } from './films-list/films-list.component';
 import { FilmsCategoriesComponent } from './films-categories/films-categories.component';
+import { ButtonComponent } from './button/button.component';
+import { TrailerFullScreenComponent } from './home/trailer-full-screen/trailer-full-screen.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -50,8 +53,11 @@ import { FilmsCategoriesComponent } from './films-categories/films-categories.co
     // pipe
     CapitalizePipe,
     FilmsCategoriesComponent,
+    ButtonComponent,
+    TrailerFullScreenComponent,
   ],
   imports: [
+    // CommonModule,
     BrowserModule,
     AppRoutingModule,
     NgxPageScrollModule,

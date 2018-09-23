@@ -93,7 +93,7 @@ export const FILMS_2018: Film[] = [
         duration: 71,
         year: 2016,
         author: 'Paulo Cesar Toledo - Abigail Spindel',
-        country: 'Brasil',
+        country: 'Brazil',
         date: [
             {
                 info: 'Oct 18th - Aurora (After party) - 21:00',

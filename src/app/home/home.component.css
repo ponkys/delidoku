@@ -111,6 +111,15 @@
     fill: #6fc9c6;
 }
 
+.buttons-area {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 16px 0;
+}
+
 @media only screen and (max-width: 768px) {
 
     .title-wrapper {

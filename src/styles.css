@@ -99,6 +99,10 @@ a {
     color: #dcdc1d;
 }
 
+.blue-color {
+    background-color: #70c9c5;
+}
+
 @media only screen and (min-width: 600px) {
     /* For tablets: */
     .col-m-1 {width: 8.33%;}

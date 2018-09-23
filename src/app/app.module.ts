@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ParticlesModule } from 'angular-particle';
 
@@ -18,9 +19,6 @@ import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
 import { FilmComponent } from './film/film.component';
 import { LogoComponent } from './logo/logo.component';
-
-// pipe
-import {CapitalizePipe} from './utils/capitalize.pipe';
 import { LinksComponent } from './links/links.component';
 import { LoadingComponent } from './loading/loading.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
@@ -30,7 +28,11 @@ import { FilmsListComponent } from './films-list/films-list.component';
 import { FilmsCategoriesComponent } from './films-categories/films-categories.component';
 import { ButtonComponent } from './button/button.component';
 import { TrailerFullScreenComponent } from './home/trailer-full-screen/trailer-full-screen.component';
-import { CommonModule } from '@angular/common';
+import { UpdateBannerComponent } from './update-banner/update-banner.component';
+
+// pipe
+import {CapitalizePipe} from './utils/capitalize.pipe';
+
 
 @NgModule({
   declarations: [
@@ -49,14 +51,16 @@ import { CommonModule } from '@angular/common';
     ProgrammeComponent,
     MainComponent,
     FilmsListComponent,
-    // pipe
-    CapitalizePipe,
     FilmsCategoriesComponent,
     ButtonComponent,
     TrailerFullScreenComponent,
+    UpdateBannerComponent,
+    // pipe
+    CapitalizePipe
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     ParticlesModule
   ],

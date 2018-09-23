@@ -1,0 +1,25 @@
+.banner {
+    cursor: pointer;
+    position: sticky;
+    width: 100vw;
+    height: 5vh;
+    background-color: #2E2E2E;
+    color: #f7f7f7;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.shadow {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+}
+.shadow:hover {
+    animation: example 100ms ease-in-out;
+    animation-iteration-count: 1;
+    box-shadow: 0 5px 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+@keyframes example {
+    from {box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);}
+    to {box-shadow: 0 5px 2px 0 rgba(0, 0, 0, 0.25);}
+}

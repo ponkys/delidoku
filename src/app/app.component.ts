@@ -3,6 +3,7 @@ import { Location } from '@angular/common';
 import { Router, NavigationEnd } from '@angular/router';
 
 import { WindowRefService } from './window-ref.service';
+import { LogUpdateService } from './update-banner/services/log-update.service';
 
 @Component({
     selector: 'app-root',
@@ -19,9 +20,11 @@ export class AppComponent implements OnInit {
     constructor(
         private winRef: WindowRefService,
         private location: Location,
-        private router: Router
+        private router: Router,
+        private logUpdateService: LogUpdateService
     ) {
         this.changePos = this.winRef.nativeWindow.innerHeight;
+        const initLogupdate = this.logUpdateService.init;
     }
 
     @HostListener('window:scroll', ['$event'])

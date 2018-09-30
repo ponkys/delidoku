@@ -4,6 +4,7 @@ import { Router, NavigationEnd } from '@angular/router';
 
 import { WindowRefService } from './window-ref.service';
 import { LogUpdateService } from './update-banner/services/log-update.service';
+import { GoogleTagService } from './google-tag.service';
 
 @Component({
     selector: 'app-root',
@@ -21,14 +22,16 @@ export class AppComponent implements OnInit {
         private winRef: WindowRefService,
         private location: Location,
         private router: Router,
-        private logUpdateService: LogUpdateService
+        private logUpdateService: LogUpdateService,
+        private gTag: GoogleTagService
     ) {
         this.changePos = this.winRef.nativeWindow.innerHeight;
+        this.gTag.initScript();
         this.router.events.subscribe(event => {
-            if (event instanceof NavigationEnd) {
-              (<any>window).ga('set', 'page', event.urlAfterRedirects);
-              (<any>window).ga('send', 'pageview');
-            }
+            // if (event instanceof NavigationEnd) {
+            //     (<any>window).ga('set', 'page', event.urlAfterRedirects);
+            //     (<any>window).ga('send', 'pageview');
+            // }
           });
     }
 

@@ -19,7 +19,7 @@ export const Team: any[] = [
     },
     {
         name: '<h4>D&aacute;niel Bozzai</h4>',
-        role: 'Graphic design',
+        role: 'Graphic designer',
         // tslint:disable-next-line:max-line-length
         img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Foptimized%2Fdaniel.png?alt=media&token=4f3a0370-b47a-42dc-9f65-7c37c0d4e10a'
     },
@@ -37,7 +37,7 @@ export const Team: any[] = [
     },
     {
         name: '<h4>Diego Mosquera</h4>',
-        role: 'Web development',
+        role: 'Web developer',
         // tslint:disable-next-line:max-line-length
         img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Foptimized%2Fdiego.png?alt=media&token=b6ba262f-05c8-46c4-add2-b2048bfdec0a'
     },

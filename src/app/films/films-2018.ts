@@ -37,7 +37,7 @@ export const FILMS_2018: Film[] = [
                 event: null
             },
             {
-                info: 'Oct 21th - Bem Mozi (Closing night + Tango night) - 21:00',
+                info: 'Oct 21st - Bem Mozi (Closing night + Tango night) - 21:00',
                 event: null
             },
         ],
@@ -172,7 +172,7 @@ export const FILMS_2018: Film[] = [
         country: 'Ecuador',
         date: [
             {
-                info: 'Oct 21th - Bem Mozi - 17:00',
+                info: 'Oct 21st - Bem Mozi - 17:00',
                 event: null
             },
         ],
@@ -207,7 +207,7 @@ export const FILMS_2018: Film[] = [
         country: 'Brazil',
         date: [
             {
-                info: 'Oct 21th - Bem Mozi - 19:00',
+                info: 'Oct 21st - Bem Mozi - 19:00',
                 event: null
             },
         ],

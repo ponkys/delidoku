@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { ParticlesModule } from 'angular-particle';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
 // routing
 import { AppRoutingModule } from './app-routing.module';
@@ -30,7 +32,12 @@ import { FilmsListComponent } from './films-list/films-list.component';
 import { FilmsCategoriesComponent } from './films-categories/films-categories.component';
 import { ButtonComponent } from './button/button.component';
 import { TrailerFullScreenComponent } from './home/trailer-full-screen/trailer-full-screen.component';
-import { CommonModule } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
+
+
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
+}
 
 @NgModule({
   declarations: [
@@ -57,6 +64,13 @@ import { CommonModule } from '@angular/common';
   ],
   imports: [
     BrowserModule,
+    TranslateModule.forRoot({
+      loader: {
+          provide: TranslateLoader,
+          useFactory: (createTranslateLoader),
+          deps: [HttpClient]
+      }
+  }),
     AppRoutingModule,
     ParticlesModule
   ],

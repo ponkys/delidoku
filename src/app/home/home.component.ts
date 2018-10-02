@@ -3,6 +3,7 @@ import { WindowRefService } from '../window-ref.service';
 import { PARTICLES_PARAMS } from './particles/particles-params';
 import { TRAILERS } from './trailers-const';
 import { PARTICLES_STYLES } from './particles/particles-styles';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-home',

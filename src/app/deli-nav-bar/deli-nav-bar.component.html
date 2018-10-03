@@ -3,6 +3,9 @@
         <i class="fa fa-bars yellow-color" aria-hidden="true"></i>
     </div>
     <app-links class="links"></app-links>
+    <div class="lang-selector">
+        <p (click)="onLangChange(languages.EN)">en</p><p (click)="onLangChange(languages.HU)">hu</p>
+    </div>
     <app-logo></app-logo>
 </header>
 <div *ngIf="showNavBar" class="nav-bar-wrapper">

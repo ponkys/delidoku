@@ -2,9 +2,9 @@ import { Component, HostListener, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
 import { Router, NavigationEnd } from '@angular/router';
 
-import {TranslateService} from '@ngx-translate/core';
 
 import { WindowRefService } from './window-ref.service';
+import { TranslationService } from './translation.service';
 
 @Component({
     selector: 'app-root',
@@ -19,13 +19,12 @@ export class AppComponent implements OnInit {
     removeOnWindowEvent = false
 
     constructor(
-        private translate: TranslateService,
         private winRef: WindowRefService,
         private location: Location,
-        private router: Router
+        private router: Router,
+        private translationService: TranslationService
     ) {
-        this.translate.setDefaultLang('en');
-        this.translate.use('en');
+        this.translationService.init();
         this.changePos = this.winRef.nativeWindow.innerHeight;
     }
 

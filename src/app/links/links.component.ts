@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location, ViewportScroller } from '@angular/common';
-import { Links, LinksArchive } from '../links';
+import { Routes, RoutesArchive } from '../links';
 
 @Component({
   selector: 'app-links',
@@ -11,8 +11,8 @@ import { Links, LinksArchive } from '../links';
 export class LinksComponent {
   @Input() isMobile = false;
   @Output() linkClicked: EventEmitter<any> = new EventEmitter();
-  links: string[] = Links;
-  linksArchive: string[] = LinksArchive;
+  links: string[] = Routes;
+  linksArchive: string[] = RoutesArchive;
   isArchive: boolean;
 
   constructor(

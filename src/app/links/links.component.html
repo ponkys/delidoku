@@ -7,12 +7,12 @@
         <li *ngFor="let link of links" [ngClass]="isMobile ? 'nav-bar__link' : 'links'">
             <ng-container *ngIf="link !== 'archive'; else archiveLink">
                 <a [ngClass]="isMobile ? 'links-a' : 'nav-bar__link-a'" (click)="onSelect(link)" routerLinkActive="active">
-                    {{link | capitalize}}
+                    {{link | translate | capitalize}}
                 </a>
             </ng-container>
             <ng-template #archiveLink>
                 <a [ngClass]="isMobile ? 'links-a' : 'nav-bar__link-a'" (click)="onSelect(link)" routerLinkActive="active">
-                    {{link | capitalize}}
+                    {{link | translate | capitalize}}
                 </a>
             </ng-template>
         </li>
@@ -20,7 +20,7 @@
     <ng-template #archive>
         <li *ngFor="let link of linksArchive" [ngClass]="isMobile ? 'nav-bar__link' : 'links'">
             <a [ngClass]="isMobile ? 'links-a' : 'nav-bar__link-a'" (click)="onSelect(link)" routerLinkActive="active">
-                {{link | capitalize}}
+                {{link | translate | capitalize}}
             </a>
         </li>
     </ng-template>

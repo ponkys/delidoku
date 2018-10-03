@@ -2,6 +2,11 @@ ul {
     padding: 0;
 }
 
+.lang-selector {
+    position: absolute;
+    left: 2.5rem;
+    top: 5rem;
+}
 .open {
     position: fixed;
 }

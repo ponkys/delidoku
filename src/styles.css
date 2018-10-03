@@ -22,7 +22,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: #EAECEE;
-    -webkit-user-select: none;
+    /* -webkit-user-select: none; */
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
 }

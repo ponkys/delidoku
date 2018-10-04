@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 import { WindowRefService } from '../window-ref.service';
 import { ActivatedRoute } from '@angular/router';
-import { Film } from '../films/film';
+import { Film2018, Film } from '../films/film';
 
 @Component({
     selector: 'app-film',
@@ -12,7 +12,7 @@ import { Film } from '../films/film';
 export class FilmComponent {
 
     mobileScreen = true;
-    films: Array<Film>;
+    films: Array<Film2018 | Film>;
     year: string;
     title: string;
 

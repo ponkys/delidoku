@@ -5,7 +5,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { MainComponent } from 'app/main/main.component';
 import { FilmComponent } from './film/film.component';
 import { FILMS_2017 } from './films/films-2017';
-import { FILMS_2018 } from './films/films-2018';
 
 const routes: Routes = [
     {
@@ -13,8 +12,9 @@ const routes: Routes = [
         component: MainComponent,
         data : {
             year : '',
-            title: 'Films',
-            films: FILMS_2018
+            title: 'FILMS.TITLE',
+            // Logic moved to categories component due to translations
+            films: []
         }
     },
     {
@@ -22,7 +22,7 @@ const routes: Routes = [
         component: FilmComponent,
         data : {
             year : '2017',
-            title: 'Archive',
+            title: 'ARCHIVE.TITLE',
             films: FILMS_2017
         }
     },
@@ -45,4 +45,5 @@ const routes: Routes = [
     ],
     exports: [ RouterModule ]
 })
-export class AppRoutingModule {}
+export class AppRoutingModule {
+}

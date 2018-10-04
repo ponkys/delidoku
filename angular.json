@@ -31,7 +31,9 @@
               "src/assets/favicons/android-chrome-192x192.png",
               "src/assets/favicons/android-chrome-512x512.png",
               "src/browserconfig.xml",
-              "src/assets/favicons/safari-pinned-tab.svg"
+              "src/assets/favicons/safari-pinned-tab.svg",
+              "src/assets/i18n/en.json",
+              "src/assets/i18n/hu.json"
             ],
             "styles": [
               "src/styles.css",

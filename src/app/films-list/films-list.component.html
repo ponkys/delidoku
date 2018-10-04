@@ -1,10 +1,10 @@
 <ng-container *ngFor="let film of films; let i = index">
     <div class="film-main-info" (click)="openFilmInfo(film.title)" [ngClass]="selectedFilm !== film.title? 'border-bottom' : ''">
         <div>
-            <h3>{{film.title}} <ng-container *ngIf="film.duration">({{film.duration}}min)</ng-container></h3>
-            <p *ngIf="film.author">by {{film.author}} - {{film.country}} <ng-container *ngIf="film.year">({{film.year}})</ng-container> - Hungarian and English subtitles</p>
+            <h3>{{film.title}} <ng-container *ngIf="film.duration">({{film.duration}} {{ 'FILMS.MINS' | translate }})</ng-container></h3>
+            <p *ngIf="film.author">{{film.author}} - {{film.country}} <ng-container *ngIf="film.year">({{film.year}})</ng-container><ng-container *ngIf="film.subtitleNote"> - {{ film.subtitleNote | translate }}</ng-container></p>
             <div class="film-info-events">
-                <p *ngIf="film.date.length">Screening<ng-container *ngIf="film.date.length > 1">s</ng-container>:</p>
+                <p *ngIf="film.date.length">{{ 'FILMS.SCREENING' | translate }}:</p>
                 <ng-container *ngFor="let d of film.date">
                     <a href="{{d.event}}" target="_blank"> {{d.info}}</a>
                 </ng-container>
@@ -18,7 +18,7 @@
             <iframe width="100%" frameBorder="0" height="400px" [src]=film.trailerSafe allowfullscreen></iframe>
         </div>
         <ng-template #noTrailer>
-            <h4 class="center mb-16">Trailer not available</h4>
+            <h4 class="center mb-16">{{ 'FILMS.NO_TRAILER' | translate }}</h4>
         </ng-template>
         <div *ngIf="film.synopsis" class="film-description">
             <p>{{film.synopsis}}</p>

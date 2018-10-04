@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Film } from '../films/film';
+import { Component, Input, OnChanges } from '@angular/core';
+import { Film2018, Film } from '../films/film';
 import { VideoBackgroundService } from '../video-background.service';
 
 @Component({
@@ -7,13 +7,13 @@ import { VideoBackgroundService } from '../video-background.service';
     templateUrl: './films-list.component.html',
     styleUrls: ['./films-list.component.css']
 })
-export class FilmsListComponent implements OnInit {
-    @Input() films: Film[] = [];
+export class FilmsListComponent implements OnChanges {
+    @Input() films: Array<Film2018 | Film> = [];
     selectedFilm: string;
 
     constructor(private videoBackgroundService: VideoBackgroundService) { }
 
-    ngOnInit() {
+    ngOnChanges() {
         this.films.map( film => {
             if (!film.trailer) { return film.trailer };
             film.trailerSafe = this.videoBackgroundService.sanitise(film.trailer);

@@ -22,7 +22,7 @@ body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
     color: #EAECEE;
-    -webkit-user-select: none;
+    /* -webkit-user-select: none; */
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
 }
@@ -79,6 +79,10 @@ a {
     margin-bottom: 24px;
 }
 
+.display-flex {
+    display: flex;
+}
+
 .flex-column {
     flex-direction: column;
 }
@@ -100,6 +104,10 @@ a {
 
 .yellow-color {
     color: #dcdc1d;
+}
+
+.blue-color {
+    color: #6fc9c6;
 }
 
 .blue-color-bg {

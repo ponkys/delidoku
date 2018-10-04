@@ -1,7 +1,7 @@
-import { Component, Input, OnChanges } from '@angular/core';
-import { Router } from '@angular/router';
-import { Links } from '../links';
+import { Component, Input, OnInit } from '@angular/core';
 import { WindowRefService } from '../window-ref.service';
+import { environment } from 'environments/environment.prod';
+import { TranslationService } from '../translation.service';
 
 @Component({
     selector: 'app-deli-nav-bar',
@@ -10,27 +10,26 @@ import { WindowRefService } from '../window-ref.service';
     animations: [
     ]
 })
-export class DeliNavBarComponent {
+export class DeliNavBarComponent implements OnInit {
 
     @Input() isScrolled: Boolean;
 
-    links: string[] = Links;
     showNavBar: Boolean = false;
     bigScreen: Boolean = false;
+    languages = environment.LANGUAGES;
+    isHu = true;
 
     constructor(
-        private router: Router,
-        private winRef: WindowRefService) {
+        private winRef: WindowRefService,
+        private translationService: TranslationService
+    ) {
         if (this.winRef.nativeWindow.outerWidth > 768) {
             this.bigScreen = true;
         }
     }
 
-    onSelect(link: string) {
-        this.router.navigate([`/${link}`]);
-        if (this.bigScreen === false) {
-            this.closeNavBar()
-        }
+    ngOnInit() {
+        this.isHu = this.translationService.currentLocale === this.languages.HU ? true : false;
     }
 
     openNavBar() {
@@ -43,6 +42,11 @@ export class DeliNavBarComponent {
 
     facebookNavigate() {
         window.open('https://www.facebook.com/delidokubp/', '_blank');
+    }
+
+    onLangChange(lang: string) {
+        this.isHu = lang === this.languages.HU ? true : false;
+        this.translationService.changeLang(lang);
     }
 
 }

@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
 import { Location, ViewportScroller } from '@angular/common';
-import { Links, LinksArchive } from '../links';
+import { Routes, RoutesArchive } from '../links';
 
 @Component({
   selector: 'app-links',
@@ -11,8 +11,8 @@ import { Links, LinksArchive } from '../links';
 export class LinksComponent {
   @Input() isMobile = false;
   @Output() linkClicked: EventEmitter<any> = new EventEmitter();
-  links: string[] = Links;
-  linksArchive: string[] = LinksArchive;
+  links: string[] = Routes;
+  linksArchive: string[] = RoutesArchive;
   isArchive: boolean;
 
   constructor(
@@ -25,14 +25,14 @@ export class LinksComponent {
 
   onSelect(link: string) {
     if (link === 'archive') {
-      this.router.navigate(['archive']);
+      this.router.navigate([link]);
       this.isArchive = true;
     } else {
       if (this.isArchive) {
         this.router.navigate(['']);
       }
       this.viewportScroller.scrollToAnchor(link);
-      this.isArchive = false
+      this.isArchive = false;
     }
     if (this.isMobile) {
       this.linkClicked.emit(null);
@@ -42,5 +42,4 @@ export class LinksComponent {
   private initHeader() {
     this.isArchive = this.location.path() === '/archive';
   }
-
 }

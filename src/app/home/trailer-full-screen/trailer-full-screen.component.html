@@ -1,7 +1,4 @@
-<div class="fullscreen">
-    <div (click)="closeFullScreen.emit(null)" class="close">
-        X
-    </div>
+<div class="fullscreen" (click)="closeFullScreen.emit(null)">
     <video  controls autoplay>
         <source src={{videoUrl}}/>
         <!-- other video -->

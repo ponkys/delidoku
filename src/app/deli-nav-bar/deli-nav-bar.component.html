@@ -1,15 +1,16 @@
 <header class="header" [class.page-scroll-header]="isScrolled && bigScreen">
-    <div class="menu-symbol open blue-color-bg" *ngIf="showNavBar === false" (click)="openNavBar()">
+    <div class="menu-symbol display-none-large open blue-color-bg menu-position-left" *ngIf="showNavBar === false" (click)="openNavBar()">
         <i class="fa fa-bars yellow-color" aria-hidden="true"></i>
     </div>
     <app-links class="links"></app-links>
-    <div class="lang-selector">
-        <p (click)="onLangChange(languages.EN)">en</p><p (click)="onLangChange(languages.HU)">hu</p>
+    <div class="menu-symbol lang-position-right">
+        <p *ngIf="isHu" (click)="onLangChange(languages.EN)" [class.yellow-color]="isHu">en</p>
+        <p *ngIf="!isHu" (click)="onLangChange(languages.HU)" [class.yellow-color]="!isHu">hu</p>
     </div>
     <app-logo></app-logo>
 </header>
 <div *ngIf="showNavBar" class="nav-bar-wrapper">
-    <nav class="nav-bar" [class.nav-bar-animation]="bigScreen">
+    <nav class="nav-bar" [class.nav-bar-animation]="!bigScreen">
         <div class="menu-symbol close blue-color-bg" (click)="closeNavBar()">
             <i class="fa fa-times yellow-color" aria-hidden="true"></i>
         </div>

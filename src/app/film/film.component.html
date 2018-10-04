@@ -2,7 +2,7 @@
     
     <div class="wrapper-parallel">
         <div class="title main-title-line-height">
-            <h1 class="animation-title">{{ title }}</h1><div class="film-icon"></div>
+            <h1 class="animation-title">{{ title | translate }}</h1><div class="film-icon"></div>
         </div>
         <div class="title-bar"></div>
         <section class="parallel-area">
@@ -11,14 +11,5 @@
             </h2>
             <app-films-list [films]="films"></app-films-list>
         </section>
-        <!-- <div>
-            <h2 class="title animation-title">Parallel showcase:</h2>
-        </div> -->
-        <!-- <section class="parallel-area">
-            <p>For the first edition of Déli-Doku there was a section of short documentary films from the renowned
-                EICTV film school in Cuba, curated by Adam Breier, Hungarian film director and former student of
-                the school.
-            </p>
-        </section> -->
     </div>
 </div>

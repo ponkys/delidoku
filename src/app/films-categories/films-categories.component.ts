@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Film } from '../films/film';
+import { Film2018 } from '../films/film';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { environment } from 'environments/environment';
 import { FILMS_2018, FILMS_2018_HU } from '../films/films-2018';
@@ -11,7 +11,7 @@ import { TranslationService } from '../translation.service';
   templateUrl: './films-categories.component.html',
   styleUrls: ['../film/film.component.css']
 })
-export class FilmsCategoriesComponent implements OnInit, OnDestroy {
+export class FilmsCategoriesComponent implements OnInit {
     year: string;
     title: string;
     categories = [
@@ -34,16 +34,17 @@ export class FilmsCategoriesComponent implements OnInit, OnDestroy {
         private tr: TranslateService,
         private translationService: TranslationService
     ) {
+        this.onLanguageChange();
     }
 
     ngOnInit() {
         this.aRoute.data.subscribe(data => {
             this.title = data['title'];
-            this.renderFilmsTranslations();
+            this.mapFilms(this.determineFilms());
         })
     }
 
-    private mapFilms(films: Film[]) {
+    private mapFilms(films: Film2018[]) {
         this.categories = this.categories.map((sectionObj, i) => {
             sectionObj.films = [];
             films.map(filmObj => {
@@ -55,10 +56,6 @@ export class FilmsCategoriesComponent implements OnInit, OnDestroy {
         });
     }
 
-    ngOnDestroy() {
-        this.tr.onLangChange.unsubscribe();
-    }
-
     determineFilms() {
         if (this.translationService.currentLocale === environment.LANGUAGES.EN) {
             return FILMS_2018;
@@ -66,7 +63,7 @@ export class FilmsCategoriesComponent implements OnInit, OnDestroy {
         return FILMS_2018_HU;
     }
 
-    private renderFilmsTranslations() {
+    private onLanguageChange() {
         this.tr.onLangChange.subscribe((event: LangChangeEvent) => {
             if (event.lang === environment.LANGUAGES.EN) {
                 this.mapFilms(FILMS_2018);

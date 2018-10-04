@@ -1,12 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 import { ParticlesModule } from 'angular-particle';
-import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
-import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+import { TranslateModule, TranslateLoader, TranslateService } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
-// routing
-import { AppRoutingModule } from './app-routing.module';
 
 
 import { AppComponent } from './app.component';
@@ -22,7 +21,7 @@ import { FilmComponent } from './film/film.component';
 import { LogoComponent } from './logo/logo.component';
 
 // pipe
-import {CapitalizePipe} from './utils/capitalize.pipe';
+import { CapitalizePipe } from './utils/capitalize.pipe';
 import { LinksComponent } from './links/links.component';
 import { LoadingComponent } from './loading/loading.component';
 import { SponsorsComponent } from './sponsors/sponsors.component';
@@ -32,7 +31,8 @@ import { FilmsListComponent } from './films-list/films-list.component';
 import { FilmsCategoriesComponent } from './films-categories/films-categories.component';
 import { ButtonComponent } from './button/button.component';
 import { TrailerFullScreenComponent } from './home/trailer-full-screen/trailer-full-screen.component';
-import { HttpClient } from '@angular/common/http';
+import { AppRoutingModule } from './app-routing.module';
+
 
 
 export function createTranslateLoader(http: HttpClient) {
@@ -70,7 +70,7 @@ export function createTranslateLoader(http: HttpClient) {
           useFactory: (createTranslateLoader),
           deps: [HttpClient]
       }
-  }),
+    }),
     AppRoutingModule,
     ParticlesModule
   ],

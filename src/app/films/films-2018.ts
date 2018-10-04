@@ -1,6 +1,6 @@
-import { Film } from './film';
+import { Film2018 } from './film';
 
-export const FILMS_2018: Film[] = [
+export const FILMS_2018: Film2018[] = [
     {
         title: 'Amazona',
         // tslint:disable-next-line:max-line-length
@@ -20,7 +20,8 @@ export const FILMS_2018: Film[] = [
                 event: 'https://www.facebook.com/events/280806729199349/'
             },
         ],
-        section: 'FILMS.OFFICIAL_SELECTION'
+        section: 'FILMS.OFFICIAL_SELECTION',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE'
     },
     {
         title: 'The cinephiles',
@@ -41,7 +42,8 @@ export const FILMS_2018: Film[] = [
                 event: 'https://www.facebook.com/events/485034195308462/'
             },
         ],
-        section: 'FILMS.OFFICIAL_SELECTION'
+        section: 'FILMS.OFFICIAL_SELECTION',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE'
     },
     {
         title: 'Heiress of the Wind',
@@ -62,7 +64,8 @@ export const FILMS_2018: Film[] = [
                 event: 'https://www.facebook.com/events/620645598330488/'
             },
         ],
-        section: 'FILMS.OFFICIAL_SELECTION'
+        section: 'FILMS.OFFICIAL_SELECTION',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE'
     },
     {
         title: 'Solitary Land',
@@ -83,7 +86,8 @@ export const FILMS_2018: Film[] = [
                 event: 'https://www.facebook.com/events/2129307073953198/'
             },
         ],
-        section: 'FILMS.OFFICIAL_SELECTION'
+        section: 'FILMS.OFFICIAL_SELECTION',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE'
     },
     {
         title: 'Waiting for B',
@@ -104,7 +108,8 @@ export const FILMS_2018: Film[] = [
                 event: 'https://www.facebook.com/events/2067981343246850/'
             },
         ],
-        section: 'FILMS.OFFICIAL_SELECTION'
+        section: 'FILMS.OFFICIAL_SELECTION',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE'
     },
     {
         title: 'Alamar',
@@ -125,7 +130,8 @@ export const FILMS_2018: Film[] = [
                 event: 'https://www.facebook.com/events/891984797665888/'
             },
         ],
-        section: 'FILMS.OFFICIAL_SELECTION'
+        section: 'FILMS.OFFICIAL_SELECTION',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE'
     },
     {
         title: 'The Death of Jaime Roldós',
@@ -142,7 +148,8 @@ export const FILMS_2018: Film[] = [
                 event: 'https://www.facebook.com/events/2083218681722346/'
             },
         ],
-        section: 'FILMS.ECUADOR'
+        section: 'FILMS.ECUADOR',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE'
     },
     {
         title: `Cesar's grill`,
@@ -159,7 +166,8 @@ export const FILMS_2018: Film[] = [
                 event: 'https://www.facebook.com/events/2010754585882266/'
             },
         ],
-        section: 'FILMS.ECUADOR'
+        section: 'FILMS.ECUADOR',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE'
     },
     {
         title: 'Descartes',
@@ -176,13 +184,13 @@ export const FILMS_2018: Film[] = [
                 event: 'https://www.facebook.com/events/920846938099456/'
             },
         ],
-        section: 'FILMS.ECUADOR'
+        section: 'FILMS.ECUADOR',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE'
     },
     {
         title: 'Master Building',
         // tslint:disable-next-line:max-line-length
         synopsis: 'For one week, Eduardo Coutinho and his team talked to 27 residents in an enormous building in Copacabana. Amongst these are a middle-aged couple who met through the classified ads in a newspaper, a call-girl who keeps her daughter and her sister, a retired actor, an ex-football player, and a janitor who suspects that his adopted father, whom he dreams about every night, is his real father. The subject of this documentary is private life in the big city, apartments as a last stronghold of individuality, in addition to emphasizing the fact that to live together in one and the same place does not ensure that a community will be formed.',
-        section: 'FILMS.RETROSPECTIVE',
         trailer: 'https://www.youtube.com/embed/OcgQfatgwmE',
         duration: 110,
         year: 2002,
@@ -194,12 +202,13 @@ export const FILMS_2018: Film[] = [
                 event: 'https://www.facebook.com/events/485461548588475/'
             },
         ],
+        section: 'FILMS.RETROSPECTIVE',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE'
     },
     {
         title: 'Last conversations',
         // tslint:disable-next-line:max-line-length
         synopsis: 'Just before his death in February 2014, famous Brazilian filmmaker Eduardo Coutinho recorded a series of casual conversations with teens who enter an almost empty space one by one. He hopes to find out how they think, dream and live. His simple, empathetic questions about parents and school soon elicit very candid stories. There are girls growing up without a father or mother, because their dad has disappeared and their mom is always at work. There’s a boy who is bullied and has now fallen victim to a deep sense of boredom, and a teenage girl who feels threatened by her stepfather. But there are also plenty of light-hearted moments: a tough, teenage girl who sings Roxette’s “Listen To Your Heart,” another who writes poetry and a seven-year-old who fantasizes about what the world was like before she was born. “Adolescence is just miserable, that’s why I should have filmed kids,” concludes Coutinho, who did what he did best, listen, to the very end. Last Conversations was completed after Coutinho’s death by João Moreira Salles.',
-        section: 'FILMS.RETROSPECTIVE',
         trailer: 'https://player.vimeo.com/video/154723137',
         duration: 87,
         year: 2015,
@@ -211,10 +220,12 @@ export const FILMS_2018: Film[] = [
                 event: 'https://www.facebook.com/events/554507678336616/'
             },
         ],
+        section: 'FILMS.RETROSPECTIVE',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE'
     },
 ];
 
-export const FILMS_2018_HU: Film[] = [
+export const FILMS_2018_HU: Film2018[] = [
     {
         title: 'Amazona',
         // tslint:disable-next-line:max-line-length
@@ -234,7 +245,8 @@ export const FILMS_2018_HU: Film[] = [
                 event: 'https://www.facebook.com/events/280806729199349/'
             },
         ],
-        section: 'FILMS.OFFICIAL_SELECTION'
+        section: 'FILMS.OFFICIAL_SELECTION',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE',
     },
     {
         title: 'Filmrajongók',
@@ -247,7 +259,7 @@ export const FILMS_2018_HU: Film[] = [
         country: 'Argentína',
         date: [
             {
-                info: 'Okt 16 - Bem Mozi (Opening Film) - 18:00',
+                info: 'Okt 16 - Bem Mozi (Nyitófilm) - 18:00',
                 event: 'https://www.facebook.com/events/2145274009131981/'
             },
             {
@@ -255,7 +267,8 @@ export const FILMS_2018_HU: Film[] = [
                 event: 'https://www.facebook.com/events/485034195308462/'
             },
         ],
-        section: 'FILMS.OFFICIAL_SELECTION'
+        section: 'FILMS.OFFICIAL_SELECTION',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE',
     },
     {
         title: 'A szél örököse',
@@ -276,7 +289,8 @@ export const FILMS_2018_HU: Film[] = [
                 event: 'https://www.facebook.com/events/620645598330488/'
             },
         ],
-        section: 'FILMS.OFFICIAL_SELECTION'
+        section: 'FILMS.OFFICIAL_SELECTION',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE',
     },
     {
         title: 'A magány földje',
@@ -297,7 +311,8 @@ export const FILMS_2018_HU: Film[] = [
                 event: 'https://www.facebook.com/events/2129307073953198/'
             },
         ],
-        section: 'FILMS.OFFICIAL_SELECTION'
+        section: 'FILMS.OFFICIAL_SELECTION',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE',
     },
     {
         title: 'B-RE VÁRVA',
@@ -314,11 +329,12 @@ export const FILMS_2018_HU: Film[] = [
                 event: 'https://www.facebook.com/events/246366509384126/'
             },
             {
-                info: 'Okt 19 - Bem Mozi (Talk) - 18:00',
+                info: 'Okt 19 - Bem Mozi (Beszélgetés) - 18:00',
                 event: 'https://www.facebook.com/events/2067981343246850/'
             },
         ],
-        section: 'FILMS.OFFICIAL_SELECTION'
+        section: 'FILMS.OFFICIAL_SELECTION',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE_PT',
     },
     {
         title: 'Alamar',
@@ -339,10 +355,11 @@ export const FILMS_2018_HU: Film[] = [
                 event: 'https://www.facebook.com/events/891984797665888/'
             },
         ],
-        section: 'FILMS.OFFICIAL_SELECTION'
+        section: 'FILMS.OFFICIAL_SELECTION',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE',
     },
     {
-        title: 'Jaime roldós halála',
+        title: 'Jaime Roldós halála',
         // tslint:disable-next-line:max-line-length
         synopsis: 'Jaime Roldós rövid kormányzása egy 1981-es titokzatos légikatasztrofával ért véget. Latin-Amerika demokratikus átalakulásának ez a tragikus eseménye az, amely elindítja a film készítőit egy olyan történetet elmesélése felé, mely egyszerre használja az oknyomozó újságírás, a film esszé, és a személyes dráma eszközeit is. Ez a film arra vállalkozik, hogy a hallgatás terhével sújtott országban rávilágítson olyan tényekre, amelyek új megvilágításba helyezik Ecuador történetét. Ebben a shakespeare-i drámában három árva harcát láthatjuk a politikai hatalomért, a kérlelhetetlen igazság nehéz terhe alatt.',
         trailer: 'https://www.youtube.com/embed/WFib0QDtY_E',
@@ -356,7 +373,8 @@ export const FILMS_2018_HU: Film[] = [
                 event: 'https://www.facebook.com/events/2083218681722346/'
             },
         ],
-        section: 'FILMS.ECUADOR'
+        section: 'FILMS.ECUADOR',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE',
     },
     {
         title: `César étterme`,
@@ -373,7 +391,8 @@ export const FILMS_2018_HU: Film[] = [
                 event: 'https://www.facebook.com/events/2010754585882266/'
             },
         ],
-        section: 'FILMS.ECUADOR'
+        section: 'FILMS.ECUADOR',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE',
     },
     {
         title: 'Kiselejtezett képkockák',
@@ -390,13 +409,13 @@ export const FILMS_2018_HU: Film[] = [
                 event: 'https://www.facebook.com/events/920846938099456/'
             },
         ],
-        section: 'FILMS.ECUADOR'
+        section: 'FILMS.ECUADOR',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE'
     },
     {
         title: 'A master-lakóház',
         // tslint:disable-next-line:max-line-length
         synopsis: 'Eduardo Coutinho és stábja egy hét alatt 27 lakóval beszélgetett a híres Copacabana egyik hatalmas lakóházában. Többek között egy középkorú házaspárral, akik egy apróhirdetés útján találkoztak, egy prostituálttal, aki egyedül tartja el lányát és húgát, egy nyugdíjas színésszel, egy volt focistával, és egy gondnokkal, aki arra gyanakszik, hogy mostohaapja valójában az igazi apja. A film témája a magánélet a nagyvárosban, a lakások mint az individualitás végső erődjei, hangsúlyozva, hogy csak azért, mert sokan laknak egymáshoz közel, még cseppet sem biztos, hogy közösséggé formálódnak.',
-        section: 'FILMS.RETROSPECTIVE',
         trailer: 'https://www.youtube.com/embed/OcgQfatgwmE',
         duration: 110,
         year: 2002,
@@ -408,12 +427,13 @@ export const FILMS_2018_HU: Film[] = [
                 event: 'https://www.facebook.com/events/485461548588475/'
             },
         ],
+        section: 'FILMS.RETROSPECTIVE',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE_PT',
     },
     {
         title: 'Utolsó beszélgetések',
         // tslint:disable-next-line:max-line-length
         synopsis: 'Közvetlenül 2014 februárjában bekövetkezett halála előtt a híres brazil filmrendező, Eduard Coutinho felvett egy sor kötetlen beszélgetést tinédzserekkel, akik egyenként belépnek egy majdhogynem üres térbe. Megpróbálja kideríteni, hogyan gondolkoznak, miről álmodnak és milyen az életük. Egyszerű, empatikus kérdései nyomán szülőkről, iskoláról igazán őszinte történeteket ismerünk meg. Lányok, akik apa vagy anya nélkül nőttek fel, apjuk eltűnt, anyjuk megállás nélkül dolgozik. Egy fiú, akit folyamatosan szekálnak, és ezért mélységes unalomba zuhan, és egy tizenéves lány, aki fenyegetve érzi magát nevelőapja által. A film emellett sok könnyedebb pillanatot is ígér, egy vagány tinédzser lány, aki Roxette "Listen To Your Heart" című dalát énekli, egy másik, aki verseket ír, és egy hétéves kislány, aki arról fantáziál, hogy milyen volt a világ, mielőtt ő megszületett. "A serdülőkor borzalmas, inkább gyerekekről kellett volna forgatnom”, vonja le végső következtetést Coutinho, aki azt tette, amihez a legjobban ért, figyelmesen hallgatott a legvégsőkig. Az “Utolsó beszélgetések"-et Joao Moreira Salles fejezte be Coutinho halála után.',
-        section: 'FILMS.RETROSPECTIVE',
         trailer: 'https://player.vimeo.com/video/154723137',
         duration: 87,
         year: 2015,
@@ -425,5 +445,7 @@ export const FILMS_2018_HU: Film[] = [
                 event: 'https://www.facebook.com/events/554507678336616/'
             },
         ],
+        section: 'FILMS.RETROSPECTIVE',
+        subtitleNote: 'FILMS.SUBTITLE_NOTE_PT'
     },
 ];

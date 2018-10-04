@@ -25,14 +25,14 @@ export class LinksComponent {
 
   onSelect(link: string) {
     if (link === 'archive') {
-      this.router.navigate(['archive']);
+      this.router.navigate([link]);
       this.isArchive = true;
     } else {
       if (this.isArchive) {
         this.router.navigate(['']);
       }
       this.viewportScroller.scrollToAnchor(link);
-      this.isArchive = false
+      this.isArchive = false;
     }
     if (this.isMobile) {
       this.linkClicked.emit(null);
@@ -42,5 +42,4 @@ export class LinksComponent {
   private initHeader() {
     this.isArchive = this.location.path() === '/archive';
   }
-
 }

@@ -9,6 +9,10 @@ export interface Film {
     year: number;
     author: string;
     country: string;
-    section?: string;
     date: Array<{info: string, event: string}>
 };
+
+export interface Film2018 extends Film {
+    section: string;
+    subtitleNote: string;
+}

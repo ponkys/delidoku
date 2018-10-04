@@ -1,13 +1,11 @@
 {
-    "ROUTES": {
-        "HOME": "Nyitólap",
-        "FILMS": "Filmek",
-        "ABOUT": "Rólunk",
-        "TEAM": "A csapat",
-        "ARCHIVE": "Archív",
-        "CONTACT": "Kontakt",
-        "SPONSORS": "Támogatók"
-    },
+    "ROUTES.home": "Nyitólap",
+    "ROUTES.films": "Filmek",
+    "ROUTES.about": "Rólunk",
+    "ROUTES.team": "A csapat",
+    "ROUTES.archive": "Archív",
+    "ROUTES.contact": "Kontakt",
+    "ROUTES.sponsors": "Támogatók",
     "HOME": {
         "MAIN_COPY": "Kortárs Latin-Amerikai Dokumentumfilm Fesztivál",
         "DESCRIPTION": "2018. Október 16-21 / Budapest",
@@ -21,7 +19,9 @@
         "RETROSPECTIVE": "Eduardo Coutinho retrospektív",
         "ECUADOR": "A fókuszban Ecuador",
         "SUBTITLE_NOTE": "Spanyol nyelven, magyar és angol felirattal",
-        "MINS": "perc"        
+        "SUBTITLE_NOTE_PT": "Portugál nyelven, magyar és angol felirattal.",
+        "MINS": "perc",
+        "SCREENING": "Vetítések"   
     },
     "ABOUT": {
         "TITLE": "Rólunk",
@@ -35,6 +35,9 @@
         "WHY_REASON": "Mert közelebb akarjuk hozni Latin-Amerikát Budapesthez. Úgy gondoljuk, hogy erre nincs is jobb mód, mint valódi történeteket mesélve: ezért választjuk a dokumentumfilmeket. Azon túl, hogy a dokumentumfilm rajongóinak kedvében járjunk, a Déli-Doku csapata azt szeretné, hogy új emberek ismerkedjenek meg ezzel a csodálatos műfajjal. Célunk, hogy népszerűsítsük, támogassuk, és ezzel felemeljük a dokumentumfilmes ipart.",
         "HOW": "Hogy csináljuk?",
         "HOW_REASON": "Csapatunk olyan önkéntesekből áll, akik hisznek a fesztivál alapelveiben és szabadidejükben dolgoznak az eseményen.  A nagykövetségek, a kulturális központok, és a forgalmazók támogatása elengedhetetlen számunkra, mivel a fesztivál minimális költségvetésből üzemel.  Minden támogatásnak örülünk, így ha vállalkozásoddal segítened a fesztiválunkat, ne légy bátortalan, és küldj nekünk egy emailt!"
+    },
+    "ARCHIVE": {
+        "TITLE": "Archív"
     },
     "TEAM": {
         "TITLE": "A CSAPAT",

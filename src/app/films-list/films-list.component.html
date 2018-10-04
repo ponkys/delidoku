@@ -2,9 +2,9 @@
     <div class="film-main-info" (click)="openFilmInfo(film.title)" [ngClass]="selectedFilm !== film.title? 'border-bottom' : ''">
         <div>
             <h3>{{film.title}} <ng-container *ngIf="film.duration">({{film.duration}} {{ 'FILMS.MINS' | translate }})</ng-container></h3>
-            <p *ngIf="film.author">{{film.author}} - {{film.country}} <ng-container *ngIf="film.year">({{film.year}})</ng-container> - {{ 'FILMS.SUBTITLE_NOTE' | translate }}</p>
+            <p *ngIf="film.author">{{film.author}} - {{film.country}} <ng-container *ngIf="film.year">({{film.year}})</ng-container><ng-container *ngIf="film.subtitleNote"> - {{ film.subtitleNote | translate }}</ng-container></p>
             <div class="film-info-events">
-                <p *ngIf="film.date.length">{{ 'FILMS.SCREENING' | translate }}<ng-container *ngIf="film.date.length > 1">s</ng-container>:</p>
+                <p *ngIf="film.date.length">{{ 'FILMS.SCREENING' | translate }}:</p>
                 <ng-container *ngFor="let d of film.date">
                     <a href="{{d.event}}" target="_blank"> {{d.info}}</a>
                 </ng-container>

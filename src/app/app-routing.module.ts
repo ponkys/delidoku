@@ -22,7 +22,7 @@ const routes: Routes = [
         component: FilmComponent,
         data : {
             year : '2017',
-            title: 'Archive',
+            title: 'ARCHIVE.TITLE',
             films: FILMS_2017
         }
     },

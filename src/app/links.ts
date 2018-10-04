@@ -1,15 +1,15 @@
 export const Routes: string[] = [
-    'ROUTES.HOME',
-    'ROUTES.FILMS',
+    'home',
+    'films',
     // 'Programme',
-    'ROUTES.ABOUT',
-    'ROUTES.TEAM',
-    'ROUTES.ARCHIVE',
-    'ROUTES.CONTACT',
-    'ROUTES.SPONSORS'
+    'about',
+    'team',
+    'archive',
+    'contact',
+    'sponsors'
 ]
 
 export const RoutesArchive: string[] = [
-    'ROUTES.HOME',
-    'ROUTES.ARCHIVE'
+    'home',
+    'archive'
 ]

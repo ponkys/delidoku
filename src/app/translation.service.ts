@@ -7,24 +7,25 @@ import { environment } from '../environments/environment';
   providedIn: 'root'
 })
 export class TranslationService {
-
   LANGUAGES = environment.LANGUAGES;
   currentLocale: string;
 
-  constructor(private translate: TranslateService) {
+  constructor(
+    private translate: TranslateService
+  ) {
   }
 
-  init() {
-    this.currentLocale = this.translate.getBrowserLang();
-    this.translate.setDefaultLang(this.LANGUAGES.EN);
-    if ( this.currentLocale === this.LANGUAGES.HU) {
-      this.translate.use(this.currentLocale);
-      return;
+    init() {
+        this.currentLocale = this.translate.getBrowserLang();
+        this.translate.setDefaultLang(this.LANGUAGES.EN);
+        if (this.currentLocale === this.LANGUAGES.HU) {
+            this.translate.use(this.currentLocale);
+            return;
+        }
+        this.translate.use(this.LANGUAGES.EN);
     }
-    this.translate.use(this.LANGUAGES.EN)
-  }
 
-  changeLang(lang: string) {
-    this.translate.use(lang);
-  }
+    changeLang(lang: string) {
+        this.translate.use(lang);
+    }
 }

@@ -1,6 +1,5 @@
 .wrapper {
-    background-color: #BC3926;
-    padding: 0 12px;
+    padding: 0 12px 48px;
 }
 
 .wrapper-title {
@@ -25,7 +24,6 @@
 
 .team-title-wrapper {
     width: 100%;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,12 +35,6 @@
 
 .main-title-line-height {
     line-height: 1.3;
-}
-
-.title-bar {
-    width: 50px;
-    height: 4px;
-    background-color: #70C9C5;
 }
 
 .team-title {
@@ -78,7 +70,6 @@
 .team-area {
     margin: 0 auto;
     padding: 70px 0 20px;
-    color: white;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -96,20 +87,18 @@
 }
 
 .white {
-    background-color: white;
+    color: #EAECEE;
     border-radius: 6px;
 }
 
 .social-icon {
     cursor: pointer;
     font-size: 20px;
-    margin-bottom: 40px;
-    color: white;
-    /* color: rgba(111, 201, 198, 0.6); */
+    fill: #EAECEE;;
     -webkit-transition: color 0.2s; /* Safari */
     transition: color 0.2s;
 }
 
 .social-icon:hover {
-    color: #6fc9c6;
+    fill: #6fc9c6;
 }

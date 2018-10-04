@@ -2,20 +2,39 @@ ul {
     padding: 0;
 }
 
+.lang-selector {
+    position: absolute;
+    left: 2.5rem;
+    top: 1rem;
+}
+
 .open {
     position: fixed;
 }
 
 .menu-symbol {
-    color: #EAECEE;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 2px 0px 20px 0px rgba(0,0,0,0.5);
+    -moz-box-shadow: 2px 0px 20px 0px rgba(0,0,0,0.5);
+    box-shadow: 2px 0px 20px 0px rgba(0,0,0,0.5);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
     cursor: pointer;
-    font-size: 24px;
-    padding: 10px 25px 5px 5px;
+    font-size: 2rem;
     position: absolute;
-    left: 10px;
-    left: 20px;
     z-index: 10;
+}
+
+.display-none-large {
     display: none;
+}
+
+.lang-position-right {
+    left: 24px;
+    top: 1rem;
 }
 
 .close {
@@ -33,7 +52,6 @@ ul {
 }
 
 .nav-bar {
-    /* background-color: #2E2E2E; */
     background-color: #EAECEE;
     padding-top: 25vh;
     position: absolute;
@@ -100,15 +118,8 @@ ul {
     margin-right: auto;
 }
 
-.social-wrapper {
-    position: absolute;
-    width: 100%;
-    bottom: 15%;
-}
-
 .social {
-    /* border-top: 1px solid rgba(111, 201, 198, 0.6); */
-    border-top: 1px solid white;
+    border-top: 1px solid #EAECEE;
     margin: 0 auto;
     padding-top: 5%;
     text-align: center;
@@ -120,14 +131,13 @@ ul {
 .social-icon {
     cursor: pointer;
     font-size: 20px;
-    color: #2E2E2E;
-    /* color: rgba(111, 201, 198, 0.6); */
+    fill: #EAECEE;;
     -webkit-transition: color 0.2s; /* Safari */
     transition: color 0.2s;
 }
 
 .social-icon:hover {
-    color: #6fc9c6;
+    fill: #6fc9c6;
 }
 
 .header {
@@ -143,56 +153,56 @@ ul {
     transition: all 0.5s ease-out;
 }
 
-.logo-wrapper {
-    cursor: pointer;
-    width: 205px;
-    height: 100%;
-    margin-top: 5px;
-    display: none;
-}
-
-.logo {
-    margin: 0 auto;
-    height: 60px;
-    background-image: url('/assets/images/title1-black.svg');
-    background-repeat: no-repeat;
-    width: 100%;
-    background-size: cover;
-}
-
 .page-scroll-header {
-    background-color: #BC3926;
+    background: #a01f61;
+    background: -moz-linear-gradient(45deg, #a01f61 0%, #bc3926 100%);
+    background: -webkit-linear-gradient(45deg, #a01f61 0%,#bc3926 100%);
+    background: linear-gradient(45deg, #a01f61 0%,#bc3926 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a01f61', endColorstr='#bc3926',GradientType=1 );
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
 }
 
 @media only screen and (max-width: 768px) {
-
-    .open {
-        display: block;
-        color: #2E2E2E;
-    }
     
     .nav-bar__link-a {
         color: #EAECEE;
     }
 
     .menu-symbol {
-        display: inline;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-shadow: 2px 0px 20px 0px rgba(0,0,0,0.5);
+        -moz-box-shadow: 2px 0px 20px 0px rgba(0,0,0,0.5);
+        box-shadow: 2px 0px 20px 0px rgba(0,0,0,0.5);
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 2rem;
+        position: absolute;
+        z-index: 10;
+    }
+
+    .menu-position-left {
+        left: 24px;
+    }
+
+    .lang-position-right {
+        left: 24px;
+        top: 5rem;
     }
 
     .nav-bar {
         display: block;
         width: 80%;
         max-width: 320px;
-        padding-top: 20vh;
+        padding-top: 16px;
         position: absolute;
         background-color: #2E2E2E;
         color: #EAECEE;
         height: 100vh;
         z-index: 10;
-        -webkit-box-shadow: 2px 0px 20px 0px rgba(0,0,0,0.5);
-        -moz-box-shadow: 2px 0px 20px 0px rgba(0,0,0,0.5);
-        box-shadow: 2px 0px 20px 0px rgba(0,0,0,0.5);
     }
 
     .nav-bar-wrapper {
@@ -221,27 +231,34 @@ ul {
     }
 
     .close {
-        display: block;
+        display: flex;
         left: 80%;
-        top: 0;
-    }
-
-    .open {
-        display: block;
-        color: #2E2E2E;
     }
 
     .social-icon {
-        color: white;
+        color: #EAECEE;
     }
 
     .social {
-        border-top: 1px solid white;
+        border-top: 1px solid #EAECEE;
     }
 
     .header {
-        z-index: 1;
-        background-color: rgba(250 ,250 ,250, 1);
+        z-index: 10;
+        background-color: transparent;
+    }
+
+    .page-scroll-header {
+        /* everything transparent */
+        background-color: transparent;
+        background: transparent;
+        box-shadow: 2px 0px 20px 0px rgba(0,0,0,0);
+    }
+
+    .lang-selector {
+        position: absolute;
+        left: 2.5rem;
+        top: 5rem;
     }
 
 }

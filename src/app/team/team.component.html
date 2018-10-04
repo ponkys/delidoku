@@ -1,9 +1,11 @@
 <div #contentWrapper class="wrapper" [ngClass]="(mobileScreen===true)? 'mobile-screen-width' : 'big-screen-width'">
   <div class="wrapper-team">
       <div class="title animation-title main-title-line-height">
-        <h2 class="team-title-animation">Team</h2>
+        <h1 class="team-title-animation">{{ 'TEAM.TITLE' | translate }}</h1>
       </div>
       <div class="title-bar"></div>
+      <h2>{{ 'TEAM.WHO' | translate }}</h2>
+      <p>{{ 'TEAM.WHO_REASON' | translate }}</p>
     <section class="team-area">
       <div class="team-card center" *ngFor="let t of team">
         <div class="team-img-wrapper">
@@ -11,7 +13,7 @@
         </div>
         <div class="team-content">
           <div [innerHTML]="t.name"></div>
-          <p>{{t.role}}</p>
+          <p>{{ t.role | translate }}</p>
         </div>
       </div>
     </section>

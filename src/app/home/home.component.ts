@@ -1,33 +1,46 @@
-import { Component, OnInit } from '@angular/core';
-import { VideoBackgroundService } from '../video-background.service';
+import { Component } from '@angular/core';
 import { WindowRefService } from '../window-ref.service';
-import { ActivatedRoute } from '@angular/router';
+import { PARTICLES_PARAMS } from './particles/particles-params';
+import { TRAILERS } from './trailers-const';
+import { PARTICLES_STYLES } from './particles/particles-styles';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.css']
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent {
+    currentVideo: string;
+    height = 100;
+    isHomeComponent: false;
+    mobileScreen = true;
+    myParams: object = PARTICLES_PARAMS;
+    particlesStyle: object = PARTICLES_STYLES;
+    showVideo: boolean;
+    trialers = TRAILERS;
+    width = 100;
 
-  public video;
-  public mobileScreen = true;
-  public isHomeComponent: false;
-
-  constructor (
-    private videoBackgroundService: VideoBackgroundService,
-    private winRef: WindowRefService) {
-    if (this.winRef.nativeWindow.innerWidth > 768) {
-      this.mobileScreen = false;
+    constructor(
+        private winRef: WindowRefService
+    ) {
+        if (this.winRef.nativeWindow.innerWidth > 768) {
+            this.mobileScreen = false;
+        }
     }
-  }
 
-  ngOnInit() {
-    this.video = this.videoBackgroundService.randomVideo()
-  }
+    onClickVideo(video: string) {
+        this.currentVideo = video;
+        this.showVideo = true;
+    }
 
-  facebookNavigate() {
-    window.open('https://www.facebook.com/delidokubp/', '_blank');
-  }
+    onCloseVideo() {
+        this.showVideo = false;
+        this.currentVideo = null;
+    }
+
+    facebookNavigate() {
+        window.open('https://www.facebook.com/delidokubp/', '_blank');
+    }
 
 }

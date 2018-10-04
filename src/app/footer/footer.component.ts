@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Links } from '../links';
+import { Routes } from '../links';
 
 @Component({
   selector: 'app-footer',
@@ -9,7 +9,7 @@ import { Links } from '../links';
 })
 export class FooterComponent {
 
-  links: any[] = Links;
+  links: any[] = Routes;
 
   constructor(private router: Router) {}
 

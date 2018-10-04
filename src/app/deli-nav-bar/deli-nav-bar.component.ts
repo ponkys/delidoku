@@ -1,53 +1,52 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { Links } from '../links';
+import { Component, Input, OnInit } from '@angular/core';
 import { WindowRefService } from '../window-ref.service';
-import { trigger, animate, state, style, transition } from '@angular/animations';
+import { environment } from 'environments/environment.prod';
+import { TranslationService } from '../translation.service';
 
 @Component({
-  selector: 'app-deli-nav-bar',
-  templateUrl: './deli-nav-bar.component.html',
-  styleUrls: ['./deli-nav-bar.component.css'],
-  animations: [
-  ]
+    selector: 'app-deli-nav-bar',
+    templateUrl: './deli-nav-bar.component.html',
+    styleUrls: ['./deli-nav-bar.component.css'],
+    animations: [
+    ]
 })
-export class DeliNavBarComponent {
+export class DeliNavBarComponent implements OnInit {
 
-  @Input() isScrolled: Boolean;
+    @Input() isScrolled: Boolean;
 
-  links: string[] = Links;
-  showNavBar: Boolean = false;
-  bigScreen: Boolean = false;
+    showNavBar: Boolean = false;
+    bigScreen: Boolean = false;
+    languages = environment.LANGUAGES;
+    isHu = true;
 
-  constructor(
-      private router: Router,
-      private winRef: WindowRefService) {
-        if (winRef.nativeWindow.outerWidth > 768) {
-          this.bigScreen = true;
+    constructor(
+        private winRef: WindowRefService,
+        private translationService: TranslationService
+    ) {
+        if (this.winRef.nativeWindow.outerWidth > 768) {
+            this.bigScreen = true;
         }
-      }
-
-  onSelect(link: string) {
-    this.router.navigate([`/${link}`]);
-    if (this.bigScreen === false) {
-      this.closeNavBar()
-    }
-  }
-
-  openNavBar() {
-    this.showNavBar = true;
-  }
-
-  closeNavBar(link?) {
-    if (link) {
-      window.location.hash = link;
     }
 
-    this.showNavBar = false;
-  }
+    ngOnInit() {
+        this.isHu = this.translationService.currentLocale === this.languages.HU ? true : false;
+    }
 
-  facebookNavigate() {
-      window.open('https://www.facebook.com/delidokubp/', '_blank');
-  }
+    openNavBar() {
+        this.showNavBar = true;
+    }
+
+    closeNavBar() {
+        this.showNavBar = false;
+    }
+
+    facebookNavigate() {
+        window.open('https://www.facebook.com/delidokubp/', '_blank');
+    }
+
+    onLangChange(lang: string) {
+        this.isHu = lang === this.languages.HU ? true : false;
+        this.translationService.changeLang(lang);
+    }
 
 }

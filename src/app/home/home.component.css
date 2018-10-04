@@ -2,19 +2,19 @@
     height: 100vh;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.wrapper {
-    top: 50%;
-    transform: translate(0%, -50%);
-    right: 15%;
+.main-title-background {
     position: absolute;
-    padding: 40px 60px 10% 60px;
-    text-align: left;
-    display: flex;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
     height: 100vh;
-    flex-direction: column;
-    justify-content: flex-end;
 }
 
 .mobile-screen-width {
@@ -28,12 +28,16 @@
     padding-bottom: 90px;
 }
 
-.inner-message {
-    margin-bottom: 6px;
-    color: #EAECEE;
-    font-weight: 700;
-    font-size: 1.5rem;
-    font-family: 'Roboto', sans-serif;
+.message {
+    z-index: 1;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.meta-message {
+    font-weight: 400;
+    margin-bottom: 8px;
 }
 
 .fullscreen-bg {
@@ -62,8 +66,12 @@
 .video-background {
     background: #000;
     position: fixed;
-    top: 0; right: 0; bottom: 0; left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: -99;
+    filter: opacity(.9);
 }
 
 .video-foreground {
@@ -81,7 +89,6 @@
 }
 
 .mobile-background {
-    background-color: #BC3926;
     top: 0;
     left: 0;
     width: 100%;
@@ -95,14 +102,22 @@
 .social-icon {
     cursor: pointer;
     font-size: 25px;
-    color: white;
-    /* color: rgba(111, 201, 198, 0.6); */
+    fill: #EAECEE;;
     -webkit-transition: color 0.2s; /* Safari */
     transition: color 0.2s;
 }
 
 .social-icon:hover {
-    color: #6fc9c6;
+    fill: #6fc9c6;
+}
+
+.buttons-area {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 16px 0;
 }
 
 @media only screen and (max-width: 768px) {

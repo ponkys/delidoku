@@ -1,5 +1,17 @@
 {
   "projects": {
     "default": "delidoku-b2ece"
+  },
+  "targets": {
+    "delidoku-b2ece": {
+      "hosting": {
+        "production": [
+          "delidoku-b2ece"
+        ],
+        "development": [
+          "delidoku-dev"
+        ]
+      }
+    }
   }
 }

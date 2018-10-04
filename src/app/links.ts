@@ -1,6 +1,6 @@
-export const Links: string[] = [
+export const Routes: string[] = [
     'home',
-    // 'films',
+    'films',
     // 'Programme',
     'about',
     'team',
@@ -9,7 +9,7 @@ export const Links: string[] = [
     'sponsors'
 ]
 
-export const LinksArchive: string[] = [
+export const RoutesArchive: string[] = [
     'home',
     'archive'
 ]

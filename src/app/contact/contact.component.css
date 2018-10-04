@@ -7,14 +7,13 @@
 .contact-title-wrapper {
     width: 100%;
     height: 100vh;
-    color: white;
+    color: #EAECEE;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .contact-title {
-    font-weight: 700;
     opacity: 1;
     -webkit-animation-name: title; /* Safari 4.0 - 8.0 */
     -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */

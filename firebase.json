@@ -1,11 +1,31 @@
 {
-  "hosting": {
-    "public": "dist/delidoku",
-    "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.html"
-      }
-    ]
-  }
+  "hosting": [
+    {
+      "target": "production",
+      "public": "dist/delidoku",
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    },
+    {
+      "target": "development",
+      "public": "dist/delidoku",
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "headers": [ {
+        "source" : "**",
+        "headers" : [ {
+          "key" : "X-Robots-Tag",
+          "value" : "noindex"
+        } ]
+      } ]
+    }
+  ]
 }

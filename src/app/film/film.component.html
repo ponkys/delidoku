@@ -1,0 +1,15 @@
+<div class="wrapper">
+    
+    <div class="wrapper-parallel">
+        <div class="title main-title-line-height">
+            <h1 class="animation-title">{{ title | translate }}</h1><div class="film-icon"></div>
+        </div>
+        <div class="title-bar"></div>
+        <section class="parallel-area">
+            <h2 class="center">
+                {{ year }}
+            </h2>
+            <app-films-list [films]="films"></app-films-list>
+        </section>
+    </div>
+</div>

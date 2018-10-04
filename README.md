@@ -13,4 +13,3 @@ ng serve
  - header 13 and 10 in media query ---> this is shit;
  - inner-message 1;
  - deli-img 1;
-

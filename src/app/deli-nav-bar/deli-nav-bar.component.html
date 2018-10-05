@@ -3,7 +3,7 @@
         <i class="fa fa-bars yellow-color" aria-hidden="true"></i>
     </div>
     <app-links class="links"></app-links>
-    <div class="menu-symbol lang-position-right">
+    <div class="menu-symbol lang-position-left display-none-small">
         <p *ngIf="isHu" (click)="onLangChange(languages.EN)" [class.yellow-color]="isHu">en</p>
         <p *ngIf="!isHu" (click)="onLangChange(languages.HU)" [class.yellow-color]="!isHu">hu</p>
     </div>
@@ -11,6 +11,10 @@
 </header>
 <div *ngIf="showNavBar" class="nav-bar-wrapper">
     <nav class="nav-bar" [class.nav-bar-animation]="!bigScreen">
+        <div class="menu-symbol lang-position-left display-none-large">
+            <p *ngIf="isHu" (click)="onLangChange(languages.EN)" [class.yellow-color]="isHu">en</p>
+            <p *ngIf="!isHu" (click)="onLangChange(languages.HU)" [class.yellow-color]="!isHu">hu</p>
+        </div>
         <div class="menu-symbol close blue-color-bg" (click)="closeNavBar()">
             <i class="fa fa-times yellow-color" aria-hidden="true"></i>
         </div>

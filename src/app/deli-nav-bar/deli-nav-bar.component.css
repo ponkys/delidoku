@@ -2,12 +2,6 @@ ul {
     padding: 0;
 }
 
-.lang-selector {
-    position: absolute;
-    left: 2.5rem;
-    top: 1rem;
-}
-
 .open {
     position: fixed;
 }
@@ -32,8 +26,8 @@ ul {
     display: none;
 }
 
-.lang-position-right {
-    left: 24px;
+.lang-position-left {
+    left: 3rem;
     top: 1rem;
 }
 
@@ -188,9 +182,9 @@ ul {
         left: 24px;
     }
 
-    .lang-position-right {
-        left: 24px;
-        top: 5rem;
+    .lang-position-left {
+        left: 3rem;
+        top: 1rem;
     }
 
     .nav-bar {
@@ -255,10 +249,8 @@ ul {
         box-shadow: 2px 0px 20px 0px rgba(0,0,0,0);
     }
 
-    .lang-selector {
-        position: absolute;
-        left: 2.5rem;
-        top: 5rem;
+    .display-none-small {
+        display: none;
     }
 
 }

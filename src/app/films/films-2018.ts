@@ -384,7 +384,7 @@ export const FILMS_2018_HU: Film2018[] = [
         duration: 88,
         year: 2013,
         author: 'Darío Aguirre',
-        country: 'Ecuador, Switzerland és Germany',
+        country: 'Ecuador, Svájc és Németország',
         date: [
             {
                 info: 'Okt 16th - Bem Mozi (Közönségtalálkozó a rendezővel) - 20:00',

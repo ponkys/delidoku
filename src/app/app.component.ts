@@ -26,6 +26,12 @@ export class AppComponent implements OnInit {
     ) {
         this.translationService.init();
         this.changePos = this.winRef.nativeWindow.innerHeight;
+        this.router.events.subscribe(event => {
+            if (event instanceof NavigationEnd) {
+                (<any>window).ga('set', 'page', event.urlAfterRedirects);
+                (<any>window).ga('send', 'pageview');
+            }
+        });
     }
 
     @HostListener('window:scroll', ['$event'])

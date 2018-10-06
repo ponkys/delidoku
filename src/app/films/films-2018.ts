@@ -16,7 +16,7 @@ export const FILMS_2018: Film2018[] = [
                 event: 'https://www.facebook.com/events/272309646944133/'
             },
             {
-                info: 'Oct 20th - House Bar - 21:00',
+                info: 'Oct 21st - House Bar (Closing night) - 21:00',
                 event: 'https://www.facebook.com/events/280806729199349/'
             },
         ],
@@ -38,7 +38,7 @@ export const FILMS_2018: Film2018[] = [
                 event: 'https://www.facebook.com/events/2145274009131981/'
             },
             {
-                info: 'Oct 21st - Bem Mozi (Closing night + Tango night) - 21:00',
+                info: 'Oct 20th - Bem Mozi (Tango night) - 21:00',
                 event: 'https://www.facebook.com/events/485034195308462/'
             },
         ],
@@ -241,7 +241,7 @@ export const FILMS_2018_HU: Film2018[] = [
                 event: 'https://www.facebook.com/events/272309646944133/'
             },
             {
-                info: 'Okt 20 - House Bar - 21:00',
+                info: 'Okt 21 - House Bar - 21:00',
                 event: 'https://www.facebook.com/events/280806729199349/'
             },
         ],
@@ -263,7 +263,7 @@ export const FILMS_2018_HU: Film2018[] = [
                 event: 'https://www.facebook.com/events/2145274009131981/'
             },
             {
-                info: 'Okt 21 - Bem Mozi (Tangó Este) - 21:00',
+                info: 'Okt 20 - Bem Mozi (Tangó Este) - 21:00',
                 event: 'https://www.facebook.com/events/485034195308462/'
             },
         ],

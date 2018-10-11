@@ -28,10 +28,10 @@ export class AppComponent implements OnInit {
         this.translationService.init();
         this.changePos = this.winRef.nativeWindow.innerHeight;
         this.router.events.subscribe(event => {
-            // if (event instanceof NavigationEnd && environment.production) {
-            //     (<any>window).ga('set', 'page', event.urlAfterRedirects);
-            //     (<any>window).ga('send', 'pageview');
-            // }
+            if (event instanceof NavigationEnd && environment.production) {
+                (<any>window).ga('set', 'page', event.urlAfterRedirects);
+                (<any>window).ga('send', 'pageview');
+            }
         });
     }
 

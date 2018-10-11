@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --aot --prod --build-optimizer && npm run precache && firebase deploy --only hosting:development",
+    "deploy": "ng build --aot --build-optimizer && npm run precache && firebase deploy --only hosting:development",
     "deploy-prod": "ng build --aot --prod --build-optimizer && npm run precache && firebase deploy --only hosting:production",
     "precache": "sw-precache --root=dist/delidoku --verbose",
     "extract": "ngx-translate-extract --input ./src --output ./src/assets/i18n/ --clean --sort --format namespaced-json"

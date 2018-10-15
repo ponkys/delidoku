@@ -23,6 +23,10 @@
         "MINS": "perc",
         "SCREENING": "Vetítések"   
     },
+    "PROGRAMME": {
+        "TITLE": "Műsor",
+        "CTA": "Műsor letöltése!"
+    },
     "ABOUT": {
         "TITLE": "Rólunk",
         "PARAGRAPH_1": "A Déli Doku elhozza Budapestre a legjobb latin-amerikai dokumentumfilmeket és velük együtt a latin életérzést is. A Déli Doku egy alternatív filmes esemény a budapesti kulturális életben, amely 2017-ben indult. A mozikon kívül egyéb alternatív helyszíneken is szervezünk vetítéseket. Ráadásul a filmeken kívül beszélgetésekre, kiállításokra, gasztronómiai estékre és bulikra is csábítjuk a közönségünket.",

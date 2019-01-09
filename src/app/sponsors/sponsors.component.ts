@@ -14,4 +14,8 @@ export class SponsorsComponent {
     window.open('https://www.facebook.com/delidokubp/', '_blank');
   }
 
+  onNkaClick() {
+    window.open('http://www.nka.hu', '_blank');
+  }
+
 }

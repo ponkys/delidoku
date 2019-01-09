@@ -72,6 +72,10 @@ a {
     color: #EAECEE;;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .strong {
     font-weight: 700;
 }
@@ -141,6 +145,7 @@ a {
     .col-m-11 {width: 91.66%;}
     .col-m-12 {width: 100%;}
 }
+
 @media only screen and (min-width: 768px) {
     html {
         font-size: 16px;

@@ -108,3 +108,119 @@
 .social-icon:hover {
     fill: #6fc9c6;
 }
+
+.sponsors {
+    background-color: white;
+}
+
+.sponsors .main-nk {
+    background-image: url('assets/images/sponsors/nka_hun.png');
+    background-size: contain;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sponsors .main-ben {
+    background-image: url('assets/images/sponsors/BEM_MOZI.png');
+    background-size: contain;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sponsors-other {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 12px;
+    justify-content: center;
+}
+
+.sponsors-other div {
+    width: 200px;
+    height: 200px;
+}
+
+.sponsors-other .ecuador {
+    background-image: url('assets/images/sponsors/ECUADOR.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sponsors-other .brazil {
+    background-image: url('assets/images/sponsors/Embassy_Brazil.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sponsors-other .mexico {
+    background-image: url('assets/images/sponsors/mexico.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sponsors-other .colombia {
+    background-image: url('assets/images/sponsors/colombia.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sponsors-other .chile {
+    background-image: url('assets/images/sponsors/chile.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sponsors-other .argentina {
+    background-image: url('assets/images/sponsors/argentina.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sponsors-other .ametist {
+    background-image: url('assets/images/sponsors/ametist.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sponsors-other .aurora {
+    background-image: url('assets/images/sponsors/aurora.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sponsors-other .cervantes {
+    background-image: url('assets/images/sponsors/cervantes.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sponsors-other .lumen {
+    background-image: url('assets/images/sponsors/lumen.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sponsors-other .house-bar {
+    background-image: url('assets/images/sponsors/house-bar.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sponsors-other .peters {
+    background-image: url('assets/images/sponsors/peters.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}

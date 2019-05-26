@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges } from '@angular/core';
-import { Film2018, Film } from '../films/film';
+import { Film2018, Film2017 } from '../films/film';
 import { VideoBackgroundService } from '../video-background.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { VideoBackgroundService } from '../video-background.service';
     styleUrls: ['./films-list.component.css']
 })
 export class FilmsListComponent implements OnChanges {
-    @Input() films: Array<Film2018 | Film> = [];
+    @Input() films: Array<Film2018 | Film2017> = [];
     selectedFilm: string;
 
     constructor(private videoBackgroundService: VideoBackgroundService) { }

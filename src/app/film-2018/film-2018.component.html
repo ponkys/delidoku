@@ -6,9 +6,8 @@
         <div class="title-bar"></div>
         <section class="parallel-area">
             <h2 class="center">
-                {{ year }}
+                2018
             </h2>
-            
             <ng-container *ngFor="let cat of categories; let i = index">
                 <h2 *ngIf="i === 1"class="center mb-16">{{ 'FILMS.SPECIAL_SCREENINGS' | translate }}:</h2>
                 <h2 class="yellow-color" [class.center]="i === 0">{{ cat.name | translate }}</h2>

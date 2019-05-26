@@ -3,28 +3,18 @@ import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { MainComponent } from 'app/main/main.component';
-import { FilmComponent } from './film/film.component';
+import { Film2017Component } from './film-2017/film-2017.component';
 import { FILMS_2017 } from './films/films-2017';
+import { ArchiveComponent } from './archive/archive.component';
 
 const routes: Routes = [
     {
         path: '',
-        component: MainComponent,
-        data : {
-            year : '',
-            title: 'FILMS.TITLE',
-            // Logic moved to categories component due to translations
-            films: []
-        }
+        component: MainComponent
     },
     {
         path: 'archive',
-        component: FilmComponent,
-        data : {
-            year : '2017',
-            title: 'ARCHIVE.TITLE',
-            films: FILMS_2017
-        }
+        component: ArchiveComponent
     },
     {
         path: '**',

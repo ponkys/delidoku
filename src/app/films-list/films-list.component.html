@@ -6,7 +6,9 @@
             <div class="film-info-events">
                 <p *ngIf="film.date.length">{{ 'FILMS.SCREENING' | translate }}:</p>
                 <ng-container *ngFor="let d of film.date">
-                    <a href="{{d.event}}" target="_blank"> {{d.info}}</a>
+                    <p>
+                        <a href="{{d.event}}" target="_blank"> {{d.info}}</a>
+                    </p>
                 </ng-container>
             </div>
         </div>

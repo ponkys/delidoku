@@ -3,7 +3,7 @@ import { NgModule } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 import { ParticlesModule } from 'angular-particle';
-import { TranslateModule, TranslateLoader, TranslateService } from '@ngx-translate/core';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 
@@ -17,7 +17,7 @@ import { TeamComponent } from './team/team.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { FooterComponent } from './footer/footer.component';
-import { FilmComponent } from './film/film.component';
+import { Film2017Component } from './film-2017/film-2017.component';
 import { LogoComponent } from './logo/logo.component';
 
 // pipe
@@ -28,10 +28,11 @@ import { SponsorsComponent } from './sponsors/sponsors.component';
 import { ProgrammeComponent } from './programme/programme.component';
 import { MainComponent } from './main/main.component';
 import { FilmsListComponent } from './films-list/films-list.component';
-import { FilmsCategoriesComponent } from './films-categories/films-categories.component';
+import { Film2018Component } from './film-2018/film-2018.component';
 import { ButtonComponent } from './button/button.component';
 import { TrailerFullScreenComponent } from './home/trailer-full-screen/trailer-full-screen.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ArchiveComponent } from './archive/archive.component';
 
 
 
@@ -48,7 +49,7 @@ export function createTranslateLoader(http: HttpClient) {
     ContactComponent,
     AboutComponent,
     FooterComponent,
-    FilmComponent,
+    Film2017Component,
     LogoComponent,
     LinksComponent,
     LoadingComponent,
@@ -58,9 +59,10 @@ export function createTranslateLoader(http: HttpClient) {
     FilmsListComponent,
     // pipe
     CapitalizePipe,
-    FilmsCategoriesComponent,
+    Film2018Component,
     ButtonComponent,
     TrailerFullScreenComponent,
+    ArchiveComponent,
   ],
   imports: [
     BrowserModule,

@@ -9,7 +9,7 @@ import { WindowRefService } from '../window-ref.service';
 })
 export class TeamComponent implements OnInit {
 
-  @ViewChild('contentWrapper')
+  @ViewChild('contentWrapper', { static: true })
   contentWrapper: ElementRef
 
   team: any[] = Team;
@@ -17,7 +17,7 @@ export class TeamComponent implements OnInit {
   public mobileScreen = true;
 
   constructor(private winRef: WindowRefService) {
-    if (winRef.nativeWindow.outerWidth > 768) {
+    if (this.winRef.nativeWindow.outerWidth > 768) {
       this.mobileScreen = false;
     }
   }

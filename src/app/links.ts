@@ -1,7 +1,7 @@
 export const Routes: string[] = [
     'home',
-    'films',
-    'programme',
+    // 'films',
+    // 'programme',
     'about',
     'team',
     'archive',

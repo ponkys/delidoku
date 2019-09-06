@@ -1,71 +1,71 @@
 {
-    "ROUTES.home": "home",
-    "ROUTES.films": "films",
-    "ROUTES.about": "about",
-    "ROUTES.team": "team",
-    "ROUTES.archive": "archive",
-    "ROUTES.contact": "contact",
-    "ROUTES.sponsors": "sponsors",
-    "HOME": {
-        "MAIN_COPY": "A NEW WAY TO EXPERIENCE LATIN AMERICA THROUGH DOCUMENTARY CINEMA",
-        "DESCRIPTION": "October 2019 / Budapest",
-        "OFFICIAL_SELECTION_TRAILER": "Watch official selection trailer",
-        "SPECIAL_SCREENING_TRAILER": "Watch special screenings trailer"
-    },
-    "FILMS": {
-        "TITLE": "Films",
-        "OFFICIAL_SELECTION": "Official selection",
-        "SPECIAL_SCREENINGS": "Special screenings",
-        "RETROSPECTIVE": "Retrospective: Eduardo Coutinho",
-        "ECUADOR": "FOCUS Ecuador",
-        "SUBTITLE_NOTE": "Hungarian and English subtitles",
-        "SUBTITLE_NOTE_PT": "Hungarian and English subtitles",
-        "MINS": "mins",
-        "SCREENING": "Screening",
-        "NO_TRAILER": "Trailer not available"
-    },
-    "PROGRAMME": {
-        "TITLE": "Programme",
-        "CTA": "Download Programme!"
-    },
-    "ABOUT": {
-        "TITLE": "About",
-        "PARAGRAPH_1": "Déli-Doku brings to Budapest the finest in modern documentary film production from Latin America and brings along the Latin-American feeling. Starting in 2017 as an alternative film event, Déli-Doku goes beyond the cinema experience by taking the screenings to both public and private locations, such as social organizations, artistic venues and such, generating a series of social happenings connected with today's alternative ways of cinema distribution.",
-        "LIST_1": "It’s - Contemporary - because we want to show what’s going on in the world through different views",
-        "LIST_2": "It’s - Latin American - because we all could use some warmth of the “southern continent” during a chilling Hungarian autumn",
-        "LIST_3": "It’s - Documentary film - because it provides the ultimate cultural immersion you can have from afar",
-        "LIST_4": "It’s - Festival - because we, latinos, love a good party",
-        "FREE_CTA": "AND DID WE MENTION THAT ALL SCREENINGS ARE FREE OF CHARGE? AND IF YOU ARE LUCKY, EVEN SOME WINE TOO!",
-        "WHY": "Why we do it?",
-        "WHY_REASON": "We want to bring Latin America a little closer to Budapest. And there’s not better way to do this than sharing their real stories told in a new way: the documentary cinema. More than pleasing documentary film lovers, we from the Déli Doku team want to invite new lovers to join this hub and discover the beauty of watching these real stories being told through the lenses of a camera. More importantly, we want to promote, support and elevate the documentary film industry.",
-        "HOW": "How we do it?",
-        "HOW_REASON": "Our crew is made of volunteers who believe in the idea of this festival and dedicate their free time to create and promote the event. The support from embassies, cultural centers and distributors is crucial, since we run all our activities basically on a zero budget. Sponsor are always welcome so if you have a business and you want to support us don’t be shy and drop us an email."
-    },
-    "ARCHIVE": {
-        "TITLE": "Archive"
-    },
-    "TEAM": {
-        "TITLE": "Team",
-        "WHO": "Who are we?",
-        "WHO_REASON": "A band of documentary film aficionados who eventually drag our beloved friends into the project to help us. Some of us are from Latin America, others from Hungary. Some have PhD in documentary film and others had just recently discovered this genre. What we all have in common is the will to bring this new cultural experience to Budapest. Oh yes, that’s another thing we have in common: we all love Budapest.",
-        "EXECUTIVE_PRODUCER": "Executive producer",
-        "PRODUCER": "Producer",
-        "COMMUNICATION_MAN": "Communication manager",
-        "COMMUNICATION_SUPPORT": "Communication support",
-        "GRAPHIC_DESIGNER": "Graphic designer",
-        "ARTISTIC_PRODUCER": "Artistic producer",
-        "COMPOSER": "Composer",
-        "TRANSLATOR": "Translator",
-        "WEB_DEV": "Web developer",
-        "ARTISTIC_PRODUCER_AND_PROGRAMMER": "Artistic producer and programmer",
-        "FILM_PROGRAMMER": "Film programmer"
-    },
-    "CONTACT": {
-        "CTA": "contact us!"
-    },
-    "SPONSORS": {
-        "TITLE": "Sponsors",
-        "MEDIA_PARTNER": "Media partner",
-        "FOLLOW_US": "Follow us!"
-    }
+  "ROUTES.home": "home",
+  "ROUTES.films": "films",
+  "ROUTES.about": "about",
+  "ROUTES.team": "team",
+  "ROUTES.archive": "archive",
+  "ROUTES.contact": "contact",
+  "ROUTES.sponsors": "sponsors",
+  "HOME": {
+    "MAIN_COPY": "A NEW WAY TO EXPERIENCE LATIN AMERICA THROUGH DOCUMENTARY CINEMA",
+    "DESCRIPTION": "October 8th - 13th, 2019 / Budapest",
+    "OFFICIAL_SELECTION_TRAILER": "Watch official selection trailer",
+    "SPECIAL_SCREENING_TRAILER": "Watch special screenings trailer"
+  },
+  "FILMS": {
+    "TITLE": "Films",
+    "OFFICIAL_SELECTION": "Official selection",
+    "SPECIAL_SCREENINGS": "Special screenings",
+    "RETROSPECTIVE": "Retrospective: Eduardo Coutinho",
+    "ECUADOR": "FOCUS Ecuador",
+    "SUBTITLE_NOTE": "Hungarian and English subtitles",
+    "SUBTITLE_NOTE_PT": "Hungarian and English subtitles",
+    "MINS": "mins",
+    "SCREENING": "Screening",
+    "NO_TRAILER": "Trailer not available"
+  },
+  "PROGRAMME": {
+    "TITLE": "Programme",
+    "CTA": "Download Programme!"
+  },
+  "ABOUT": {
+    "TITLE": "About",
+    "PARAGRAPH_1": "Déli-Doku brings to Budapest the finest in modern documentary film production from Latin America and brings along the Latin-American feeling. Starting in 2017 as an alternative film event, Déli-Doku goes beyond the cinema experience by taking the screenings to both public and private locations, such as social organizations, artistic venues and such, generating a series of social happenings connected with today's alternative ways of cinema distribution.",
+    "LIST_1": "It’s - Contemporary - because we want to show what’s going on in the world through different views",
+    "LIST_2": "It’s - Latin American - because we all could use some warmth of the “southern continent” during a chilling Hungarian autumn",
+    "LIST_3": "It’s - Documentary film - because it provides the ultimate cultural immersion you can have from afar",
+    "LIST_4": "It’s - Festival - because we, latinos, love a good party",
+    "FREE_CTA": "AND DID WE MENTION THAT ALL SCREENINGS ARE FREE OF CHARGE? AND IF YOU ARE LUCKY, EVEN SOME WINE TOO!",
+    "WHY": "Why we do it?",
+    "WHY_REASON": "We want to bring Latin America a little closer to Budapest. And there’s not better way to do this than sharing their real stories told in a new way: the documentary cinema. More than pleasing documentary film lovers, we from the Déli Doku team want to invite new lovers to join this hub and discover the beauty of watching these real stories being told through the lenses of a camera. More importantly, we want to promote, support and elevate the documentary film industry.",
+    "HOW": "How we do it?",
+    "HOW_REASON": "Our crew is made of volunteers who believe in the idea of this festival and dedicate their free time to create and promote the event. The support from embassies, cultural centers and distributors is crucial, since we run all our activities basically on a zero budget. Sponsor are always welcome so if you have a business and you want to support us don’t be shy and drop us an email."
+  },
+  "ARCHIVE": {
+    "TITLE": "Archive"
+  },
+  "TEAM": {
+    "TITLE": "Team",
+    "WHO": "Who are we?",
+    "WHO_REASON": "A band of documentary film aficionados who eventually drag our beloved friends into the project to help us. Some of us are from Latin America, others from Hungary. Some have PhD in documentary film and others had just recently discovered this genre. What we all have in common is the will to bring this new cultural experience to Budapest. Oh yes, that’s another thing we have in common: we all love Budapest.",
+    "EXECUTIVE_PRODUCER": "Executive producer",
+    "PRODUCER": "Producer",
+    "COMMUNICATION_MAN": "Communication manager",
+    "COMMUNICATION_SUPPORT": "Communication support",
+    "GRAPHIC_DESIGNER": "Graphic designer",
+    "ARTISTIC_PRODUCER": "Artistic producer",
+    "COMPOSER": "Composer",
+    "TRANSLATOR": "Translator",
+    "WEB_DEV": "Web developer",
+    "ARTISTIC_PRODUCER_AND_PROGRAMMER": "Artistic producer and programmer",
+    "FILM_PROGRAMMER": "Film programmer"
+  },
+  "CONTACT": {
+    "CTA": "contact us!"
+  },
+  "SPONSORS": {
+    "TITLE": "Sponsors",
+    "MEDIA_PARTNER": "Media partner",
+    "FOLLOW_US": "Follow us!"
+  }
 }

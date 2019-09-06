@@ -1,0 +1,41 @@
+._2Khxgy9plvo0xUJJiw3pNr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 0.5);
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 2rem;
+  position: absolute;
+  z-index: 10; }
+
+.Ttx9TN68d8nr7k6mHMxjF {
+  display: none; }
+
+._1oxuvv1lJcZ32gQqBzLXHf {
+  position: fixed; }
+
+@media only screen and (max-width: 768px) {
+  ._12DUq0U2Re-hbJCMAAO7HV {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 0px 20px 0px rgba(0, 0, 0, 0.5);
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 2rem;
+    position: absolute;
+    z-index: 10; }
+  ._2pBgv122U5Dw_6-6rjGRWL {
+    left: 24px; } }
+
+
+/*# sourceMappingURL=styles.chunk.css.map*/

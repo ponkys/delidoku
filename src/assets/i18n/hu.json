@@ -1,69 +1,69 @@
 {
-    "ROUTES.home": "Nyitólap",
-    "ROUTES.films": "Filmek",
-    "ROUTES.about": "Rólunk",
-    "ROUTES.team": "A csapat",
-    "ROUTES.archive": "Archív",
-    "ROUTES.contact": "Kontakt",
-    "ROUTES.sponsors": "Támogatók",
-    "HOME": {
-        "MAIN_COPY": "Kortárs Latin-Amerikai Dokumentumfilm Fesztivál",
-        "DESCRIPTION": "Október 2019 / Budapest",
-        "OFFICIAL_SELECTION_TRAILER": "Nézd meg a hivatalos válogatásunk trailerét!",
-        "SPECIAL_SCREENING_TRAILER": "Nézd meg a külön válogatásunk trailerét!"
-    },
-    "FILMS": {
-        "TITLE": "Filmek",
-        "OFFICIAL_SELECTION": "Hivatalos válogatás",
-        "SPECIAL_SCREENINGS": "Külön válogatás",
-        "RETROSPECTIVE": "Eduardo Coutinho retrospektív",
-        "ECUADOR": "A fókuszban Ecuador",
-        "SUBTITLE_NOTE": "Spanyol nyelven, magyar és angol felirattal",
-        "SUBTITLE_NOTE_PT": "Portugál nyelven, magyar és angol felirattal.",
-        "MINS": "perc",
-        "SCREENING": "Vetítések"   
-    },
-    "PROGRAMME": {
-        "TITLE": "Műsor",
-        "CTA": "Műsor letöltése!"
-    },
-    "ABOUT": {
-        "TITLE": "Rólunk",
-        "PARAGRAPH_1": "A Déli Doku elhozza Budapestre a legjobb latin-amerikai dokumentumfilmeket és velük együtt a latin életérzést is. A Déli Doku egy alternatív filmes esemény a budapesti kulturális életben, amely 2017-ben indult. A mozikon kívül egyéb alternatív helyszíneken is szervezünk vetítéseket. Ráadásul a filmeken kívül beszélgetésekre, kiállításokra, gasztronómiai estékre és bulikra is csábítjuk a közönségünket.",
-        "LIST_1": "Kortárs – mert meg akarjuk mutatni, hogy éppen mi zajlik a világban",
-        "LIST_2": "Latin - amerikai – mert mindenkire ráfér egy kis déli melegség a hűvös magyar őszben",
-        "LIST_3": "Dokumentumfilm – mert ez a legőszintébb formája az információszerzésnek",
-        "LIST_4": "Fesztivál – mert latinok vagyunk, és szeretjük a jó built",
-        "FREE_CTA": "ÉS AZT MÁR EMLÍTETTÜK, HOGY AZ ÖSSZES VETÍTÉS INGYENES? ÉS HA SZERENCSÉS VAGY, MÉG INGYEN BORT IS JUT MAJD.",
-        "WHY": "Miért csináljuk?",
-        "WHY_REASON": "Mert közelebb akarjuk hozni Latin-Amerikát Budapesthez. Úgy gondoljuk, hogy erre nincs is jobb mód, mint valódi történeteket mesélve: ezért választjuk a dokumentumfilmeket. Azon túl, hogy a dokumentumfilm rajongóinak kedvében járjunk, a Déli-Doku csapata azt szeretné, hogy új emberek ismerkedjenek meg ezzel a csodálatos műfajjal. Célunk, hogy népszerűsítsük, támogassuk, és ezzel felemeljük a dokumentumfilmes ipart.",
-        "HOW": "Hogy csináljuk?",
-        "HOW_REASON": "Csapatunk olyan önkéntesekből áll, akik hisznek a fesztivál alapelveiben és szabadidejükben dolgoznak az eseményen.  A nagykövetségek, a kulturális központok, és a forgalmazók támogatása elengedhetetlen számunkra, mivel a fesztivál minimális költségvetésből üzemel.  Minden támogatásnak örülünk, így ha vállalkozásoddal segítened a fesztiválunkat, ne légy bátortalan, és küldj nekünk egy emailt!"
-    },
-    "ARCHIVE": {
-        "TITLE": "Archív"
-    },
-    "TEAM": {
-        "TITLE": "A CSAPAT",
-        "WHO": "Kik vagyunk?",
-        "WHO_REASON": "Egy csapat dokumentumfilm-rajongó, akik sikerrel berángatták a barátaikat hogy segítsenek ebben a projektben. A csapat tagjai között vannak latin-amerikaiak és magyarok is. Van olyan köztünk, aki dokumentum filmből PhD-zett, és olyan is, aki nemrég fedezte csak fel ezt a műfajt. Ami összeköt minket, az a vágy, hogy elhozzuk ezt a latin kulturális élményt Budapestre. Ó igen, és még egy dolog, mind imádjuk Budapestet!",
-        "EXECUTIVE_PRODUCER": "Executive producer",
-        "PRODUCER": "Producer",
-        "COMMUNICATION_MAN": "Kommunikációs manager",
-        "COMMUNICATION_SUPPORT": "Kommunikációs segítő",
-        "GRAPHIC_DESIGNER": "Grafikus",
-        "ARTISTIC_PRODUCER": "Artistic producer",
-        "COMPOSER": "Zeneszerző",
-        "TRANSLATOR": "Fordító",
-        "WEB_DEV": "Webfejlesztő",
-        "ARTISTIC_PRODUCER_AND_PROGRAMMER": "Művészeti producer és programszervező",
-        "FILM_PROGRAMMER": "Filmes programszervező"
-    },
-    "CONTACT": {
-        "CTA": "Kapcsolat"
-    },
-    "SPONSORS": {
-        "TITLE": "Támogatóink",
-        "MEDIA_PARTNER": "Média partner"
-    }
+  "ROUTES.home": "Nyitólap",
+  "ROUTES.films": "Filmek",
+  "ROUTES.about": "Rólunk",
+  "ROUTES.team": "A csapat",
+  "ROUTES.archive": "Archív",
+  "ROUTES.contact": "Kontakt",
+  "ROUTES.sponsors": "Támogatók",
+  "HOME": {
+    "MAIN_COPY": "Kortárs Latin-Amerikai Dokumentumfilm Fesztivál",
+    "DESCRIPTION": "Október 8 - 13, 2019 / Budapest",
+    "OFFICIAL_SELECTION_TRAILER": "Nézd meg a hivatalos válogatásunk trailerét!",
+    "SPECIAL_SCREENING_TRAILER": "Nézd meg a külön válogatásunk trailerét!"
+  },
+  "FILMS": {
+    "TITLE": "Filmek",
+    "OFFICIAL_SELECTION": "Hivatalos válogatás",
+    "SPECIAL_SCREENINGS": "Külön válogatás",
+    "RETROSPECTIVE": "Eduardo Coutinho retrospektív",
+    "ECUADOR": "A fókuszban Ecuador",
+    "SUBTITLE_NOTE": "Spanyol nyelven, magyar és angol felirattal",
+    "SUBTITLE_NOTE_PT": "Portugál nyelven, magyar és angol felirattal.",
+    "MINS": "perc",
+    "SCREENING": "Vetítések"
+  },
+  "PROGRAMME": {
+    "TITLE": "Műsor",
+    "CTA": "Műsor letöltése!"
+  },
+  "ABOUT": {
+    "TITLE": "Rólunk",
+    "PARAGRAPH_1": "A Déli Doku elhozza Budapestre a legjobb latin-amerikai dokumentumfilmeket és velük együtt a latin életérzést is. A Déli Doku egy alternatív filmes esemény a budapesti kulturális életben, amely 2017-ben indult. A mozikon kívül egyéb alternatív helyszíneken is szervezünk vetítéseket. Ráadásul a filmeken kívül beszélgetésekre, kiállításokra, gasztronómiai estékre és bulikra is csábítjuk a közönségünket.",
+    "LIST_1": "Kortárs – mert meg akarjuk mutatni, hogy éppen mi zajlik a világban",
+    "LIST_2": "Latin - amerikai – mert mindenkire ráfér egy kis déli melegség a hűvös magyar őszben",
+    "LIST_3": "Dokumentumfilm – mert ez a legőszintébb formája az információszerzésnek",
+    "LIST_4": "Fesztivál – mert latinok vagyunk, és szeretjük a jó built",
+    "FREE_CTA": "ÉS AZT MÁR EMLÍTETTÜK, HOGY AZ ÖSSZES VETÍTÉS INGYENES? ÉS HA SZERENCSÉS VAGY, MÉG INGYEN BORT IS JUT MAJD.",
+    "WHY": "Miért csináljuk?",
+    "WHY_REASON": "Mert közelebb akarjuk hozni Latin-Amerikát Budapesthez. Úgy gondoljuk, hogy erre nincs is jobb mód, mint valódi történeteket mesélve: ezért választjuk a dokumentumfilmeket. Azon túl, hogy a dokumentumfilm rajongóinak kedvében járjunk, a Déli-Doku csapata azt szeretné, hogy új emberek ismerkedjenek meg ezzel a csodálatos műfajjal. Célunk, hogy népszerűsítsük, támogassuk, és ezzel felemeljük a dokumentumfilmes ipart.",
+    "HOW": "Hogy csináljuk?",
+    "HOW_REASON": "Csapatunk olyan önkéntesekből áll, akik hisznek a fesztivál alapelveiben és szabadidejükben dolgoznak az eseményen.  A nagykövetségek, a kulturális központok, és a forgalmazók támogatása elengedhetetlen számunkra, mivel a fesztivál minimális költségvetésből üzemel.  Minden támogatásnak örülünk, így ha vállalkozásoddal segítened a fesztiválunkat, ne légy bátortalan, és küldj nekünk egy emailt!"
+  },
+  "ARCHIVE": {
+    "TITLE": "Archív"
+  },
+  "TEAM": {
+    "TITLE": "A CSAPAT",
+    "WHO": "Kik vagyunk?",
+    "WHO_REASON": "Egy csapat dokumentumfilm-rajongó, akik sikerrel berángatták a barátaikat hogy segítsenek ebben a projektben. A csapat tagjai között vannak latin-amerikaiak és magyarok is. Van olyan köztünk, aki dokumentum filmből PhD-zett, és olyan is, aki nemrég fedezte csak fel ezt a műfajt. Ami összeköt minket, az a vágy, hogy elhozzuk ezt a latin kulturális élményt Budapestre. Ó igen, és még egy dolog, mind imádjuk Budapestet!",
+    "EXECUTIVE_PRODUCER": "Executive producer",
+    "PRODUCER": "Producer",
+    "COMMUNICATION_MAN": "Kommunikációs manager",
+    "COMMUNICATION_SUPPORT": "Kommunikációs segítő",
+    "GRAPHIC_DESIGNER": "Grafikus",
+    "ARTISTIC_PRODUCER": "Artistic producer",
+    "COMPOSER": "Zeneszerző",
+    "TRANSLATOR": "Fordító",
+    "WEB_DEV": "Webfejlesztő",
+    "ARTISTIC_PRODUCER_AND_PROGRAMMER": "Művészeti producer és programszervező",
+    "FILM_PROGRAMMER": "Filmes programszervező"
+  },
+  "CONTACT": {
+    "CTA": "Kapcsolat"
+  },
+  "SPONSORS": {
+    "TITLE": "Támogatóink",
+    "MEDIA_PARTNER": "Média partner"
+  }
 }

@@ -2,7 +2,11 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Film2018 } from '../films/film';
 import { TranslateService, LangChangeEvent } from '@ngx-translate/core';
 import { environment } from 'environments/environment';
-import { FILMS_2019, FILMS_2019_HU } from '../films/films-2019';
+import {
+  FILMS_2019,
+  FILMS_2019_HU,
+  SHORT_FILMS_2019
+} from '../films/films-2019';
 import { Subscription } from 'rxjs';
 
 const BLANK_CATEGORIES = [
@@ -29,7 +33,7 @@ interface Category {
 export class Film2019Component implements OnInit, OnDestroy {
   title = 'FILMS.TITLE';
   categories: Array<Category> = [];
-
+  shortFilms = SHORT_FILMS_2019;
   private subscriptions: Subscription[] = [];
 
   constructor(private tr: TranslateService) {}

@@ -5,7 +5,9 @@ import { environment } from 'environments/environment';
 import {
   FILMS_2019,
   FILMS_2019_HU,
-  SHORT_FILMS_2019
+  SHORT_FILMS_2019_EN,
+  SHORT_FILMS_2019_HU,
+  ShortFilm2019
 } from '../films/films-2019';
 import { Subscription } from 'rxjs';
 
@@ -33,7 +35,7 @@ interface Category {
 export class Film2019Component implements OnInit, OnDestroy {
   title = 'FILMS.TITLE';
   categories: Array<Category> = [];
-  shortFilms = SHORT_FILMS_2019;
+  shortFilms: ShortFilm2019[];
   private subscriptions: Subscription[] = [];
 
   constructor(private tr: TranslateService) {}
@@ -73,8 +75,10 @@ export class Film2019Component implements OnInit, OnDestroy {
   private determineFilmsBasedOnLanguage(lang: string): void {
     if (lang === environment.LANGUAGES.EN) {
       this.categories = this.mapFilms(FILMS_2019, [...BLANK_CATEGORIES]);
+      this.shortFilms = SHORT_FILMS_2019_EN;
       return;
     }
     this.categories = this.mapFilms(FILMS_2019_HU, [...BLANK_CATEGORIES]);
+    this.shortFilms = SHORT_FILMS_2019_HU;
   }
 }

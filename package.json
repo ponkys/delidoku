@@ -26,7 +26,6 @@
     "@angular/router": "8.0.1",
     "@ngx-translate/core": "^10.0.2",
     "@ngx-translate/http-loader": "^3.0.1",
-    "angular-particle": "^1.0.4",
     "core-js": "^2.5.1",
     "font-awesome": "^4.7.0",
     "normalize.css": "8.0.0",

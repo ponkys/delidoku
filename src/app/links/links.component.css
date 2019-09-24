@@ -19,17 +19,17 @@
 }
 
 .links-a:hover {
-    border-bottom: 1px solid #EAECEE;
+    border-bottom: 1px solid #eb5c58;
 }
 
 .links-a {
-    color: #EAECEE;
+    color: #eb5c58;
     cursor: pointer;
     
 }
 
 .links:after {
-    color: #EAECEE;
+    color: #eb5c58;
 }
 
 .links:last-child {
@@ -47,11 +47,11 @@
 }
 
 .nav-bar__link-a {
-    color: #ffffff;
+    color: #242424;
     /* color: rgba(111, 201, 198, 0.6); */
     cursor: pointer;
 }
 
 .nav-bar__link-a:hover {
-    color: #ebebeb;
+    color: #242424;
 }

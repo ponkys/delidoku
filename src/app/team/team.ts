@@ -24,12 +24,6 @@ export const Team: any[] = [
         img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Foptimized%2Fdaniel.png?alt=media&token=4f3a0370-b47a-42dc-9f65-7c37c0d4e10a'
     },
     {
-        name: '<h4>Juan Pablo Muñoz</h4>',
-        role: 'TEAM.COMPOSER',
-        // tslint:disable-next-line:max-line-length
-        img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Foptimized%2FJUAN-PABLO-MUNOZ.png?alt=media&token=ac9eeb5c-3916-4789-9f78-1bdc6358c46c'
-    },
-    {
         name: '<h4>Petra Smid&eacute;liusz</h4>',
         role: 'TEAM.TRANSLATOR',
         // tslint:disable-next-line:max-line-length
@@ -54,18 +48,6 @@ export const Team: any[] = [
         img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Foptimized%2FFelszeghy%20Adam%202.png?alt=media&token=6a2d23de-d76f-4f34-8442-4a5445cf103b'
     },
     {
-        name: '<h4>Sabina Triana</h4>',
-        role: 'TEAM.COMMUNICATION_SUPPORT',
-        // tslint:disable-next-line:max-line-length
-        img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Foptimized%2FSabinaBW%202.jpg?alt=media&token=0d4ccce2-4696-4eec-812a-0e76712b2ebd'
-    },
-    {
-        name: '<h4>Gabriel Motta</h4>',
-        role: 'TEAM.COMMUNICATION_SUPPORT',
-        // tslint:disable-next-line:max-line-length
-        img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Foptimized%2FGabriel%20Motta%20-%20communication%20supportBW.png?alt=media&token=507ef142-8791-47a8-b052-4ca226f0e794'
-    },
-    {
         name: '<h4>Diana Pacheco</h4>',
         role: 'TEAM.FILM_PROGRAMMER',
         // tslint:disable-next-line:max-line-length
@@ -73,9 +55,10 @@ export const Team: any[] = [
 
     },
     {
-        name: '<h4>Pallav Tyagi</h4>',
-        role: 'TEAM.PRODUCER',
+        name: '<h4>Kitti Bodas</h4>',
+        role: 'TEAM.EVENT_COORDINATOR',
         // tslint:disable-next-line:max-line-length
-        img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Foptimized%2FPallav_Tyagi.png?alt=media&token=68569611-2c9f-4b9a-9f73-3eba71b5c961'
-    },
+        img: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/team%2Foptimized%2FKITTI-1.png?alt=media&token=33f7b5cb-b5a1-436a-9d5e-d1f7de0a77cb'
+
+    }
 ];

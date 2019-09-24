@@ -103,7 +103,7 @@ export const FILMS_2019: Film2018[] = [
 
 export const FILMS_2019_HU: Film2018[] = [
   {
-    title: `A girl's band`,
+    title: `Lánybanda`,
     // tslint:disable-next-line:max-line-length
     synopsis: `„Kamerára cseréltem a basszusgitáromat” – nyilatkozta Marilina Giménez, aki két barátnőjével együtt 6 éven keresztül (2013-ig) zenélt a Yilet nevű bandában. Ennek apropója ihlette önéletrajzi dokumentumfilmjét, amely több nemi szereppel kapcsolatos dilemmát is felvet. Milyen szerep jut a nőknek a mai zenében? Hogyan hat az, ha a nők a nekik tetsző zenével foglalkozhatnak? Milyen a hatásuk, ha a színpadon a testük érzéki és agresszív? A filmből megismerhetjük az éjszakai Buenos Aires különféle női bandáit. Gyertek és táncoljatok!`,
     trailer:
@@ -131,7 +131,7 @@ export const FILMS_2019_HU: Film2018[] = [
     subtitleNote: ''
   },
   {
-    title: 'Us women, them women',
+    title: 'Mi, nők',
     trailer:
       'https://player.vimeo.com/video/358302844?color=ffffff&title=0&byline=0&portrait=0',
     // tslint:disable-next-line: max-line-length
@@ -145,7 +145,7 @@ export const FILMS_2019_HU: Film2018[] = [
     subtitleNote: ''
   },
   {
-    title: 'The Smiling Lombana',
+    title: 'A mosolygós Lombana',
     trailer:
       'https://player.vimeo.com/video/358303791?color=ffffff&title=0&byline=0&portrait=0',
     // tslint:disable-next-line: max-line-length
@@ -159,7 +159,7 @@ export const FILMS_2019_HU: Film2018[] = [
     subtitleNote: ''
   },
   {
-    title: 'My Aunt Toty',
+    title: 'Nagynéném, Toty',
     trailer:
       'https://player.vimeo.com/video/358302601?color=ffffff&title=0&byline=0&portrait=0',
     // tslint:disable-next-line: max-line-length
@@ -187,7 +187,7 @@ export const FILMS_2019_HU: Film2018[] = [
     subtitleNote: ''
   },
   {
-    title: 'Beauties of the Night',
+    title: 'Az éjszaka királynői',
     trailer:
       'https://player.vimeo.com/video/358302180?color=ffffff&title=0&byline=0&portrait=0',
     // tslint:disable-next-line: max-line-length
@@ -202,39 +202,113 @@ export const FILMS_2019_HU: Film2018[] = [
   }
 ];
 
-export const SHORT_FILMS_2019: {
+export interface ShortFilm2019 {
   title: string;
   country: string;
   duration: number;
   year: number;
   author: string;
-}[] = [
+  synopsis: string;
+}
+
+export const SHORT_FILMS_2019_EN: ShortFilm2019[] = [
   {
     title: 'Motriz',
     country: 'Cuba',
     duration: 13,
     year: 2016,
-    author: 'Celina Escher'
+    author: 'Celina Escher',
+    // tslint:disable-next-line:max-line-length
+    synopsis: `María is 50 years old and she is the only mechanic in san Antonio de los Baños, repairing fans and small engines. She lives under the same roof with  her ex-husband, a situation that makes her carry a great burden. While repairing fans, she'll tell us about her life, her dreams and her frustrations.`
   },
   {
     title: 'Aurora',
     country: 'Cuba',
     duration: 16,
     year: 2017,
-    author: 'Everlane Moraes'
-  },
-  {
-    title: 'La Espera',
-    country: 'Cuba',
-    duration: 13,
-    year: 2018,
-    author: 'Violena Ampudia'
+    author: 'Everlane Moraes',
+    // tslint:disable-next-line:max-line-length
+    synopsis: `Aurora is a filmic essay about the anguishes and physiological changes of women in three different phases of life. This film is proposed as a theatre pice in which three women reenact their inner conflicts on a stage in ruins, which symbolises the space and the sense of life.`
   },
   {
     title: 'Bonita',
     country: 'Cuba',
     duration: 18,
     year: 2018,
-    author: 'María del Mar Rosario'
+    author: 'María del Mar Rosario',
+    // tslint:disable-next-line:max-line-length
+    synopsis: `Through close-up shots of often painful procedures, La Bonita unmasks the violence of normative feminine standards of beauty.`
+  },
+  {
+    title: 'El Monte',
+    country: 'Cuba',
+    duration: 13,
+    year: 2017,
+    author: 'Claudia Claremi',
+    // tslint:disable-next-line:max-line-length
+    synopsis: `This film is a portray of the Sierra Maestra, where Jose Manuel explains to his granddaughter Malena, his view on the world through the knowledge of nature. Plants and people are alike and should respect each other. Jose Manuel would like Malena to inherit his knowledge, which he in turn inherited from his father, so she becomes a fine strong tree.`
+  },
+  {
+    title: 'Cheli',
+    country: 'Cuba',
+    duration: 16,
+    year: 2012,
+    author: 'Juliette Touin',
+    // tslint:disable-next-line:max-line-length
+    synopsis: `Cheli lives alone in the plains of the Sierra Maestra, Cuba. Her choice to be an independent woman doesn't correspond with the ideals of the masculine rural world that she belongs to.`
+  }
+];
+
+export const SHORT_FILMS_2019_HU: {
+  title: string;
+  country: string;
+  duration: number;
+  year: number;
+  author: string;
+  synopsis: string;
+}[] = [
+  {
+    title: 'A motorszerelő nő',
+    country: 'Cuba',
+    duration: 13,
+    year: 2016,
+    author: 'Celina Escher',
+    // tslint:disable-next-line:max-line-length
+    synopsis: `María 50 éves, és ő az egyetlen szerelő San Antonio de los Baños városában, ventilátorokat és kis motorokat javít. Egy tető alatt él volt férjével, ami nehéz helyzetbe hozza őt és nagy terhet jelent számára. Ventilátor javítás közben mesél az életről, álmairól és frusztrációiról.`
+  },
+  {
+    title: 'Aurora',
+    country: 'Cuba',
+    duration: 16,
+    year: 2017,
+    author: 'Everlane Moraes',
+    // tslint:disable-next-line:max-line-length
+    synopsis: `Az Aurora filmes esszé a nők életének három különböző szakaszában jelenlévő szorongásaikról és élettani változásaikról. Ezt a filmet színdarabnak javasolják, amelyben három nő életre kelti belső konfliktusaikat egy romokban lévő színpadon, amely a teret és az élet értelmét szimbolizálja.`
+  },
+  {
+    title: 'A szépség',
+    country: 'Cuba',
+    duration: 18,
+    year: 2018,
+    author: 'María del Mar Rosario',
+    synopsis: `A gyakran fájdalmas közeli felvételeken keresztül a La Bonita leleplezi a női szépség normatív standardjainak erőszakát.`
+  },
+  {
+    title: 'A Hegy',
+    country: 'Cuba',
+    duration: 13,
+    year: 2017,
+    author: 'Claudia Claremi',
+    // tslint:disable-next-line:max-line-length
+    synopsis: `Ez a film a Sierra Maestra portréja, ahol José Manuel elmeséli unokájának Malenának a természet megismerésén keresztül kialakított véleményét a világról. A növények és az emberek egyenlőek, és tiszteletben kell tartaniuk egymást. José Manuel azt akarja, hogy Malena örökölje azt a tudást, amelyet ő is az apjától kapott, hogy ezáltal Melena egy erős fává válhasson.`
+  },
+  {
+    title: 'Cheli',
+    country: 'Cuba',
+    duration: 16,
+    year: 2012,
+    author: 'Juliette Touin',
+    // tslint:disable-next-line:max-line-length
+    synopsis: `Cheli egyedül él a kubai Sierra Maestrában. A választása, hogy önálló független nőként éljen, nem felel meg annak a férfias vidéki világ eszményeinek, amelyhez ő is tartozik.`
   }
 ];

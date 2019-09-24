@@ -7,8 +7,13 @@
   "ROUTES.contact": "Kontakt",
   "ROUTES.sponsors": "Támogatók",
   "HOME": {
-    "MAIN_COPY": "Kortárs Latin-Amerikai Dokumentumfilm Fesztivál",
-    "DESCRIPTION": "Október 8 - 13, 2019 / Budapest",
+    "MAIN_COPY": "DÉLI DOKU 2019 - Dokumentumfilmek női szemüvegen keresztül",
+    "DESCRIPTION": "Október 8 - 13, 2019. között Budapesten.",
+    "LIST": {
+      "1": "Latin-amerikai nők történetei.",
+      "2": "Latin-amreikai történetek nőkről.",
+      "3": "Latin-amerikai nőkről szóló történetek."
+    },
     "OFFICIAL_SELECTION_TRAILER": "Nézd meg a hivatalos válogatásunk trailerét!",
     "SPECIAL_SCREENING_TRAILER": "Nézd meg a külön válogatásunk trailerét!"
   },
@@ -29,7 +34,7 @@
   },
   "ABOUT": {
     "TITLE": "Rólunk",
-    "PARAGRAPH_1": "A Déli Doku elhozza Budapestre a legjobb latin-amerikai dokumentumfilmeket és velük együtt a latin életérzést is. A Déli Doku egy alternatív filmes esemény a budapesti kulturális életben, amely 2017-ben indult. A mozikon kívül egyéb alternatív helyszíneken is szervezünk vetítéseket. Ráadásul a filmeken kívül beszélgetésekre, kiállításokra, gasztronómiai estékre és bulikra is csábítjuk a közönségünket.",
+    "PARAGRAPH_1": "Büszkén mutatjuk be a Déli Doku fesztivál 3. és egyben nagyon különleges kiadását. Ebben az évben, azon felül, hogy meghívjuk a közönséget, hogy dokumentumfilmeken keresztül szerezzenek latin-amerikai tapasztalatokat, a fesztivált annak is szenteljük, hogy méltassuk és megvitassuk a nők filmipari szerepét. Kate Erbland szavaival élve: „Ameddig filmek léteznek, addig lesznek nők is, akik elkészítik őket. Míg a Lumière testvérek sokkolták a közönséget egy száguldó vonat hihetetlen ábrázolásával, Alice Guy-Blaché úttörője volt saját technikáinak új művészi formájában való alkalmazásában. Amikor D.W. Griffith úttörő szerepet játszott a művészet terén azzal, hogy felépítette saját stúdióját, hogy elvégezze a munkáját, Lois Weber szintén ugyanezt csinálta. Amikor Hollywood az Aranykorát élte, Dorothy Arzner, Dorothy Davenport, Tressie Souders és sok más nő is ott voltak és saját filmjeiket készítették. Ez akkor nem is egy tendencia volt, ami azóta csökkent volna, mert igazából ez a tendencia sosem létezett. Hosszú időn keresztül a filmkészítő nők egyszerűen csak természetesnek számítottak.\" Számunkra, a Deli Doku csapat számára, ez lenne továbbra is a természetes. Minden évben magas a női rendezők részvételének aránya és sok történet szól a nők világáról. Ezúttal úgy döntöttünk, ezt hivatalossá is tesszük. Azon túl, hogy elhoztuk az ő filmjeiket, az a célunk, hogy megadjuk nekik a vágyott elismerést és méltassuk jelenlétüket a dokumentumfilmek világában, függetlenül attól, hogy a kamera melyik oldalán vannak. Itt az ideje, hogy főszereplőként mutassuk meg a nőket, hiszen amúgy is azok a moziban. És mi lehetne jobb módja ennek, mint segítségül hívni a dokumentumfilmeket?",
     "LIST_1": "Kortárs – mert meg akarjuk mutatni, hogy éppen mi zajlik a világban",
     "LIST_2": "Latin - amerikai – mert mindenkire ráfér egy kis déli melegség a hűvös magyar őszben",
     "LIST_3": "Dokumentumfilm – mert ez a legőszintébb formája az információszerzésnek",
@@ -57,7 +62,8 @@
     "TRANSLATOR": "Fordító",
     "WEB_DEV": "Webfejlesztő",
     "ARTISTIC_PRODUCER_AND_PROGRAMMER": "Művészeti producer és programszervező",
-    "FILM_PROGRAMMER": "Filmes programszervező"
+    "FILM_PROGRAMMER": "Filmes programszervező",
+    "EVENT_COORDINATOR": "Események Kordinátor"
   },
   "CONTACT": {
     "CTA": "Kapcsolat"

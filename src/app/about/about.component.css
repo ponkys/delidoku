@@ -13,7 +13,6 @@ ul li {
 .info-area {
     margin: 0 auto;
     padding: 20px 0;
-    color: #EAECEE;
 }
 
 .info-area-minus-bottom {
@@ -122,14 +121,14 @@ ul li {
     cursor: pointer;
     font-size: 20px;
     margin: 20px 0 0;
-    color: #EAECEE;
+    color: #eb5c58;
     /* color: rgba(111, 201, 198, 0.6); */
     -webkit-transition: color 0.2s; /* Safari */
     transition: color 0.2s;
 }
 
 .social-icon:hover {
-    color: #6fc9c6;
+    color: #eb5c58;
 }
 
 /* Animation  */

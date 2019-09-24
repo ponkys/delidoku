@@ -1,6 +1,6 @@
 export const Routes: string[] = [
     'home',
-    // 'films',
+    'films',
     // 'programme',
     'about',
     'team',

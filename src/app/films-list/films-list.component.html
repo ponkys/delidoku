@@ -6,14 +6,12 @@
   >
     <div>
       <h3>
-        {{ film.title }}
-        <ng-container *ngIf="film.duration"
-          >({{ film.duration }} {{ 'FILMS.MINS' | translate }})</ng-container
-        >
+        {{ film.title }} - {{ film.country }}
       </h3>
       <p *ngIf="film.author">
-        {{ film.author }} - {{ film.country }}
-        <ng-container *ngIf="film.year">({{ film.year }})</ng-container
+        {{ film.author }}<ng-container *ngIf="film.duration"
+        > - {{ film.duration }} {{ 'FILMS.MINS' | translate }}</ng-container>
+        <ng-container *ngIf="film.year"> - {{ film.year }}</ng-container
         ><ng-container *ngIf="film.subtitleNote">
           - {{ film.subtitleNote | translate }}</ng-container
         >

@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900');
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,600,900');
 
+/* colours 2019 
+blue:68c0b6
+red: eb5c58
+yellow: facf5e 
+white: EAECEE
+black: 242424 */
 
 *, *:after, *:before {
     -webkit-box-sizing: border-box;
@@ -25,7 +31,7 @@ body {
     line-height: 1.6;
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    color: #EAECEE;
+    color: #242424;
     /* -webkit-user-select: none; */
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none;
@@ -83,7 +89,7 @@ a {
 .title-bar {
     width: 50px;
     height: 4px;
-    background-color: #70c9c5;
+    background-color: #68c0b6;
     margin-bottom: 24px;
 }
 
@@ -119,7 +125,7 @@ a {
 }
 
 .yellow-color {
-    color: #dcdc1d;
+    color: #facf5e;
 }
 
 .blue-color {
@@ -127,7 +133,7 @@ a {
 }
 
 .blue-color-bg {
-    background-color: #70c9c5;
+    background-color: #68c0b6;
 }
 
 @media only screen and (min-width: 600px) {

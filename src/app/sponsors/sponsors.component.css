@@ -92,21 +92,16 @@
     border-radius: 6px;
 }
 
-.white {
-    color: #EAECEE;
-    border-radius: 6px;
-}
-
 .social-icon {
     cursor: pointer;
     font-size: 20px;
-    fill: #EAECEE;;
+    fill: #eb5c58;
     -webkit-transition: color 0.2s; /* Safari */
     transition: color 0.2s;
 }
 
 .social-icon:hover {
-    fill: #6fc9c6;
+    fill: #eb5c58;
 }
 
 .sponsors {

@@ -46,7 +46,7 @@ ul {
 }
 
 .nav-bar {
-    background-color: #EAECEE;
+    background-color: #eb5c58;
     padding-top: 25vh;
     position: absolute;
     width: 150px;
@@ -113,7 +113,7 @@ ul {
 }
 
 .social {
-    border-top: 1px solid #EAECEE;
+    border-top: 1px solid #eb5c58;
     margin: 0 auto;
     padding-top: 5%;
     text-align: center;
@@ -125,7 +125,7 @@ ul {
 .social-icon {
     cursor: pointer;
     font-size: 20px;
-    fill: #EAECEE;;
+    fill: #eb5c58;;
     -webkit-transition: color 0.2s; /* Safari */
     transition: color 0.2s;
 }
@@ -148,18 +148,14 @@ ul {
 }
 
 .page-scroll-header {
-    background: #a01f61;
-    background: -moz-linear-gradient(45deg, #a01f61 0%, #bc3926 100%);
-    background: -webkit-linear-gradient(45deg, #a01f61 0%,#bc3926 100%);
-    background: linear-gradient(45deg, #a01f61 0%,#bc3926 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a01f61', endColorstr='#bc3926',GradientType=1 );
+    background: white;
     box-shadow: 0 2px 2px -2px rgba(0,0,0,.15);
 }
 
 @media only screen and (max-width: 768px) {
     
     .nav-bar__link-a {
-        color: #EAECEE;
+        color: #242424;
     }
 
     .menu-symbol {

@@ -43,13 +43,13 @@
 .social-icon {
     cursor: pointer;
     font-size: 20px;
-    color: #EAECEE;
+    color: #eb5c58;
     -webkit-transition: color 0.2s; /* Safari */
     transition: color 0.2s;
 }
 
 .social-icon:hover {
-    color: #6fc9c6;
+    color: #eb5c58;
 }
 
 /* Animations  */

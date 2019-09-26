@@ -13,3 +13,10 @@ ng serve
  - header 13 and 10 in media query ---> this is shit;
  - inner-message 1;
  - deli-img 1;
+
+
+## Embedding links for trailers
+
+vimeo: 'https://player.vimeo.com/video/358302844?color=ffffff&title=0&byline=0&portrait=0',
+
+youtube: https://www.youtube.com/embed/X6JIpR_wOIU

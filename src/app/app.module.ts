@@ -2,11 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
-import { ParticlesModule } from 'angular-particle';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-
-
 
 import { AppComponent } from './app.component';
 import { VideoBackgroundService } from './video-background.service';
@@ -33,8 +30,7 @@ import { ButtonComponent } from './button/button.component';
 import { TrailerFullScreenComponent } from './home/trailer-full-screen/trailer-full-screen.component';
 import { AppRoutingModule } from './app-routing.module';
 import { ArchiveComponent } from './archive/archive.component';
-
-
+import { Film2019Component } from './film-2019/film-2019.component';
 
 export function createTranslateLoader(http: HttpClient) {
   return new TranslateHttpLoader(http, 'assets/i18n/', '.json');
@@ -50,6 +46,7 @@ export function createTranslateLoader(http: HttpClient) {
     AboutComponent,
     FooterComponent,
     Film2017Component,
+    Film2019Component,
     LogoComponent,
     LinksComponent,
     LoadingComponent,
@@ -62,24 +59,20 @@ export function createTranslateLoader(http: HttpClient) {
     Film2018Component,
     ButtonComponent,
     TrailerFullScreenComponent,
-    ArchiveComponent,
+    ArchiveComponent
   ],
   imports: [
     BrowserModule,
     TranslateModule.forRoot({
       loader: {
-          provide: TranslateLoader,
-          useFactory: (createTranslateLoader),
-          deps: [HttpClient]
+        provide: TranslateLoader,
+        useFactory: createTranslateLoader,
+        deps: [HttpClient]
       }
     }),
     AppRoutingModule,
-    ParticlesModule
   ],
-  providers: [
-    VideoBackgroundService,
-    WindowRefService,
-  ],
+  providers: [VideoBackgroundService, WindowRefService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

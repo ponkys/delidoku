@@ -7,8 +7,14 @@
   "ROUTES.contact": "contact",
   "ROUTES.sponsors": "sponsors",
   "HOME": {
-    "MAIN_COPY": "A NEW WAY TO EXPERIENCE LATIN AMERICA THROUGH DOCUMENTARY CINEMA",
-    "DESCRIPTION": "October 8th - 13th, 2019 / Budapest",
+    "DELIDOKU": "DÉLI-DOKU 2019",
+    "MAIN_COPY": "Documentary cinema through women’s perspective.",
+    "DESCRIPTION": "October 8th - 13th, 2019 - Budapest",
+    "LIST": {
+      "1": "Stories by Latin American women.",
+      "2": "Latin American stories about women.",
+      "3": "Stories about Latin American women."
+    },
     "OFFICIAL_SELECTION_TRAILER": "Watch official selection trailer",
     "SPECIAL_SCREENING_TRAILER": "Watch special screenings trailer"
   },
@@ -22,7 +28,8 @@
     "SUBTITLE_NOTE_PT": "Hungarian and English subtitles",
     "MINS": "mins",
     "SCREENING": "Screening",
-    "NO_TRAILER": "Trailer not available"
+    "NO_TRAILER": "Trailer not available",
+    "SHORT_FILMS": "Cuba EICTV Short films"
   },
   "PROGRAMME": {
     "TITLE": "Programme",
@@ -30,11 +37,9 @@
   },
   "ABOUT": {
     "TITLE": "About",
-    "PARAGRAPH_1": "Déli-Doku brings to Budapest the finest in modern documentary film production from Latin America and brings along the Latin-American feeling. Starting in 2017 as an alternative film event, Déli-Doku goes beyond the cinema experience by taking the screenings to both public and private locations, such as social organizations, artistic venues and such, generating a series of social happenings connected with today's alternative ways of cinema distribution.",
-    "LIST_1": "It’s - Contemporary - because we want to show what’s going on in the world through different views",
-    "LIST_2": "It’s - Latin American - because we all could use some warmth of the “southern continent” during a chilling Hungarian autumn",
-    "LIST_3": "It’s - Documentary film - because it provides the ultimate cultural immersion you can have from afar",
-    "LIST_4": "It’s - Festival - because we, latinos, love a good party",
+    "PARAGRAPH_1": "We’re proud to present the very special 3rd edition of the Déli Doku festival. This year, more than inviting our audience to experience Latin America through documentary cinema, we want to dedicate our festival to praise and discuss the women representation in film industry.",
+    "PARAGRAPH_2": "In the words of Kate Erbland: \"For as long as there have been movies, there have been women making them. When the Lumière brothers were shocking audiences with their unbelievable depiction of a running train, Alice Guy-Blaché was pioneering her own techniques in the brand-new artform. When D.W. Griffith was pioneering advances in the art, and building his own studio to make his work, Lois Weber was doing, well, the exact same thing. When Hollywood was deep in its Golden Age, Dorothy Arzner, Dorothy Davenport, Tressie Souders, and many more women were right there, making their own films. It’s not even a trend that really abated, because it was never a trend. For so long, women being filmmakers was simply part of the norm.\" For us, the Deli Doku team, this should continue to be the norm.",
+    "PARAGRAPH_3": "Every year, we have a massive participation of women directors and stories from the feminine world. Now, we decided to make it official. So more than just bringing their films, we want to give them the desired recognition and praise their presence in documentary cinema, be it behind or in front of the camera. It’s about time to show women as the protagonists they really are in cinema. And what better way to do this than through documentary films?",
     "FREE_CTA": "AND DID WE MENTION THAT ALL SCREENINGS ARE FREE OF CHARGE? AND IF YOU ARE LUCKY, EVEN SOME WINE TOO!",
     "WHY": "Why we do it?",
     "WHY_REASON": "We want to bring Latin America a little closer to Budapest. And there’s not better way to do this than sharing their real stories told in a new way: the documentary cinema. More than pleasing documentary film lovers, we from the Déli Doku team want to invite new lovers to join this hub and discover the beauty of watching these real stories being told through the lenses of a camera. More importantly, we want to promote, support and elevate the documentary film industry.",
@@ -58,7 +63,8 @@
     "TRANSLATOR": "Translator",
     "WEB_DEV": "Web developer",
     "ARTISTIC_PRODUCER_AND_PROGRAMMER": "Artistic producer and programmer",
-    "FILM_PROGRAMMER": "Film programmer"
+    "FILM_PROGRAMMER": "Film programmer",
+    "EVENT_COORDINATOR": "Events coordinator"
   },
   "CONTACT": {
     "CTA": "contact us!"

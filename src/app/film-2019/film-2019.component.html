@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <div class="wrapper-parallel">
+    <div class="title main-title-line-height">
+      <h1 class="animation-title">{{ title | translate }}</h1>
+      <div class="film-icon"></div>
+    </div>
+    <div class="title-bar"></div>
+    <section class="parallel-area">
+      <h2 class="center">
+        2019
+      </h2>
+      <ng-container *ngFor="let cat of categories; let i = index">
+        <h2 class="yellow-color" [class.center]="true">
+          {{ cat.name | translate }}
+        </h2>
+        <app-films-list [films]="cat.films"></app-films-list>
+      </ng-container>
+      <h2 class="yellow-color" [class.center]="true">
+        {{ 'FILMS.SHORT_FILMS' | translate }}
+      </h2>
+      <app-films-list [films]="shortFilms"></app-films-list>
+    </section>
+  </div>
+</div>

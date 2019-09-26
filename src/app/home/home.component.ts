@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { WindowRefService } from '../window-ref.service';
-import { PARTICLES_PARAMS } from './particles/particles-params';
-import { PARTICLES_STYLES } from './particles/particles-styles';
 import { TRAILERS } from './trailers-const';
 
 @Component({
@@ -14,8 +12,6 @@ export class HomeComponent {
   height = 100;
   isHomeComponent: false;
   mobileScreen = true;
-  myParams: object = PARTICLES_PARAMS;
-  particlesStyle: object = PARTICLES_STYLES;
   showVideo: boolean;
   trailers = TRAILERS;
   width = 100;

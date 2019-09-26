@@ -3,28 +3,28 @@ import { Film2018, Film2017 } from '../films/film';
 import { VideoBackgroundService } from '../video-background.service';
 
 @Component({
-    selector: 'app-films-list',
-    templateUrl: './films-list.component.html',
-    styleUrls: ['./films-list.component.css']
+  selector: 'app-films-list',
+  templateUrl: './films-list.component.html',
+  styleUrls: ['./films-list.component.css']
 })
 export class FilmsListComponent implements OnChanges {
-    @Input() films: Array<Film2018 | Film2017> = [];
-    selectedFilm: string;
+  @Input() films: Array<Film2018 | Film2017> = [];
+  selectedFilm: string;
 
-    constructor(private videoBackgroundService: VideoBackgroundService) { }
+  constructor(private videoBackgroundService: VideoBackgroundService) {}
 
-    ngOnChanges() {
-        this.films.map( film => {
-            if (!film.trailer) { return film.trailer };
-            film.trailerSafe = this.videoBackgroundService.sanitise(film.trailer);
-        });
+  ngOnChanges() {
+    this.films.forEach(film => {
+      film.trailerSafe = film.trailer
+        ? this.videoBackgroundService.sanitise(film.trailer)
+        : null;
+    });
+  }
+
+  openFilmInfo(title: string): string {
+    if (title === this.selectedFilm) {
+      return (this.selectedFilm = '');
     }
-
-    openFilmInfo(title: string): string {
-        if (title === this.selectedFilm) {
-          return this.selectedFilm = '';
-        }
-        return this.selectedFilm = title;
-    }
-
+    return (this.selectedFilm = title);
+  }
 }

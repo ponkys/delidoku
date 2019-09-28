@@ -94,14 +94,14 @@
 
 .social-icon {
     cursor: pointer;
-    font-size: 20px;
-    fill: #eb5c58;
+    font-size: 24px;
+    fill: #242424;
     -webkit-transition: color 0.2s; /* Safari */
     transition: color 0.2s;
 }
 
 .social-icon:hover {
-    fill: #eb5c58;
+    fill: #242424;
 }
 
 .sponsors {
@@ -111,7 +111,7 @@
 .sponsors .main-nk {
     background-image: url('assets/images/sponsors/nka_hun.png');
     background-size: contain;
-    height: 250px;
+    height: 200px;
     background-repeat: no-repeat;
     background-position: center center;
 }
@@ -119,9 +119,26 @@
 .sponsors .main-ben {
     background-image: url('assets/images/sponsors/BEM_MOZI.png');
     background-size: contain;
-    height: 250px;
+    height: 200px;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+.sponsors .main-ankert {
+    background-image: url('assets/images/sponsors/ankert.jpg');
+    background-size: contain;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.sponsors .main-house-bar {
+    background-image: url('assets/images/sponsors/house-bar.png');
+    background-size: contain;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin-top: 32px;
 }
 
 .sponsors-other {
@@ -157,20 +174,6 @@
     background-position: center center;
 }
 
-.sponsors-other .colombia {
-    background-image: url('assets/images/sponsors/colombia.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.sponsors-other .chile {
-    background-image: url('assets/images/sponsors/chile.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
 .sponsors-other .argentina {
     background-image: url('assets/images/sponsors/argentina.png');
     background-size: contain;
@@ -185,36 +188,8 @@
     background-position: center center;
 }
 
-.sponsors-other .aurora {
-    background-image: url('assets/images/sponsors/aurora.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
 .sponsors-other .cervantes {
     background-image: url('assets/images/sponsors/cervantes.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.sponsors-other .lumen {
-    background-image: url('assets/images/sponsors/lumen.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.sponsors-other .house-bar {
-    background-image: url('assets/images/sponsors/house-bar.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-}
-
-.sponsors-other .peters {
-    background-image: url('assets/images/sponsors/peters.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;

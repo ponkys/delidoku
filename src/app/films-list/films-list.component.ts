@@ -8,7 +8,7 @@ import { VideoBackgroundService } from '../video-background.service';
   styleUrls: ['./films-list.component.css']
 })
 export class FilmsListComponent implements OnChanges {
-  @Input() films: Array<Film2018 | Film2017> = [];
+  @Input() films: Array<Film2018 | Film2017 & {still: string}>  = [];
   selectedFilm: string;
 
   constructor(private videoBackgroundService: VideoBackgroundService) {}

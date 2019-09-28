@@ -121,14 +121,13 @@ ul li {
     cursor: pointer;
     font-size: 20px;
     margin: 20px 0 0;
-    color: #eb5c58;
-    /* color: rgba(111, 201, 198, 0.6); */
+    color: #242424;
     -webkit-transition: color 0.2s; /* Safari */
     transition: color 0.2s;
 }
 
 .social-icon:hover {
-    color: #eb5c58;
+    color: #242424;
 }
 
 /* Animation  */

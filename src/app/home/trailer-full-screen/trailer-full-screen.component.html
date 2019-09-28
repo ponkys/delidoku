@@ -1,6 +1,10 @@
 <div class="fullscreen" (click)="closeFullScreen.emit(null)">
-    <video  controls autoplay>
-        <source src={{videoUrl}}/>
         <!-- other video -->
-    </video>
+        <iframe
+        width="100%"
+        frameBorder="0"
+        height="400px"
+        [src]=videoUrl
+        allowfullscreen
+      ></iframe>
 </div>

@@ -10,7 +10,16 @@ export const FILMS_2019: Film2018[] = [
     year: 2018,
     author: 'Marilina Giménez',
     country: 'Argentina',
-    date: [],
+    date: [
+      {
+        info: 'Oct 12th - Anker\'t - 20:30',
+        event: '#'
+      },
+      {
+        info: 'Oct 13th - Bem Mozi - 16:30',
+        event: '#'
+      }
+    ],
     section: 'Focus Argentina',
     subtitleNote: ''
   },
@@ -23,7 +32,16 @@ export const FILMS_2019: Film2018[] = [
     year: 2018,
     author: 'María Silvia Esteve',
     country: 'Argentina, Chile',
-    date: [],
+    date: [
+      {
+        info: 'Oct 8th - Bem Mozi - 18:30',
+        event: 'https://www.facebook.com/events/2496150524005424/'
+      },
+      {
+        info: 'Oct 10th - Bem Mozi - 18:30',
+        event: 'https://www.facebook.com/events/2496150524005424/'
+      }
+    ],
     section: 'Focus Argentina',
     subtitleNote: ''
   },
@@ -36,7 +54,16 @@ export const FILMS_2019: Film2018[] = [
     year: 2016,
     author: 'Julia Pesce',
     country: 'Argentina',
-    date: [],
+    date: [
+      {
+        info: 'Oct 8th - Bem Mozi - 20:30',
+        event: 'https://www.facebook.com/events/395528837794286/'
+      },
+      {
+        info: 'Oct 12th - Anker\'t - 18:30',
+        event: 'https://www.facebook.com/events/1372048069616719/'
+      }
+    ],
     section: 'Focus Argentina',
     subtitleNote: ''
   },
@@ -49,7 +76,16 @@ export const FILMS_2019: Film2018[] = [
     year: 2019,
     author: 'Daniela Abad',
     country: 'Colombia',
-    date: [],
+    date: [
+      {
+        info: 'Oct 9th - Bem Mozi - 20:30',
+        event: '#'
+      },
+      {
+        info: 'Oct 11th - Bem Mozi - 18:30',
+        event: ''
+      }
+    ],
     section: 'FILMS.OFFICIAL_SELECTION',
     subtitleNote: ''
   },
@@ -62,7 +98,16 @@ export const FILMS_2019: Film2018[] = [
     year: 2017,
     author: 'Leon Felipe Troya',
     country: 'Ecuador',
-    date: [],
+    date: [
+      {
+        info: 'Oct 11th - House Bar - 20:30',
+        event: ''
+      },
+      {
+        info: 'Oct 13th - Bem Mozi - 18:30',
+        event: ''
+      }
+    ],
     section: 'FILMS.OFFICIAL_SELECTION',
     subtitleNote: ''
   },
@@ -75,7 +120,16 @@ export const FILMS_2019: Film2018[] = [
     year: 2017,
     author: 'Juliana Antunes',
     country: 'Brazil',
-    date: [],
+    date: [
+      {
+        info: 'Oct 9th - Bem Mozi - 18:30',
+        event: ''
+      },
+      {
+        info: 'Oct 13th - Bem Mozi - 20:30',
+        event: ''
+      }
+    ],
     section: 'FILMS.OFFICIAL_SELECTION',
     subtitleNote: ''
   },
@@ -88,7 +142,16 @@ export const FILMS_2019: Film2018[] = [
     year: 2016,
     author: 'María José Cuevas',
     country: 'Mexico',
-    date: [],
+    date: [
+      {
+        info: 'Oct 10th - Bem Mozi - 20:30',
+        event: ''
+      },
+      {
+        info: 'Oct 12th - Anker\'t - 16:30',
+        event: ''
+      }
+    ],
     section: 'FILMS.OFFICIAL_SELECTION',
     subtitleNote: ''
   }
@@ -104,7 +167,16 @@ export const FILMS_2019_HU: Film2018[] = [
     year: 2018,
     author: 'Marilina Giménez',
     country: 'Argentina',
-    date: [],
+    date: [
+      {
+        info: 'Okt 12 - Anker\'t - 20:30',
+        event: ''
+      },
+      {
+        info: 'Okt 13 - Bem Mozi - 16:30',
+        event: ''
+      }
+    ],
     section: 'Focus Argentina',
     subtitleNote: ''
   },
@@ -117,7 +189,16 @@ export const FILMS_2019_HU: Film2018[] = [
     year: 2018,
     author: 'María Silvia Esteve',
     country: 'Argentina, Chile',
-    date: [],
+    date: [
+      {
+        info: 'Okt 8t - Bem Mozi - 18:30',
+        event: 'https://www.facebook.com/events/2496150524005424/'
+      },
+      {
+        info: 'Okt 10 - Bem Mozi - 18:30',
+        event: 'https://www.facebook.com/events/2496150524005424/'
+      }
+    ],
     section: 'Focus Argentina',
     subtitleNote: ''
   },
@@ -130,7 +211,16 @@ export const FILMS_2019_HU: Film2018[] = [
     year: 2016,
     author: 'Julia Pesce',
     country: 'Argentina',
-    date: [],
+    date: [
+      {
+        info: 'Okt 8 - Bem Mozi - 20:30',
+        event: 'https://www.facebook.com/events/395528837794286/'
+      },
+      {
+        info: 'Okt 12 - Anker\'t - 18:30',
+        event: 'https://www.facebook.com/events/1372048069616719/'
+      }
+    ],
     section: 'Focus Argentina',
     subtitleNote: ''
   },
@@ -143,7 +233,16 @@ export const FILMS_2019_HU: Film2018[] = [
     year: 2019,
     author: 'Daniela Abad',
     country: 'Colombia',
-    date: [],
+    date: [
+      {
+        info: 'Okt 9 - Bem Mozi - 20:30',
+        event: ''
+      },
+      {
+        info: 'Okt 11 - Bem Mozi - 18:30',
+        event: ''
+      }
+    ],
     section: 'FILMS.OFFICIAL_SELECTION',
     subtitleNote: ''
   },
@@ -156,7 +255,16 @@ export const FILMS_2019_HU: Film2018[] = [
     year: 2017,
     author: 'Leon Felipe Troya',
     country: 'Ecuador',
-    date: [],
+    date: [
+      {
+        info: 'Okt 11 - House Bar - 20:30',
+        event: ''
+      },
+      {
+        info: 'Okt 13 - Bem Mozi - 18:30',
+        event: ''
+      }
+    ],
     section: 'FILMS.OFFICIAL_SELECTION',
     subtitleNote: ''
   },
@@ -169,7 +277,16 @@ export const FILMS_2019_HU: Film2018[] = [
     year: 2017,
     author: 'Juliana Antunes',
     country: 'Brazil',
-    date: [],
+    date: [
+      {
+        info: 'Okt 9 - Bem Mozi - 18:30',
+        event: ''
+      },
+      {
+        info: 'Okt 13 - Bem Mozi - 20:30',
+        event: ''
+      }
+    ],
     section: 'FILMS.OFFICIAL_SELECTION',
     subtitleNote: ''
   },
@@ -182,7 +299,16 @@ export const FILMS_2019_HU: Film2018[] = [
     year: 2016,
     author: 'María José Cuevas',
     country: 'Mexico',
-    date: [],
+    date: [
+      {
+        info: 'Okt 10 - Bem Mozi - 20:30',
+        event: ''
+      },
+      {
+        info: 'Okt 12 - Anker\'t - 16:30',
+        event: ''
+      }
+    ],
     section: 'FILMS.OFFICIAL_SELECTION',
     subtitleNote: ''
   }
@@ -195,6 +321,8 @@ export interface ShortFilm2019 {
   year: number;
   author: string;
   synopsis: string;
+  still: string;
+  date: {event: string; info: string}[]
 }
 
 export const SHORT_FILMS_2019_EN: ShortFilm2019[] = [
@@ -205,7 +333,15 @@ export const SHORT_FILMS_2019_EN: ShortFilm2019[] = [
     year: 2016,
     author: 'Celina Escher',
     // tslint:disable-next-line:max-line-length
-    synopsis: `María is 50 years old and she is the only mechanic in san Antonio de los Baños, repairing fans and small engines. She lives under the same roof with  her ex-husband, a situation that makes her carry a great burden. While repairing fans, she'll tell us about her life, her dreams and her frustrations.`
+    synopsis: `María is 50 years old and she is the only mechanic in san Antonio de los Baños, repairing fans and small engines. She lives under the same roof with  her ex-husband, a situation that makes her carry a great burden. While repairing fans, she'll tell us about her life, her dreams and her frustrations.`,
+    // tslint:disable-next-line:max-line-length
+    still: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/2019%2Fshort-films-stills%2Fmotriz.jpg?alt=media&token=a21f7c9c-c3bc-4b08-92d6-f38bf4808694',
+    date: [
+      {
+        info: 'Okt 11 - Bem Mozi - 20:30',
+        event: '#'
+      },
+    ]
   },
   {
     title: 'Aurora',
@@ -214,16 +350,32 @@ export const SHORT_FILMS_2019_EN: ShortFilm2019[] = [
     year: 2017,
     author: 'Everlane Moraes',
     // tslint:disable-next-line:max-line-length
-    synopsis: `Aurora is a filmic essay about the anguishes and physiological changes of women in three different phases of life. This film is proposed as a theatre pice in which three women reenact their inner conflicts on a stage in ruins, which symbolises the space and the sense of life.`
+    synopsis: `Aurora is a filmic essay about the anguishes and physiological changes of women in three different phases of life. This film is proposed as a theatre pice in which three women reenact their inner conflicts on a stage in ruins, which symbolises the space and the sense of life.`,
+    // tslint:disable-next-line:max-line-length
+    still: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/2019%2Fshort-films-stills%2Faurora.jpg?alt=media&token=7a5d302c-f149-4c5d-9f30-e8266058d5cc',
+    date: [
+      {
+        info: 'Oct 9th - Bem Mozi - 20:30',
+        event: '#'
+      },
+    ]
   },
   {
-    title: 'Bonita',
+    title: 'La Bonita',
     country: 'Cuba',
     duration: 18,
     year: 2018,
     author: 'María del Mar Rosario',
     // tslint:disable-next-line:max-line-length
-    synopsis: `Through close-up shots of often painful procedures, La Bonita unmasks the violence of normative feminine standards of beauty.`
+    synopsis: `Through close-up shots of often painful procedures, La Bonita unmasks the violence of normative feminine standards of beauty.`,
+    // tslint:disable-next-line:max-line-length
+    still: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/2019%2Fshort-films-stills%2Flabonita.jpg?alt=media&token=dbd7d0fa-0583-4e12-b3b7-0467f4f5cdc9',
+    date: [
+      {
+        info: 'Oct 12th - Anker\'t - 20:30',
+        event: '#'
+      },
+    ]
   },
   {
     title: 'El Monte',
@@ -232,7 +384,15 @@ export const SHORT_FILMS_2019_EN: ShortFilm2019[] = [
     year: 2017,
     author: 'Claudia Claremi',
     // tslint:disable-next-line:max-line-length
-    synopsis: `This film is a portray of the Sierra Maestra, where Jose Manuel explains to his granddaughter Malena, his view on the world through the knowledge of nature. Plants and people are alike and should respect each other. Jose Manuel would like Malena to inherit his knowledge, which he in turn inherited from his father, so she becomes a fine strong tree.`
+    synopsis: `This film is a portray of the Sierra Maestra, where Jose Manuel explains to his granddaughter Malena, his view on the world through the knowledge of nature. Plants and people are alike and should respect each other. Jose Manuel would like Malena to inherit his knowledge, which he in turn inherited from his father, so she becomes a fine strong tree.`,
+    // tslint:disable-next-line:max-line-length
+    still: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/2019%2Fshort-films-stills%2Felmonte.jpg?alt=media&token=fe2d08dd-df64-418d-8e36-4ee6cd368625',
+    date: [
+      {
+        info: 'Oct 10th - Bem Mozi - 20:30',
+        event: '#'
+      },
+    ]
   },
   {
     title: 'Cheli',
@@ -241,18 +401,19 @@ export const SHORT_FILMS_2019_EN: ShortFilm2019[] = [
     year: 2012,
     author: 'Juliette Touin',
     // tslint:disable-next-line:max-line-length
-    synopsis: `Cheli lives alone in the plains of the Sierra Maestra, Cuba. Her choice to be an independent woman doesn't correspond with the ideals of the masculine rural world that she belongs to.`
+    synopsis: `Cheli lives alone in the plains of the Sierra Maestra, Cuba. Her choice to be an independent woman doesn't correspond with the ideals of the masculine rural world that she belongs to.`,
+    // tslint:disable-next-line:max-line-length
+    still: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/2019%2Fshort-films-stills%2Fcheli.jpg?alt=media&token=69a62a9f-30ff-48a3-969f-ac72e1ed8099',
+    date: [
+      {
+        info: 'Oct 13th - Bem Mozi - 20:30',
+        event: '#'
+      },
+    ]
   }
 ];
 
-export const SHORT_FILMS_2019_HU: {
-  title: string;
-  country: string;
-  duration: number;
-  year: number;
-  author: string;
-  synopsis: string;
-}[] = [
+export const SHORT_FILMS_2019_HU: ShortFilm2019[] = [
   {
     title: 'A motorszerelő nő',
     country: 'Cuba',
@@ -260,7 +421,15 @@ export const SHORT_FILMS_2019_HU: {
     year: 2016,
     author: 'Celina Escher',
     // tslint:disable-next-line:max-line-length
-    synopsis: `María 50 éves, és ő az egyetlen szerelő San Antonio de los Baños városában, ventilátorokat és kis motorokat javít. Egy tető alatt él volt férjével, ami nehéz helyzetbe hozza őt és nagy terhet jelent számára. Ventilátor javítás közben mesél az életről, álmairól és frusztrációiról.`
+    synopsis: `María 50 éves, és ő az egyetlen szerelő San Antonio de los Baños városában, ventilátorokat és kis motorokat javít. Egy tető alatt él volt férjével, ami nehéz helyzetbe hozza őt és nagy terhet jelent számára. Ventilátor javítás közben mesél az életről, álmairól és frusztrációiról.`,
+    // tslint:disable-next-line:max-line-length
+    still: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/2019%2Fshort-films-stills%2Fmotriz.jpg?alt=media&token=a21f7c9c-c3bc-4b08-92d6-f38bf4808694',
+    date: [
+      {
+        info: 'Okt 11 - Bem Mozi - 20:30',
+        event: '#'
+      },
+    ]
   },
   {
     title: 'Aurora',
@@ -269,7 +438,15 @@ export const SHORT_FILMS_2019_HU: {
     year: 2017,
     author: 'Everlane Moraes',
     // tslint:disable-next-line:max-line-length
-    synopsis: `Az Aurora filmes esszé a nők életének három különböző szakaszában jelenlévő szorongásaikról és élettani változásaikról. Ezt a filmet színdarabnak javasolják, amelyben három nő életre kelti belső konfliktusaikat egy romokban lévő színpadon, amely a teret és az élet értelmét szimbolizálja.`
+    synopsis: `Az Aurora filmes esszé a nők életének három különböző szakaszában jelenlévő szorongásaikról és élettani változásaikról. Ezt a filmet színdarabnak javasolják, amelyben három nő életre kelti belső konfliktusaikat egy romokban lévő színpadon, amely a teret és az élet értelmét szimbolizálja.`,
+    // tslint:disable-next-line:max-line-length
+    still: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/2019%2Fshort-films-stills%2Faurora.jpg?alt=media&token=7a5d302c-f149-4c5d-9f30-e8266058d5cc',
+    date: [
+      {
+        info: 'Okt 9 - Bem Mozi - 20:30',
+        event: '#'
+      },
+    ]
   },
   {
     title: 'A szépség',
@@ -277,7 +454,15 @@ export const SHORT_FILMS_2019_HU: {
     duration: 18,
     year: 2018,
     author: 'María del Mar Rosario',
-    synopsis: `A gyakran fájdalmas közeli felvételeken keresztül a La Bonita leleplezi a női szépség normatív standardjainak erőszakát.`
+    synopsis: `A gyakran fájdalmas közeli felvételeken keresztül a La Bonita leleplezi a női szépség normatív standardjainak erőszakát.`,
+    // tslint:disable-next-line:max-line-length
+    still: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/2019%2Fshort-films-stills%2Flabonita.jpg?alt=media&token=dbd7d0fa-0583-4e12-b3b7-0467f4f5cdc9',
+    date: [
+      {
+        info: 'Okt 12 - Anker\'t - 20:30',
+        event: '#'
+      },
+    ]
   },
   {
     title: 'A Hegy',
@@ -286,7 +471,15 @@ export const SHORT_FILMS_2019_HU: {
     year: 2017,
     author: 'Claudia Claremi',
     // tslint:disable-next-line:max-line-length
-    synopsis: `Ez a film a Sierra Maestra portréja, ahol José Manuel elmeséli unokájának Malenának a természet megismerésén keresztül kialakított véleményét a világról. A növények és az emberek egyenlőek, és tiszteletben kell tartaniuk egymást. José Manuel azt akarja, hogy Malena örökölje azt a tudást, amelyet ő is az apjától kapott, hogy ezáltal Melena egy erős fává válhasson.`
+    synopsis: `Ez a film a Sierra Maestra portréja, ahol José Manuel elmeséli unokájának Malenának a természet megismerésén keresztül kialakított véleményét a világról. A növények és az emberek egyenlőek, és tiszteletben kell tartaniuk egymást. José Manuel azt akarja, hogy Malena örökölje azt a tudást, amelyet ő is az apjától kapott, hogy ezáltal Melena egy erős fává válhasson.`,
+    // tslint:disable-next-line:max-line-length
+    still: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/2019%2Fshort-films-stills%2Felmonte.jpg?alt=media&token=fe2d08dd-df64-418d-8e36-4ee6cd368625',
+    date: [
+      {
+        info: 'Okt 10 - Bem Mozi - 20:30',
+        event: '#'
+      },
+    ]
   },
   {
     title: 'Cheli',
@@ -295,6 +488,14 @@ export const SHORT_FILMS_2019_HU: {
     year: 2012,
     author: 'Juliette Touin',
     // tslint:disable-next-line:max-line-length
-    synopsis: `Cheli egyedül él a kubai Sierra Maestrában. A választása, hogy önálló független nőként éljen, nem felel meg annak a férfias vidéki világ eszményeinek, amelyhez ő is tartozik.`
+    synopsis: `Cheli egyedül él a kubai Sierra Maestrában. A választása, hogy önálló független nőként éljen, nem felel meg annak a férfias vidéki világ eszményeinek, amelyhez ő is tartozik.`,
+    // tslint:disable-next-line:max-line-length
+    still: 'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/2019%2Fshort-films-stills%2Fcheli.jpg?alt=media&token=69a62a9f-30ff-48a3-969f-ac72e1ed8099',
+    date: [
+      {
+        info: 'Okt 13 - Bem Mozi - 20:30',
+        event: '#'
+      },
+    ]
   }
 ];

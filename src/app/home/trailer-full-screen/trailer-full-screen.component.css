@@ -13,6 +13,11 @@
     align-items: center;
 }
 
+.fullscreen > iframe {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 video {
     width: 80%;
     height: 85%;

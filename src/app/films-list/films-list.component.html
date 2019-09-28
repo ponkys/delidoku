@@ -49,7 +49,14 @@
       ></iframe>
     </div>
     <ng-template #noTrailer>
-      <h4 class="center mb-16">{{ 'FILMS.NO_TRAILER' | translate }}</h4>
+      <ng-container *ngIf="film.still; else noMedia">
+        <div class="center">
+          <img src="{{film.still}}">
+        </div>
+      </ng-container>
+      <ng-template #noMedia>
+        <h4 class="center mb-16">{{ 'FILMS.NO_TRAILER' | translate }}</h4>
+      </ng-template>
     </ng-template>
     <div *ngIf="film.synopsis" class="film-description">
       <p>{{ film.synopsis }}</p>

@@ -13,13 +13,12 @@
         <img class="animated fadeInDownBig main-title-home" src='assets/images/title1.svg' alt="deli doku"/>
     </div> -->
   <div class="main-title-background background-image"></div>
-  <div class="message center">
-    <h1 class="main-message deli-title">{{ 'HOME.DELIDOKU' | translate }}</h1>
-    <h2 class="main-message">{{ 'HOME.MAIN_COPY' | translate }}</h2>
-    <h1 class="main-message meta-message">
+  <div class="main-copy message center">
+    <h1 class="deli-title">{{ 'HOME.DELIDOKU' | translate }}</h1>
+    <h2 class="meta-message">
       {{ 'HOME.DESCRIPTION' | translate }}
-    </h1>
-    <ul>
+    </h2>
+    <ul class="font-size-list">
       <li class="font-bold">
         {{ 'HOME.LIST.1' | translate }}
       </li>
@@ -45,22 +44,22 @@
       </svg>
     </div>
     <div class="buttons-area">
+      <app-button
+        class="mb-16"
+        (click)="onClickVideo()"
+        [content]="'HOME.OFFICIAL_SELECTION_TRAILER'">
+      </app-button>
       <!-- <app-button
-                class="mb-16"
-                (click)="onClickVideo(trailers.official)"
-                [content]="'HOME.OFFICIAL_SELECTION_TRAILER'">
-            </app-button>
-            <app-button
-                class="mb-16"
-                (click)="onClickVideo(trailers.special_screenings)"
-                [content]="'HOME.SPECIAL_SCREENING_TRAILER'">
-            </app-button> -->
+          class="mb-16"
+          (click)="onClickVideo(trailers.special_screenings)"
+          [content]="'HOME.SPECIAL_SCREENING_TRAILER'">
+      </app-button> -->
     </div>
   </div>
-  <!-- <app-trailer-full-screen
+  <app-trailer-full-screen
     *ngIf="showVideo"
     [videoUrl]="currentVideo"
     (closeFullScreen)="onCloseVideo()"
   >
-  </app-trailer-full-screen> -->
+  </app-trailer-full-screen>
 </div>

@@ -42,14 +42,14 @@
 
 .social-icon {
     cursor: pointer;
-    font-size: 20px;
-    color: #eb5c58;
+    font-size: 24px;
+    color: #242424;
     -webkit-transition: color 0.2s; /* Safari */
     transition: color 0.2s;
 }
 
 .social-icon:hover {
-    color: #eb5c58;
+    color: #242424;
 }
 
 /* Animations  */

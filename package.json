@@ -29,13 +29,14 @@
     "core-js": "^2.5.1",
     "font-awesome": "^4.7.0",
     "normalize.css": "8.0.0",
+    "prettier": "^1.18.2",
     "rxjs": "6.4.0",
     "tslib": "^1.9.0",
     "zone.js": "^0.9.1"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "0.800.3",
-    "@angular/cli": "8.0.3",
+    "@angular/cli": "^8.3.6",
     "@angular/compiler-cli": "8.0.1",
     "@angular/language-service": "8.0.1",
     "@types/jasmine": "3.3.13",

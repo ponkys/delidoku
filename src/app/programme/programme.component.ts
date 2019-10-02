@@ -17,7 +17,7 @@ export class ProgrammeComponent implements OnInit {
     // const url = this.translate.currentLang === 'en' ? this.urlEn : this.urlHu;
     const url =
       // tslint:disable-next-line: max-line-length
-      'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/programme%2F2019%2FDD_program_for_web.pdf?alt=media&token=f7c076cb-97dc-4e68-bd5a-66bc7ca633c6';
+      'https://firebasestorage.googleapis.com/v0/b/delidoku-b2ece.appspot.com/o/programme%2F2019%2FDD_program_for_web_V2.pdf?alt=media&token=8fb9d95b-4097-42bf-91b5-3fd49ad6aa65';
     window.open(url, '_blank');
   }
 }
